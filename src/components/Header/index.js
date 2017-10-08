@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper, NavItem } from './styles';
+import { Wrapper, NavItem, JoinNavItem } from './styles';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
@@ -11,13 +11,15 @@ export default class Header extends Component {
           <Logo width="134" height="38" />
         </NavLink>
         <nav>
-          <NavItem to="/what-is-musicoin">What is Musicoin</NavItem>
+          <NavItem exact to="/">
+            What is Musicoin
+          </NavItem>
           <NavItem to="/how-it-works">How it works</NavItem>
           <NavItem to="/foundation">Foundation</NavItem>
           <NavItem to="/musicians">Musicians</NavItem>
           <NavItem to="/currency">Currency</NavItem>
           <NavItem to="/download">Download</NavItem>
-          <NavItem to="/join">Join</NavItem>
+          <JoinNavItem to="/join">Join</JoinNavItem>
         </nav>
       </Wrapper>
     );

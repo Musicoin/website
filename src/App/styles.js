@@ -13,7 +13,7 @@ export function globalStyles() {
 
     body {
       background: #211f19;
-      font-family: sans-serif;
+      font-family: 'Istok Web', sans-serif;
       font-size: 20px;
       line-height: 1.6;
     }
@@ -24,6 +24,11 @@ export function globalStyles() {
 
     svg {
       vertical-align: middle;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
     }
   `;
 }
@@ -38,7 +43,7 @@ export const Wrapper = styled.div`
   &::before {
     content: '';
     position: absolute;
-    right: 40%;
+    right: 45%;
     background: #fbbf02;
     width: 1600px;
     height: 2000px;

@@ -26,13 +26,19 @@ export const NavItem = styled(NavLink)`
   &:not(.active):hover,
   &:not(.active):focus {
     border-color: #fff;
+    background-color: transparent;
   }
 
   &.active {
-    background: #fbbf02;
+    background-color: #fff;
+    color: inherit;
   }
 
   & + & {
     margin-left: 4px;
   }
+`;
+
+export const JoinNavItem = styled(NavItem)`
+  background: #fbbf02;
 `;
