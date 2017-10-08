@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { globalStyles, Wrapper } from './styles';
+import Header from '../components/Header';
 import Home from '../Home';
 
 globalStyles();
@@ -14,6 +15,7 @@ export default class App extends React.Component {
       <HashRouter>
         <Wrapper>
           <Helmet titleTemplate={`%s - ${title}`} defaultTitle={title} />
+          <Header />
           <main role="main">
             <Switch>
               <Route exact path="/" component={Home} />
