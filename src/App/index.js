@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { globalStyles, Wrapper } from './styles';
 import Header from '../components/Header';
@@ -12,7 +12,7 @@ export default class App extends React.Component {
     const title = 'Musicoin';
 
     return (
-      <HashRouter>
+      <BrowserRouter>
         <Wrapper>
           <Helmet titleTemplate={`%s - ${title}`} defaultTitle={title} />
           <Header />
@@ -25,7 +25,7 @@ export default class App extends React.Component {
             </Switch>
           </main>
         </Wrapper>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
