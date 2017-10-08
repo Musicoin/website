@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class Logo extends React.Component {
+export default class Logo extends Component {
   render() {
     return (
       <svg {...this.props} viewBox="0 0 753.9 198">

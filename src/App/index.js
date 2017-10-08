@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { globalStyles, Wrapper } from './styles';
@@ -7,7 +7,7 @@ import Home from '../Home';
 
 globalStyles();
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     const title = 'Musicoin';
 

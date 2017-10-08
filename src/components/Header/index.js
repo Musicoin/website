@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Wrapper, NavItem } from './styles';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   render() {
     return (
       <Wrapper>
