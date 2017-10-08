@@ -21,6 +21,10 @@ export function globalStyles() {
     #root {
       height: 100vh;
     }
+
+    svg {
+      vertical-align: middle;
+    }
   `;
 }
 
@@ -34,7 +38,7 @@ export const Wrapper = styled.div`
   &::before {
     content: '';
     position: absolute;
-    left: -50%;
+    right: 40%;
     background: #fbbf02;
     width: 1600px;
     height: 2000px;
