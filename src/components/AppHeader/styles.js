@@ -38,6 +38,7 @@ export const NavItem = styled(NavLink)`
   padding: 12px 0;
   transition: border-color 200ms ease-out;
   outline: none;
+  margin-right: 40px;
 
   &:not(.active):hover,
   &:not(.active):focus {
@@ -47,10 +48,6 @@ export const NavItem = styled(NavLink)`
   &.active {
     color: #fbbf02;
     border-color: #fbbf02;
-  }
-
-  & + & {
-    margin-left: 40px;
   }
 `;
 
@@ -65,10 +62,7 @@ export const NavItemJoin = styled(NavLink)`
   font-size: 12px;
   font-weight: bold;
   transition: background-color 200ms ease-out;
-
-  ${NavItem} + & {
-    margin-left: 30px;
-  }
+  margin-left: 15px;
 
   &:not(.active):hover,
   &:not(.active):focus {
