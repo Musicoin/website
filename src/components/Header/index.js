@@ -30,3 +30,5 @@ export default class Header extends Component {
     );
   }
 }
+
+export { Wrapper };

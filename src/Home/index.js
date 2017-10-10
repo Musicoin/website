@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Title, Wrapper, Left, Right, Footer } from './styles';
-import Button from '../components/Button';
+import Button, { PrimaryButton } from '../components/buttons';
 import LogoAnim from '../components/LogoAnim';
 
 export default class Home extends Component {
@@ -16,9 +16,13 @@ export default class Home extends Component {
         <Right>
           <Title>Play free</Title>
           <p>Free streaming for listeners, indefinitely</p>
-          <Button to="/join">I am a listener</Button>
+          <PrimaryButton to="/join">I am a listener</PrimaryButton>
         </Right>
-        <Footer>Powered by Ethereum blockchain</Footer>
+        <Footer>
+          <a href="https://orbiter.musicoin.org/">
+            Powered by $MUSIC blockchain
+          </a>
+        </Footer>
       </Wrapper>
     );
   }

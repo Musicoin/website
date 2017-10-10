@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from '../components/Button';
+import { ButtonLink, PrimaryButtonLink } from '../components/buttons';
 
 /**
  * 1. Create new stacking context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
@@ -13,7 +13,6 @@ export const Title = styled.h2`
 `;
 
 export const Wrapper = styled.div`
-  background: #211f19 url('/images/icons1.png');
   flex: 1 0 auto;
   display: flex;
   align-items: center;
@@ -46,8 +45,7 @@ export const Wrapper = styled.div`
     top: 0;
     width: 200%;
     height: 200%;
-    background: url('/images/icons2.png') top right,
-      linear-gradient(20deg, #ff9000, 50%, #ff9000, 80%, #fece00);
+    background: linear-gradient(20deg, #ff9000, 50%, #ff9000, 80%, #fece00);
     transform: rotate(10deg);
     transform-origin: right top;
     z-index: -1;
@@ -58,9 +56,8 @@ export const Left = styled.div`
   font-size: 36px;
   width: 27%;
 
-  ${Link} {
+  ${ButtonLink}, ${PrimaryButtonLink} {
     font-size: 12px;
-    font-weight: bold;
   }
 `;
 
@@ -76,10 +73,12 @@ export const Right = styled(Left)`
 export const Footer = styled.p`
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  text-transform: uppercase;
   position: absolute;
   bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
+
+  a {
+    text-decoration: none;
+  }
 `;

@@ -6,9 +6,9 @@ export const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
-  margin-top: 30px;
-  color: ${props => (props.home ? '#fff' : 'inherit')};
+  padding: 0 50px;
+  margin: 30px 0 80px;
+  color: inherit;
 
   ${props =>
     props.home &&

@@ -23,6 +23,9 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["prettier --config .prettierrc --write", "git add"]
+    "*.js": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
   }
 }

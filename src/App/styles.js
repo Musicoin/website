@@ -1,5 +1,6 @@
 import styled, { injectGlobal } from 'styled-components';
 import { normalize } from 'polished';
+import { Wrapper as Header } from '../components/Header';
 
 export const Wrapper = styled.div`
   max-width: 1920px;
@@ -7,12 +8,18 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  ${Header} {
+    flex: 0 0 auto;
+  }
 `;
 
 export const Main = styled.main`
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 0 ${props => (props.home ? 0 : '50px')}
+    ${props => (props.home ? 0 : '50px')};
 `;
 
 export function globalStyles() {
@@ -33,9 +40,10 @@ export function globalStyles() {
     body {
       background: #fff url('/images/bg.png') right top no-repeat;
       font-family: 'Montserrat', sans-serif;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.6;
       min-height: 600px;
+      color: #171717;
     }
 
     #root {
@@ -44,6 +52,10 @@ export function globalStyles() {
 
     svg {
       vertical-align: middle;
+    }
+
+    a {
+      color: inherit;
     }
   `;
 }
