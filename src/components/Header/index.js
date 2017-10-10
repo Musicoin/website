@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import { Wrapper, NavItem, JoinNavItem } from './styles';
+import { Wrapper, Nav, NavItem, NavItemJoin } from './styles';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
 export default class Header extends Component {
   render() {
+    const isHome = this.props.location.pathname.match(/^\/$/);
+
     return (
-      <Wrapper>
+      <Wrapper home={isHome}>
         <NavLink to="/">
-          <Logo width="134" height="38" />
+          <Logo
+            width="134"
+            height="38"
+            color={isHome ? '#ffffff' : '#ffc300'}
+          />
         </NavLink>
-        <nav>
-          <NavItem exact to="/">
-            What is Musicoin
-          </NavItem>
+        <Nav>
+          <NavItem to="/for-musicians">For musicians</NavItem>
+          <NavItem to="/for-listeners">For listeners</NavItem>
           <NavItem to="/how-it-works">How it works</NavItem>
           <NavItem to="/foundation">Foundation</NavItem>
-          <NavItem to="/musicians">Musicians</NavItem>
           <NavItem to="/currency">Currency</NavItem>
-          <NavItem to="/download">Download</NavItem>
-          <JoinNavItem to="/join">Join</JoinNavItem>
-        </nav>
+          <NavItem to="/faq">FAQ</NavItem>
+          <NavItem to="/contact">Contact</NavItem>
+          <NavItemJoin to="/sign-up">Sign up</NavItemJoin>
+        </Nav>
       </Wrapper>
     );
   }

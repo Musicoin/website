@@ -1,44 +1,81 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { rgba } from 'polished';
 
 export const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
   padding: 0 24px;
+  margin-top: 30px;
+  color: ${props => (props.home ? '#fff' : 'inherit')};
+
+  ${props =>
+    props.home &&
+    css`
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    `};
+`;
+
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
 `;
 
 export const NavItem = styled(NavLink)`
-  color: #fff;
-  border: 1px solid transparent;
-  border-radius: 30px;
+  color: inherit;
+  border-bottom: 2px solid transparent;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 12px;
-  padding: 7px 16px;
-  transition: 200ms ease-out;
-  transition-property: border-color, background;
+  padding: 12px 0;
+  transition: border-color 200ms ease-out;
   outline: none;
 
   &:not(.active):hover,
   &:not(.active):focus {
-    border-color: #fff;
-    background-color: transparent;
+    border-color: inherit;
   }
 
   &.active {
-    background-color: #fff;
-    color: inherit;
+    color: #fbbf02;
+    border-color: #fbbf02;
   }
 
   & + & {
-    margin-left: 4px;
+    margin-left: 40px;
   }
 `;
 
-export const JoinNavItem = styled(NavItem)`
-  background: #fbbf02;
+export const NavItemJoin = styled(NavLink)`
+  background: #ffbb00;
+  color: inherit;
+  box-shadow: 0 8px 24px ${rgba('#ffc300', 0.2)};
+  border-radius: 30px;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background-color 200ms ease-out;
+
+  ${NavItem} + & {
+    margin-left: 30px;
+  }
+
+  &:not(.active):hover,
+  &:not(.active):focus {
+    background: #fece00;
+  }
+
+  &.active {
+    background: ${rgba('#fece00', 0.4)};
+  }
 `;

@@ -1061,6 +1061,10 @@ body-parser@1.18.2:
     raw-body "2.3.2"
     type-is "~1.6.15"
 
+bodymovin@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/bodymovin/-/bodymovin-4.11.1.tgz#c59a88fc25b025cf680603d22a0ae9e59fa4315e"
+
 bonjour@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/bonjour/-/bonjour-3.5.0.tgz#8e890a183d8ee9a2393b3844c691a42bcf7bc9f5"

@@ -1,49 +1,25 @@
-import React from 'react';
-import {
-  Title,
-  IntroBanner,
-  IntroPlayer,
-  IntroLeft,
-  IntroRight,
-  IntroFooter,
-  Content,
-} from './styles';
+import React, { Component } from 'react';
+import { Title, Wrapper, Left, Right, Footer } from './styles';
+import Button from '../components/Button';
+import LogoAnim from '../components/LogoAnim';
 
-export default class Home extends React.Component {
+export default class Home extends Component {
   render() {
     return (
-      <div>
-        <IntroBanner>
-          <IntroLeft>
-            <Title>Play fair</Title>
-            <p>Get paid without intermediaries</p>
-          </IntroLeft>
-          <IntroPlayer />
-          <IntroRight>
-            <Title>Play free</Title>
-            <p>Listen for free, indefinitely</p>
-          </IntroRight>
-          <IntroFooter>Powered by Ethereum blockchain</IntroFooter>
-        </IntroBanner>
-        <Content>
-          <Title>What is Musicoin</Title>
-          <p>
-            Musicoin is not just a currency. It’s an ecosystem - one that
-            enables Musicians to release their works, create simplified
-            licenses, and get paid - directly and immediately - every time a
-            music lover listens to a song.
-          </p>
-
-          <p>
-            Musicoin employs blockchain and ‘smart contract’ technology to
-            execute a usage contract along with a payment transaction -
-            automatically and seamlessly - each and every time a listener clicks
-            the ‘Play’ button. No industry intermediaries required. No monthly
-            fees. So everybody wins. (Learn more from our whitepaper and
-            roadmap)
-          </p>
-        </Content>
-      </div>
+      <Wrapper>
+        <Left>
+          <Title>Play fair</Title>
+          <p>Musicians get paid without intermediaries</p>
+          <Button to="/join">I am a musician</Button>
+        </Left>
+        <LogoAnim className="logo" />
+        <Right>
+          <Title>Play free</Title>
+          <p>Free streaming for listeners, indefinitely</p>
+          <Button to="/join">I am a listener</Button>
+        </Right>
+        <Footer>Powered by Ethereum blockchain</Footer>
+      </Wrapper>
     );
   }
 }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bodymovin": "^4.11.1",
     "husky": "^0.14.3",
     "lint-staged": "^4.2.3",
     "polished": "^1.7.0",
