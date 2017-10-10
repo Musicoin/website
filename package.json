@@ -22,10 +22,8 @@
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
   },
+  "proxy": "http://localhost:3000",
   "lint-staged": {
-    "*.js": [
-      "prettier --config .prettierrc --write",
-      "git add"
-    ]
+    "*.js": ["prettier --config .prettierrc --write", "git add"]
   }
 }
