@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link, HeaderButton, MoreFeatures as Features } from './styles';
-import { Media, MediaBody, MediaImage } from '../components/Media';
+import { MoreFeatures as Features } from './styles';
+import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
 import { FeaturesItem } from '../components/Features';
-import { ArrowUp } from '../components/icons';
 import Heading from '../components/Heading';
+import ExternalLink from '../components/ExternalLink';
 
 export default class How extends Component {
   render() {
@@ -24,11 +24,10 @@ export default class How extends Component {
               contract system, large scale transactions around music becomes
               possible.
             </p>
-            <Link href="https://medium.com/@musicoin/roadmap-of-musicoin-blockchain-4a65620fefce">
+            <ExternalLink href="https://medium.com/@musicoin/roadmap-of-musicoin-blockchain-4a65620fefce">
               Road map
-              <ArrowUp />
-            </Link>
-            <HeaderButton to="/white-paper">White paper</HeaderButton>
+            </ExternalLink>
+            <MediaButton to="/white-paper">White paper</MediaButton>
           </MediaBody>
           <MediaImage />
         </Media>

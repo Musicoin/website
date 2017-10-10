@@ -6,6 +6,7 @@ import AppFooter from '../components/AppFooter';
 import Home from '../Home';
 import How from '../How';
 import Faq from '../Faq';
+import Currency from '../Currency';
 
 globalStyles();
 
@@ -29,6 +30,7 @@ export default class App extends Component {
                   <Route exact path="/" component={Home} />
                   <Route path="/how-it-works" component={How} />
                   <Route path="/faq" component={Faq} />
+                  <Route path="/currency" component={Currency} />
                   <Route>
                     <h1>404</h1>
                   </Route>
