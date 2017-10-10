@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import { Footer, SocialButtons, SocialButton } from './styles';
+import { Wrapper, SocialButtons, SocialButton } from './styles';
 import Logo from '../Logo';
 import { Bitcoin, Facebook, Github, Medium, Slack, Twitter } from '../icons';
 
 export default class AppFooter extends Component {
   render() {
+    const { home, ...props } = this.props;
+
+    if (home) {
+      return null;
+    }
+
     return (
-      <Footer>
+      <Wrapper {...props}>
         <Logo width="134" height="38" fill="#ffc300" />
         <SocialButtons>
           <SocialButton href="https://www.facebook.com/lovemusicoin">
@@ -29,7 +35,7 @@ export default class AppFooter extends Component {
           </SocialButton>
         </SocialButtons>
         <small>&copy;2017 Musicoin.org</small>
-      </Footer>
+      </Wrapper>
     );
   }
 }

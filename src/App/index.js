@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { globalStyles, Wrapper, Header, Main } from './styles';
+import { globalStyles, Wrapper, Header as AppHeader, Main } from './styles';
 import AppFooter from '../components/AppFooter';
+import Heading from '../components/Heading';
+import { PrimaryButton } from '../components/buttons';
 import Home from '../Home';
 import How from '../How';
 import Faq from '../Faq';
@@ -20,28 +22,34 @@ export default class App extends Component {
 
     return (
       <BrowserRouter>
-        <Wrapper>
-          <Helmet titleTemplate={`%s - ${title}`} defaultTitle={title} />
-          <Route component={Header} />
-          <Route
-            render={props => (
-              <Main home={this.isHome(props.location)}>
-                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/how-it-works" component={How} />
-                  <Route path="/faq" component={Faq} />
-                  <Route path="/currency" component={Currency} />
-                  <Route>
-                    <h1>404</h1>
-                  </Route>
-                </Switch>
-              </Main>
-            )}
-          />
-          <Route
-            render={props => !this.isHome(props.location) && <AppFooter />}
-          />
-        </Wrapper>
+        <Route
+          render={props => {
+            const isHome = !!props.location.pathname.match(/^\/$/);
+
+            return (
+              <Wrapper home={isHome}>
+                <Helmet titleTemplate={`%s - ${title}`} defaultTitle={title} />
+                <AppHeader home={isHome} />
+                <Main home={isHome}>
+                  <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/how-it-works" component={How} />
+                    <Route path="/faq" component={Faq} />
+                    <Route path="/currency" component={Currency} />
+                    <Route>
+                      <div>
+                        <Heading data-prefix="404">Oops&hellip;</Heading>
+                        <p>I still haven't found what you're looking for.</p>
+                        <PrimaryButton to="/">Go home</PrimaryButton>
+                      </div>
+                    </Route>
+                  </Switch>
+                </Main>
+                <AppFooter home={isHome} />
+              </Wrapper>
+            );
+          }}
+        />
       </BrowserRouter>
     );
   }

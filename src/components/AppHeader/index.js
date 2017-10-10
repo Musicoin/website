@@ -6,12 +6,14 @@ import { PrimaryButton } from '../buttons';
 
 export default class AppHeader extends Component {
   render() {
-    const isHome = this.props.location.pathname.match(/^\/$/);
-
     return (
-      <Wrapper {...this.props} home={isHome}>
+      <Wrapper {...this.props}>
         <NavLink to="/">
-          <Logo width="134" height="38" fill={isHome ? '#ffffff' : '#ffc300'} />
+          <Logo
+            width="134"
+            height="38"
+            fill={this.props.home ? '#ffffff' : '#ffc300'}
+          />
         </NavLink>
         <Nav>
           <NavItem to="/for-musicians">For musicians</NavItem>

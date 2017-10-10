@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Footer = styled.footer`
+export const Wrapper = styled.footer`
   background-color: #171717;
   color: #fff;
   padding: 0 50px;
