@@ -15,7 +15,7 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Left>
-          <Title>Play fair</Title>
+          <Title>Pay fair</Title>
           <p>Musicians get paid without intermediaries</p>
           <LeftButton to="/join">I am a musician</LeftButton>
         </Left>
