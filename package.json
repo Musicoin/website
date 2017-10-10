@@ -24,6 +24,9 @@
   },
   "proxy": "http://localhost:3000",
   "lint-staged": {
-    "*.js": ["prettier --config .prettierrc --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
   }
 }
