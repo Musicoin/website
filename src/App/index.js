@@ -5,6 +5,7 @@ import { globalStyles, Wrapper, Main } from './styles';
 import Header from '../components/Header';
 import Home from '../Home';
 import How from '../How';
+import Faq from '../Faq';
 
 globalStyles();
 
@@ -23,6 +24,7 @@ export default class App extends Component {
                 <Switch>
                   <Route exact path="/" component={Home} />
                   <Route path="/how-it-works" component={How} />
+                  <Route path="/faq" component={Faq} />
                   <Route>
                     <h1>404</h1>
                   </Route>

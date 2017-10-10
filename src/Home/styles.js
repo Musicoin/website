@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonLink, PrimaryButtonLink } from '../components/buttons';
+import { Button, PrimaryButton } from '../components/buttons';
 
 /**
  * 1. Create new stacking context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
@@ -55,19 +55,19 @@ export const Wrapper = styled.div`
 export const Left = styled.div`
   font-size: 36px;
   width: 27%;
-
-  ${ButtonLink}, ${PrimaryButtonLink} {
-    font-size: 12px;
-  }
 `;
 
 export const Right = styled(Left)`
   color: #fbbf02;
   text-align: right;
+`;
 
-  ${Title} {
-    font-weight: bold;
-  }
+export const LeftButton = styled(Button)`
+  font-size: 12px;
+`;
+
+export const RightButton = styled(PrimaryButton)`
+  font-size: 12px;
 `;
 
 export const Footer = styled.p`

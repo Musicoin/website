@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { Wrapper, H1, H2, Link } from './styles';
-import { PrimaryButton } from '../components/buttons';
+import { Link, HeaderButton, MoreFeatures as Features } from './styles';
 import { Media, MediaBody, MediaImage } from '../components/Media';
-import { Features, FeaturesItem } from '../components/Features';
+import { FeaturesItem } from '../components/Features';
 import { ArrowUp } from '../components/icons';
+import Heading from '../components/Heading';
 
 export default class How extends Component {
   render() {
     return (
-      <Wrapper>
+      <div>
         <Media>
           <MediaBody right>
-            <H1 data-prefix="Wondering">how it works?</H1>
+            <Heading level={1} data-prefix="Wondering">
+              how it works?
+            </Heading>
             <p>
               Musicoin is designed to support the creation, publication, and
               consumption of music as a cycle. The system uses a special
@@ -26,14 +28,14 @@ export default class How extends Component {
               Road map
               <ArrowUp />
             </Link>
-            <PrimaryButton to="/white-paper">White paper</PrimaryButton>
+            <HeaderButton to="/white-paper">White paper</HeaderButton>
           </MediaBody>
           <MediaImage />
         </Media>
 
         <Media>
           <MediaBody>
-            <H2>Sharism</H2>
+            <Heading level={2}>Sharism</Heading>
             <p>
               Sharism is the fundamental philosophy underlying the Musicoin
               system, and it is from this perspective that people are enabled to
@@ -50,7 +52,7 @@ export default class How extends Component {
 
         <Media>
           <MediaBody right>
-            <H2>The currency</H2>
+            <Heading level={2}>The currency</Heading>
             <p>
               The Founders of Musicoin designed a global currency (MC) to
               support the requirements of the Musicoin system.
@@ -79,7 +81,7 @@ export default class How extends Component {
 
         <Media>
           <MediaBody>
-            <H2>Smart contracts</H2>
+            <Heading level={2}>Smart contracts</Heading>
             <p>
               With the trust-able and immutable MC currency, smart contacts can
               then be created to run automatically to ensure that payments are
@@ -104,7 +106,7 @@ export default class How extends Component {
 
         <Media>
           <MediaBody right>
-            <H2>Musiconomy</H2>
+            <Heading level={2}>Musiconomy</Heading>
             <p>
               The concept of Musicoin is to reconfigure the music industry in a
               way that empowers musicians to publish and distribute their works
@@ -161,7 +163,7 @@ export default class How extends Component {
             </p>
           </FeaturesItem>
         </Features>
-      </Wrapper>
+      </div>
     );
   }
 }

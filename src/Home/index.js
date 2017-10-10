@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import { Title, Wrapper, Left, Right, Footer } from './styles';
-import Button, { PrimaryButton } from '../components/buttons';
+import {
+  Title,
+  Wrapper,
+  Left,
+  LeftButton,
+  Right,
+  RightButton,
+  Footer,
+} from './styles';
 import LogoAnim from '../components/LogoAnim';
 
 export default class Home extends Component {
@@ -10,13 +17,13 @@ export default class Home extends Component {
         <Left>
           <Title>Play fair</Title>
           <p>Musicians get paid without intermediaries</p>
-          <Button to="/join">I am a musician</Button>
+          <LeftButton to="/join">I am a musician</LeftButton>
         </Left>
         <LogoAnim className="logo" />
         <Right>
           <Title>Play free</Title>
           <p>Free streaming for listeners, indefinitely</p>
-          <PrimaryButton to="/join">I am a listener</PrimaryButton>
+          <RightButton to="/join">I am a listener</RightButton>
         </Right>
         <Footer>
           <a href="https://orbiter.musicoin.org/">

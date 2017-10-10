@@ -25,8 +25,6 @@ export const ButtonField = styled.button`
   }
 `;
 
-ButtonField.displayName = 'ButtonField';
-
 export const PrimaryButtonField = ButtonField.extend`
   background-color: #fff;
   border-color: #fbbf02;
@@ -38,8 +36,6 @@ export const PrimaryButtonField = ButtonField.extend`
     color: #fff;
   }
 `;
-
-PrimaryButtonField.displayName = 'PrimaryButtonField';
 
 export const ButtonLink = ButtonField.withComponent(NavLink);
 export const PrimaryButtonLink = PrimaryButtonField.withComponent(NavLink);
