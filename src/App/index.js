@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { globalStyles, Wrapper, Main } from './styles';
-import Header from '../components/Header';
+import { globalStyles, Wrapper, Header, Main } from './styles';
+import AppFooter from '../components/AppFooter';
 import Home from '../Home';
 import How from '../How';
 import Faq from '../Faq';
@@ -10,6 +10,10 @@ import Faq from '../Faq';
 globalStyles();
 
 export default class App extends Component {
+  isHome = location => {
+    return location.pathname.match(/^\/$/);
+  };
+
   render() {
     const title = 'Musicoin';
 
@@ -20,7 +24,7 @@ export default class App extends Component {
           <Route component={Header} />
           <Route
             render={props => (
-              <Main home={props.location.pathname.match(/^\/$/)}>
+              <Main home={this.isHome(props.location)}>
                 <Switch>
                   <Route exact path="/" component={Home} />
                   <Route path="/how-it-works" component={How} />
@@ -31,6 +35,9 @@ export default class App extends Component {
                 </Switch>
               </Main>
             )}
+          />
+          <Route
+            render={props => !this.isHome(props.location) && <AppFooter />}
           />
         </Wrapper>
       </BrowserRouter>

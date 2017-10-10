@@ -1,3 +1,9 @@
 export { Icon as default } from './styles';
 export { default as ArrowDown } from './ArrowDown';
 export { default as ArrowUp } from './ArrowUp';
+export { default as Bitcoin } from './Bitcoin';
+export { default as Facebook } from './Facebook';
+export { default as Github } from './Github';
+export { default as Medium } from './Medium';
+export { default as Slack } from './Slack';
+export { default as Twitter } from './Twitter';
