@@ -24,6 +24,7 @@ export const Toggle = styled.button`
   padding: 22px;
   margin: -22px;
   outline: none;
+  text-align: left;
 `;
 
 export const ToggleArrow = styled(ArrowDown)`
