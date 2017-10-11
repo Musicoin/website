@@ -40,7 +40,7 @@ export default class How extends Component {
             <Heading level={2}>Sharism</Heading>
             <p>
               Sharism is the fundamental philosophy underlying the Musicoin
-              system, and it is from this perspective that people are enabled to
+              system, and it is from this perspective that people are able to
               share their creations online and be paid every time their creation
               is played (or read, enjoyed, etc. depending on the context). So
               for a musician's work that is released to a system, the system
@@ -85,7 +85,7 @@ export default class How extends Component {
           <MediaBody>
             <Heading level={2}>Smart contracts</Heading>
             <p>
-              With the trust-able and immutable MC currency, smart contacts can
+              With the trust-able and immutable MC currency, smart contracts can
               then be created to run automatically to ensure that payments are
               made correctly, directly and immediately, and also that the
               correct content is shared to the requesting party.
@@ -95,12 +95,16 @@ export default class How extends Component {
               A series of contract templates have been designed that can be used
               by creators for different types of usage and consumption. The
               first, and perhaps most important contract is the Pay-Per-Play
-              (PPP) contract. PPP automates the unit consumption of music (i.e.
-              streaming of one song) so that once the listener clicks ‘play’,
-              there is an immediate transaction which pays the creator directly
-              as specified within the contract. Again, each and every
-              transaction is recorded and made visible on the network,
-              eliminating any possibility of tampering or removal.
+              (PPP) contract.
+            </p>
+
+            <p>
+              PPP automates the unit consumption of music (i.e. streaming of one
+              song) so that once the listener clicks ‘play’, there is an
+              immediate transaction which pays the creator directly as specified
+              within the contract. Again, each and every transaction is recorded
+              and made visible on the network, eliminating any possibility of
+              tampering or removal.
             </p>
           </MediaBody>
           <MediaImage />

@@ -37,8 +37,7 @@ export default class Musicians extends Component {
             <FeaturesItem title="High Industry Standards">
               <p>
                 We make sure you receive the best rates in the industry so you
-                can focus on building your career out of your music.2. Content
-                Rights Protection.
+                can focus on building your career out of your music.
               </p>
             </FeaturesItem>
             <FeaturesItem title="Content Rights Protection">
@@ -50,7 +49,7 @@ export default class Musicians extends Component {
             </FeaturesItem>
             <FeaturesItem title="Transparent Licenses">
               <p>
-                Our autonomous smart contract provides you with an easy to
+                Our autonomous smart contract provides you with easy to
                 understand license terms and the flexibility to control your
                 revenues in a solo or multi-person band.
               </p>
@@ -65,14 +64,14 @@ export default class Musicians extends Component {
             <FeaturesItem title="Interactive Engagement">
               <p>
                 With Musicoin’s freemiums, you’re given the opportunities to
-                deepen the relationship with you fans and open collaborations
+                deepen the relationship with your fans and open collaborations
                 with your fellow musicians.
               </p>
             </FeaturesItem>
             <FeaturesItem title="A Paradigm Shift In Music">
               <p>
-                By joining Musicoin and support our musicians, you're leading a
-                revolution in promoting a vast and equitable sharing
+                By joining Musicoin and supporting our musicians, you're leading
+                a revolution in promoting a vast and equitable sharing
                 environment.
               </p>
             </FeaturesItem>

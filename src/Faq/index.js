@@ -27,26 +27,26 @@ export default class Faq extends Component {
                 previous participations on social media channels. Linking more
                 than one social media accounts to your profile will give our
                 support team a clear picture of your work, and give you a better
-                chance of getting verified. Also, if you lost access to your
+                chance of getting verified. Also, if you lose access to your
                 Musicoin account, you can still log in through your social
-                medias. (Note: We highly recommend you to avoid logging in with
+                medias. (Note: We highly recommend you avoid logging in with
                 SoundCloud as it creates login issues with Musicoin.)
               </p>
             </FirstQuestion>
             <MoreInfo title="Are the Pay-Per-Play price fixed for all music?">
               <p>
                 Since Musicoin aims to give back full content control to the
-                musicians, they have the flexibility to choose to set their own
-                price that listeners can pay to listen to or follow our PPP
-                model and get paid automatically from each listen, as well as
-                customizing their own payment distribution. They can follow the
-                license template provided on the platform.
+                musicians, they have the flexibility to set their own price that
+                listeners can pay to listen or follow our PPP model and get paid
+                automatically from each listen, as well as customizing their own
+                payment distribution. They can follow the license template
+                provided on the platform.
               </p>
             </MoreInfo>
             <MoreInfo title="What are ‘shares’? Can I define it in percentages instead?">
               <p>
                 Shares are revenues generated from your music. They are
-                expressed in whole numbers as well as percentages. Let say
+                expressed in whole numbers as well as percentages. Let’s say
                 you’re in a three-person band and each member agrees to receive
                 equal number of shares, which means each will get 33.333%. The
                 main distributor can either split each input as 1 out of 3
@@ -69,14 +69,13 @@ export default class Faq extends Component {
                 Yes, of course! One of the great things about our PPP smart
                 contract is it allows one license to work with an existing one
                 under a collaborative environment provided that both parties
-                agrees to each other’s terms. For example, if you’re sampling a
-                piece of a song from another artist to your own song, and both
-                of you agrees to a 10% royalty cut from your song for each time
-                it is played, then you would enter that artist’s song license
-                address in the recipient field under your license. So now every
-                time your song is played, 10% of your revenue from each play
-                will automatically forwards to their license, and from there
-                they can then distribute the payment as they normally would.
+                agree to each other’s terms. For example, if you’re sampling
+                part of another artist’s song and you both agree a 10% royalty
+                cut each time your song is played, you would enter that artist’s
+                song license address in the recipient field under your license.
+                Now, every time your song is played, 10% of your revenue from
+                each play will automatically forward to their license and from
+                there they can distribute the payment as they normally would.
               </p>
             </MoreInfo>
           </Column>
@@ -87,16 +86,16 @@ export default class Faq extends Component {
                 Once you’ve bought Bitcoin, you can convert them into Musicoin
                 at Bittrex and Cryptopia exchange. Bittrex is recommended
                 because of its high liquidity. You can store your Musicoin
-                either in your web wallet at musicoin.org, or download a
-                localized desktop wallet at our github page.
+                either in your web wallet at musicoin.org or download a
+                localized desktop wallet from our github page.
               </p>
             </FirstQuestion>
             <MoreInfo title="How do I get started with mining Musicoin?">
               <p>
-                Your first step is to download go-musicoin client and start
-                following an instruction guide that we have set up for you at{' '}
+                Your first step is to download go-musicoin client and then
+                follow{' '}
                 <a href="https://github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
-                  https://github.com/Musicoin/go-musicoin/wiki/Start-a-miner
+                  the mining guide
                 </a>. The client has similar functionality to go-ethereum
                 client, so the steps are identical.
               </p>
@@ -112,7 +111,7 @@ export default class Faq extends Component {
                 everyone to observe how it all works. Essentially, musicians
                 won’t be giving away their music for free. Instead, the system
                 designates miners to contribute some of their portions to
-                musicians as well as to the project developers. Though this
+                musicians as well as to the project developers. However, this
                 won’t last forever as time is getting closer to difficulty bomb
                 and Proof-of-Share release.
               </p>
@@ -140,7 +139,7 @@ export default class Faq extends Component {
                 between listeners and musicians. It is this very reason that
                 prevents piracy in the first place because piracy is driven by
                 convenience to disconnect between both parties, which causes
-                little incentives for user-interaction.
+                little incentive for user-interaction.
               </p>
             </MoreInfo>
           </Column>
