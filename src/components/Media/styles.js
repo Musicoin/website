@@ -30,8 +30,19 @@ export const MediaBody = styled.div`
 MediaBody.displayName = 'MediaBody';
 
 export const MediaImage = styled.div`
-  background-color: grey;
+  background-color: ${props => (props.children ? 'transparent' : '#eee')};
   width: 45%;
+  text-align: center;
+  z-index: -1;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 MediaImage.displayName = 'MediaImage';

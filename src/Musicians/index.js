@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Media, MediaBody, MediaButton, MediaImage } from '../components/Media';
+import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
 import Heading from '../components/Heading';
 import { Features, FeaturesItem } from '../components/Features';
 import Section from '../components/Section';
@@ -25,7 +25,9 @@ export default class Musicians extends Component {
             </p>
             <MediaButton to="/welcome">Join Musicoin</MediaButton>
           </MediaBody>
-          <MediaImage />
+          <MediaImage>
+            <img src="/images/head-musicians.png" width="400" alt="" />
+          </MediaImage>
         </Media>
         <Section>
           <Heading level={2} middle>

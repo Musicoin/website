@@ -23,7 +23,9 @@ export default class Currency extends Component {
             <ExternalLink href="#">Mine</ExternalLink>
             <MediaButton to="/trade">Trade Musicoin</MediaButton>
           </MediaBody>
-          <MediaImage />
+          <MediaImage>
+            <img src="/images/head-currency.png" width="400" alt="" />
+          </MediaImage>
         </Media>
         <Content>
           <Item>

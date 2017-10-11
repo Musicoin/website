@@ -25,6 +25,6 @@ export const FeatureTitle = styled.h2`
 export const FeatureIcon = styled.div`
   width: 70px;
   height: 45px;
-  background: grey;
+  background: #eee;
   margin: 1.5em auto 0;
 `;

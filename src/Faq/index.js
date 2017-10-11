@@ -2,12 +2,21 @@ import React, { Component } from 'react';
 import Heading from '../components/Heading';
 import { Content, Column, FirstQuestion } from './styles';
 import MoreInfo from '../components/MoreInfo';
+import { Media, MediaBody } from '../components/Media';
+import { HeaderGraphic as MediaImage } from './styles';
 
 export default class Faq extends Component {
   render() {
     return (
       <div>
-        <Heading level={1}>FAQ</Heading>
+        <Media>
+          <MediaBody>
+            <Heading level={1}>FAQ</Heading>
+          </MediaBody>
+          <MediaImage>
+            <img src="/images/head-faq.png" width="300" alt="" />
+          </MediaImage>
+        </Media>
         <Content>
           <Column>
             <Heading level={2}>Musician</Heading>

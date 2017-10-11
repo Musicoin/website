@@ -4,6 +4,7 @@ import { Features, FeaturesItem } from '../components/Features';
 import Heading from '../components/Heading';
 import ExternalLink from '../components/ExternalLink';
 import Section from '../components/Section';
+import { HeaderGraphic } from './styles';
 
 export default class How extends Component {
   render() {
@@ -29,7 +30,9 @@ export default class How extends Component {
             </ExternalLink>
             <MediaButton to="/white-paper">White paper</MediaButton>
           </MediaBody>
-          <MediaImage />
+          <HeaderGraphic>
+            <img src="/images/head-how.png" width="300" alt="" />
+          </HeaderGraphic>
         </Media>
 
         <Media>

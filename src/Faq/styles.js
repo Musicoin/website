@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 import MoreInfo from '../components/MoreInfo';
+import { MediaImage } from '../components/Media';
+
+export const HeaderGraphic = styled(MediaImage)`
+  margin-bottom: -100px;
+`;
 
 export const Content = styled.div`
   display: flex;

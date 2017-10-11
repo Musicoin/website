@@ -39,6 +39,7 @@ export function globalStyles() {
 
     body {
       background: #fff url('/images/bg.png') right top no-repeat;
+      background-size: 1920px 1563px;
       font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       line-height: 1.6;
