@@ -4,7 +4,10 @@ import { PrimaryButton } from '../buttons';
 export const Media = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+
+  & + & {
+    margin-top: 80px;
+  }
 `;
 
 Media.displayName = 'Media';

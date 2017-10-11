@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import Heading from '../components/Heading';
-import { Content, Column } from './styles';
+import { Content, Column, FirstQuestion } from './styles';
 import MoreInfo from '../components/MoreInfo';
 
 export default class Faq extends Component {
   render() {
     return (
       <div>
-        <Heading level={1} data-prefix="Need help?">
-          FAQs
-        </Heading>
+        <Heading level={1}>FAQ</Heading>
         <Content>
           <Column>
             <Heading level={2}>Musician</Heading>
-            <MoreInfo title="Why should I link more than one social media account to verify?">
+            <FirstQuestion title="Why should I link more than one social media account to verify?">
               <p>
                 For now, Musicoin only accepts qualified musicians who can
                 provide a proof of claim of their musical history through their
@@ -25,7 +23,7 @@ export default class Faq extends Component {
                 medias. (Note: We highly recommend you to avoid logging in with
                 SoundCloud as it creates login issues with Musicoin.)
               </p>
-            </MoreInfo>
+            </FirstQuestion>
             <MoreInfo title="Are the Pay-Per-Play price fixed for all music?">
               <p>
                 Since Musicoin aims to give back full content control to the
@@ -75,7 +73,7 @@ export default class Faq extends Component {
           </Column>
           <Column>
             <Heading level={2}>Consumer</Heading>
-            <MoreInfo title="Where do I buy and sell Musicoin? How do I store them?">
+            <FirstQuestion title="Where do I buy and sell Musicoin? How do I store them?">
               <p>
                 Once you’ve bought Bitcoin, you can convert them into Musicoin
                 at Bittrex and Cryptopia exchange. Bittrex is recommended
@@ -83,7 +81,7 @@ export default class Faq extends Component {
                 either in your web wallet at musicoin.org, or download a
                 localized desktop wallet at our github page.
               </p>
-            </MoreInfo>
+            </FirstQuestion>
             <MoreInfo title="How do I get started with mining Musicoin?">
               <p>
                 Your first step is to download go-musicoin client and start

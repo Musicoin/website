@@ -9,6 +9,7 @@ import Home from '../Home';
 import How from '../How';
 import Faq from '../Faq';
 import Currency from '../Currency';
+import Musicians from '../Musicians';
 
 globalStyles();
 
@@ -36,9 +37,10 @@ export default class App extends Component {
                     <Route path="/how-it-works" component={How} />
                     <Route path="/faq" component={Faq} />
                     <Route path="/currency" component={Currency} />
+                    <Route path="/for-musicians" component={Musicians} />
                     <Route>
                       <div>
-                        <Heading data-prefix="404">Oops&hellip;</Heading>
+                        <Heading prefix="404">Oops&hellip;</Heading>
                         <p>I still haven't found what you're looking for.</p>
                         <PrimaryButton to="/">Go home</PrimaryButton>
                       </div>

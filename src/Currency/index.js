@@ -10,8 +10,8 @@ export default class Currency extends Component {
       <div>
         <Media>
           <MediaBody right>
-            <Heading level={1} data-prefix="The currency">
-              $MUSIC
+            <Heading level={1} prefix="$MUSIC">
+              currency
             </Heading>
             <p>
               Musicoin ($MUSIC) is a money system running across a global

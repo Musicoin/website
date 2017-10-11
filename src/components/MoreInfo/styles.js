@@ -8,7 +8,7 @@ export const Article = styled.article`
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 8px 16px ${rgba('#575211', 0.1)};
-  margin-bottom: 30px;
+  margin-top: 30px;
   overflow: hidden;
   padding: 22px;
 `;

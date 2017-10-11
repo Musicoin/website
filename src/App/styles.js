@@ -57,5 +57,9 @@ export function globalStyles() {
     a {
       color: inherit;
     }
+
+    p {
+      margin: 1.5em 0;
+    }
   `;
 }
