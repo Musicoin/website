@@ -31,7 +31,8 @@ export const ToggleArrow = styled(ArrowDown)`
   margin-left: 10px;
   transform: ${props => (props.open ? 'rotate(-90deg)' : 'rotate(90deg)')};
   color: ${props => (props.open ? '#fece00' : 'inherit')};
-  transition: transform 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  transition-property: transform, color;
 
   ${Toggle}:hover &,
   ${Toggle}:focus & {
