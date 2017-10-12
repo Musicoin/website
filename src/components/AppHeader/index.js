@@ -5,28 +5,28 @@ import Logo from '../Logo';
 import { PrimaryButton } from '../buttons';
 
 export default class AppHeader extends Component {
-  render() {
-    return (
-      <Wrapper {...this.props}>
-        <NavLink to="/">
-          <Logo
-            width="134"
-            height="38"
-            fill={this.props.home ? '#ffffff' : '#ffc300'}
-          />
-        </NavLink>
-        <Nav>
-          <NavItem to="/for-musicians">For musicians</NavItem>
-          <NavItem to="/for-listeners">For listeners</NavItem>
-          <NavItem to="/how-it-works">How it works</NavItem>
-          <NavItem to="/currency">Currency</NavItem>
-          <NavItem to="/faq">FAQ</NavItem>
-          <PrimaryButton to="/log-in">Log in</PrimaryButton>
-          <NavItemJoin to="/sign-up">Sign up</NavItemJoin>
-        </Nav>
-      </Wrapper>
-    );
-  }
+	render() {
+		return (
+			<Wrapper {...this.props}>
+				<NavLink to="/">
+					<Logo
+						width="134"
+						height="38"
+						fill={this.props.home ? '#ffffff' : '#ffc300'}
+					/>
+				</NavLink>
+				<Nav>
+					<NavItem to="/for-musicians">For musicians</NavItem>
+					<NavItem to="/for-listeners">For listeners</NavItem>
+					<NavItem to="/how-it-works">How it works</NavItem>
+					<NavItem to="/currency">Currency</NavItem>
+					<NavItem to="/faq">FAQ</NavItem>
+					<PrimaryButton to="/log-in">Log in</PrimaryButton>
+					<NavItemJoin to="/sign-up">Sign up</NavItemJoin>
+				</Nav>
+			</Wrapper>
+		);
+	}
 }
 
 export { Wrapper };

@@ -3,19 +3,19 @@ import MoreInfo from '../components/MoreInfo';
 import { MediaImage } from '../components/Media';
 
 export const HeaderGraphic = styled(MediaImage)`
-  margin-bottom: -100px;
+	margin-bottom: -100px;
 `;
 
 export const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 `;
 
 export const FirstQuestion = styled(MoreInfo)`
-  margin-top: 50px;
+	margin-top: 50px;
 `;
 
 export const Column = styled.div`
-  width: 47%;
-  margin-top: 80px;
+	width: 47%;
+	margin-top: 80px;
 `;
