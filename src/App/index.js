@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { globalStyles, Wrapper, Header as AppHeader, Main } from './styles';
+import { Wrapper, Header as AppHeader, Main } from './styles';
 import AppFooter from '../components/AppFooter';
 import Heading from '../components/Heading';
 import { PrimaryButton } from '../components/buttons';
@@ -10,8 +10,6 @@ import How from '../How';
 import Faq from '../Faq';
 import Currency from '../Currency';
 import Musicians from '../Musicians';
-
-globalStyles();
 
 export default class App extends Component {
   isHome = location => {

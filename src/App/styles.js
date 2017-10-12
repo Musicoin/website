@@ -1,5 +1,4 @@
-import styled, { injectGlobal } from 'styled-components';
-import { normalize } from 'polished';
+import styled from 'styled-components';
 import AppHeader from '../components/AppHeader';
 
 export const Wrapper = styled.div`
@@ -21,46 +20,3 @@ export const Main = styled.main`
   padding: 0 ${props => (props.home ? 0 : '50px')}
     ${props => (props.home ? 0 : '50px')};
 `;
-
-export function globalStyles() {
-  return injectGlobal`
-    ${normalize()};
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      height: 100%;
-    }
-
-    body {
-      background: #fff url('/images/bg.png') right top no-repeat;
-      background-size: 1920px 1563px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-      min-height: 600px;
-      color: #171717;
-    }
-
-    #root {
-      height: 100%;
-    }
-
-    svg {
-      vertical-align: middle;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    p {
-      margin: 1.5em 0;
-    }
-  `;
-}

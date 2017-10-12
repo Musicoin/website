@@ -26,7 +26,7 @@ export default class Musicians extends Component {
             <MediaButton to="/welcome">Join Musicoin</MediaButton>
           </MediaBody>
           <MediaImage>
-            <img src="/images/head-musicians.png" width="400" alt="" />
+            <img src="/images/head-musicians.svg" width="400" alt="" />
           </MediaImage>
         </Media>
         <Section>

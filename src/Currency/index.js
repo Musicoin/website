@@ -47,7 +47,7 @@ export default class Currency extends Component {
               simple terms, mining is based on all computers in the Musicoin
               network running the same software where the first one generating a
               data block which is then confirmed by peers is rewarded with 314
-              coins. Computers, or pools running greater amount of computer or
+              coins. Computers, or pools running a greater amount of computer or
               ‘hash’ power, generally earn a greater share of rewards.
             </p>
           </Item>
