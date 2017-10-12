@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
 import { Features, FeaturesItem } from '../components/Features';
 import Heading from '../components/Heading';
@@ -10,6 +11,9 @@ export default class How extends Component {
 	render() {
 		return (
 			<div>
+				<Helmet>
+					<title>How it works</title>
+				</Helmet>
 				<Media>
 					<MediaBody right>
 						<Heading level={1} prefix="Wondering">

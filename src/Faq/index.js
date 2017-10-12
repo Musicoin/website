@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import Heading from '../components/Heading';
 import { Content, Column, FirstQuestion } from './styles';
 import MoreInfo from '../components/MoreInfo';
@@ -9,6 +10,9 @@ export default class Faq extends Component {
 	render() {
 		return (
 			<div>
+				<Helmet>
+					<title>FAQ</title>
+				</Helmet>
 				<Media>
 					<MediaBody>
 						<Heading level={1}>FAQ</Heading>

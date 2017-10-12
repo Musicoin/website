@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
 import Heading from '../components/Heading';
 import { Features, FeaturesItem } from '../components/Features';
@@ -8,6 +9,9 @@ export default class Musicians extends Component {
 	render() {
 		return (
 			<div>
+				<Helmet>
+					<title>For musicians</title>
+				</Helmet>
 				<Media>
 					<MediaBody>
 						<Heading level={1} prefix="For">

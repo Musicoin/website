@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
 import Heading from '../components/Heading';
 import ExternalLink from '../components/ExternalLink';
@@ -8,6 +9,9 @@ export default class Currency extends Component {
 	render() {
 		return (
 			<div>
+				<Helmet>
+					<title>Currency</title>
+				</Helmet>
 				<Media>
 					<MediaBody right>
 						<Heading level={1} prefix="$MUSIC">
