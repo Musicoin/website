@@ -10,6 +10,18 @@ export const globalStyles = css`
 		box-sizing: border-box;
 	}
 
+	html {
+		font-size: 16px;
+
+		@media (max-width: 1090px) {
+			font-size: 14px;
+		}
+
+		@media (max-width: 680px) {
+			font-size: 12px;
+		}
+	}
+
 	html,
 	body {
 		height: 100%;
@@ -19,7 +31,6 @@ export const globalStyles = css`
 		background: #fff url('/images/bg.svg') right top no-repeat;
 		background-size: 1920px 1563px;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 16px;
 		line-height: 1.6;
 		min-height: 600px;
 		color: #171717;
@@ -39,5 +50,11 @@ export const globalStyles = css`
 
 	p {
 		margin: 1.5em 0;
+	}
+
+	button {
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
 	}
 `;

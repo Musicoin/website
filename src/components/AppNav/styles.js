@@ -25,6 +25,7 @@ export const NavItems = styled.nav`
 	justify-content: flex-end;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	padding: 2px 0;
 
 	@media ${mediaSmall} {
 		display: flex;
@@ -66,6 +67,8 @@ export const NavItem = styled(NavLink)`
 `;
 
 export const NavItemLogIn = styled(PrimaryButton)`
+	font-size: 12px;
+
 	@media ${mediaSmall} {
 		width: 100%;
 		margin: 10px 0 0;
