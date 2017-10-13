@@ -8,16 +8,15 @@ export const mediaLarge = '(min-width: 1090px)';
 
 const NavOpen = css`
 	opacity: 1;
-	z-index: 1;
 	max-height: 1000px;
 	margin-top: 30px;
 `;
 
 const NavClosed = css`
 	opacity: 0;
-	z-index: -1;
 	max-height: 0;
 	margin-top: 0;
+	pointer-events: none;
 `;
 
 export const NavItems = styled.nav`
