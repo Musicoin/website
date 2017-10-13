@@ -28,7 +28,7 @@ export default class App extends Component {
 						return (
 							<Wrapper home={isHome}>
 								<Helmet titleTemplate={`%s - ${title}`} defaultTitle={title} />
-								<AppHeader home={isHome} />
+								<AppHeader history={props.history} home={isHome} />
 								<Main home={isHome}>
 									<Switch>
 										<Route exact path="/" component={Home} />

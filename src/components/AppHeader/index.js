@@ -12,6 +12,7 @@ export default class AppHeader extends Component {
 
 	componentDidMount() {
 		this.mql.addListener(this.resize);
+		this.props.history.listen(this.routeChange);
 	}
 
 	handleClick = () => {
@@ -23,6 +24,12 @@ export default class AppHeader extends Component {
 	resize = e => {
 		this.setState({
 			small: e.matches,
+		});
+	};
+
+	routeChange = () => {
+		this.setState({
+			showNav: false,
 		});
 	};
 
