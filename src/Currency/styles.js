@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Section from '../components/Section';
 
+const mediaSmall = '(max-width: 1000px)';
+const mediaExtraSmall = '(max-width: 640px)';
+
 export const Content = styled(Section)`
 	display: flex;
 	justify-content: space-between;
@@ -11,6 +14,14 @@ export const Content = styled(Section)`
 export const Item = styled.div`
 	width: 30%;
 	margin-bottom: 30px;
+
+	@media ${mediaSmall} {
+		width: 45%;
+	}
+
+	@media ${mediaExtraSmall} {
+		width: 95%;
+	}
 `;
 
 export const CurrencySymbol = styled(props => <p {...props}>$MUSIC</p>)`

@@ -1,17 +1,28 @@
 import styled from 'styled-components';
 
+const mediaSmall = '(max-width: 1000px)';
+const mediaExtraSmall = '(max-width: 640px)';
+
 export const Features = styled.div`
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 `;
 
 Features.displayName = 'Features';
 
 export const Feature = styled.div`
-	width: 25%;
+	width: 30%;
 	text-align: center;
-	margin: 50px 2.5% 0;
+	margin: 50px auto 0;
+
+	@media ${mediaSmall} {
+		width: 45%;
+	}
+
+	@media ${mediaExtraSmall} {
+		width: 95%;
+	}
 `;
 
 export const FeatureTitle = styled.h2`

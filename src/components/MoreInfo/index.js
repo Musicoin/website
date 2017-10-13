@@ -3,28 +3,20 @@ import PropTypes from 'prop-types';
 import { Article, Toggle, ToggleArrow, Content } from './styles';
 
 export default class MoreInfo extends Component {
-	static defaultProps = {
+	state = {
 		open: false,
 	};
 
-	static propTypes = {
-		open: PropTypes.bool,
-	};
-
-	state = {
-		open: this.props.open,
-	};
-
-	click = () => {
-		this.setState(prevState => ({
-			open: !prevState.open,
+	handleClick = () => {
+		this.setState(state => ({
+			open: !state.open,
 		}));
 	};
 
 	render() {
 		return (
 			<Article className={this.props.className} style={this.props.style}>
-				<Toggle onClick={this.click}>
+				<Toggle onClick={this.handleClick}>
 					{this.props.title}
 					<ToggleArrow open={this.state.open} />
 				</Toggle>

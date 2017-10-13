@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { PrimaryButton } from '../buttons';
 
+const mediaSmall = '(max-width: 1005px)';
+
 export const Media = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -25,6 +27,10 @@ export const MediaBody = styled.div`
 		margin-right: ${props => (props.right ? 0 : '30px')};
 		margin-left: ${props => (props.right ? '30px' : 0)};
 	}
+
+	@media ${mediaSmall} {
+		width: 100%;
+	}
 `;
 
 MediaBody.displayName = 'MediaBody';
@@ -42,6 +48,10 @@ export const MediaImage = styled.div`
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	}
+
+	@media ${mediaSmall} {
+		display: none;
 	}
 `;
 

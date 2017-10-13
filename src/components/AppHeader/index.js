@@ -1,29 +1,43 @@
 import React, { Component } from 'react';
-import { Wrapper, Nav, NavItem, NavItemJoin } from './styles';
-import { NavLink } from 'react-router-dom';
+import { mediaSmall, Wrapper, LogoLink, Nav, NavToggle } from './styles';
 import Logo from '../Logo';
-import { PrimaryButton } from '../buttons';
 
 export default class AppHeader extends Component {
+	mql = window.matchMedia(mediaSmall);
+
+	state = {
+		showNav: false,
+		small: this.mql.matches,
+	};
+
+	componentDidMount() {
+		this.mql.addListener(this.resize);
+	}
+
+	handleClick = () => {
+		this.setState(state => ({
+			showNav: !state.showNav,
+		}));
+	};
+
+	resize = e => {
+		this.setState({
+			small: e.matches,
+		});
+	};
+
 	render() {
+		const primary = '#ffc300';
+		const large = this.props.home ? '#ffffff' : primary;
+		const logoFill = this.state.small ? primary : large;
+
 		return (
 			<Wrapper {...this.props}>
-				<NavLink to="/">
-					<Logo
-						width="134"
-						height="38"
-						fill={this.props.home ? '#ffffff' : '#ffc300'}
-					/>
-				</NavLink>
-				<Nav>
-					<NavItem to="/for-musicians">For musicians</NavItem>
-					<NavItem to="/for-listeners">For listeners</NavItem>
-					<NavItem to="/how-it-works">How it works</NavItem>
-					<NavItem to="/currency">Currency</NavItem>
-					<NavItem to="/faq">FAQ</NavItem>
-					<PrimaryButton to="/log-in">Log in</PrimaryButton>
-					<NavItemJoin to="/sign-up">Sign up</NavItemJoin>
-				</Nav>
+				<LogoLink to="/">
+					<Logo width="134" height="38" fill={logoFill} />
+				</LogoLink>
+				<NavToggle onClick={this.handleClick}>Menu</NavToggle>
+				<Nav open={this.state.showNav} />
 			</Wrapper>
 		);
 	}
