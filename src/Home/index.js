@@ -34,13 +34,13 @@ export default class Home extends Component {
 				<Left>
 					<Title>Pay fair</Title>
 					<p>Musicians get paid without intermediaries</p>
-					<LeftButton to="/join">I am a musician</LeftButton>
+					<LeftButton to="/for-musicians">I am a musician</LeftButton>
 				</Left>
 				{!this.state.small && <CentralLogo />}
 				<Right>
 					<Title>Play free</Title>
 					<p>Free streaming for listeners, indefinitely</p>
-					<RightButton to="/join">I am a listener</RightButton>
+					<RightButton to="/for-listeners">I am a listener</RightButton>
 				</Right>
 				<Footer>
 					<a href="https://orbiter.musicoin.org/">
