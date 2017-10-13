@@ -14,7 +14,6 @@ export const Wrapper = styled.header`
 	margin: 30px 0 80px;
 	color: inherit;
 	flex-wrap: wrap;
-	overflow: hidden;
 
 	${props =>
 		props.home &&
