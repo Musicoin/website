@@ -1,32 +1,33 @@
 {
-  "name": "musicoin-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bodymovin": "^4.11.1",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.2.3",
-    "polished": "^1.7.0",
-    "prettier": "^1.7.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
-    "styled-components": "^2.2.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "precommit": "lint-staged"
-  },
-  "proxy": "http://localhost:3000",
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --config .prettierrc --write",
-      "git add"
-    ]
-  }
+	"name": "musicoin-frontend",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"bodymovin": "^4.11.1",
+		"husky": "^0.14.3",
+		"lint-staged": "^4.2.3",
+		"polished": "^1.7.0",
+		"prettier": "^1.7.4",
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0",
+		"react-ga": "^2.3.5",
+		"react-helmet": "^5.2.0",
+		"react-router-dom": "^4.2.2",
+		"react-scripts": "1.0.14",
+		"styled-components": "^2.2.1"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"precommit": "lint-staged"
+	},
+	"proxy": "http://localhost:3000",
+	"lint-staged": {
+		"src/**/*.{js,jsx,json,css}": [
+			"prettier --config .prettierrc --write",
+			"git add"
+		]
+	}
 }
