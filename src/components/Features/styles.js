@@ -27,7 +27,7 @@ export const Feature = styled(({ width, ...props }) => <div {...props} />)`
 	}
 `;
 
-export const FeatureTitle = styled.h2`
+export const FeatureTitle = styled.h3`
 	color: #fbbf02;
 	font-size: 1.5em;
 	text-transform: uppercase;

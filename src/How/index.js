@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Media, MediaBody, MediaButton } from '../components/Media';
-import { Features, FeaturesItem } from '../components/Features';
 import Heading from '../components/Heading';
 import ExternalLink from '../components/ExternalLink';
-import Section from '../components/Section';
 import { HeaderGraphic, Content, Item } from './styles';
 
 export default class How extends Component {
@@ -134,36 +132,6 @@ export default class How extends Component {
 						</p>
 					</Item>
 				</Content>
-
-				<Section>
-					<Features>
-						<FeaturesItem title="Pay per play (PPP)">
-							<p>
-								PPP is the basic smart contract of the Musicoin system that
-								enables musicians to release their works and be paid directly
-								each time one of their songs is streamed.
-							</p>
-						</FeaturesItem>
-						<FeaturesItem title="Blockchain">
-							<p>
-								Blockchain is the globally distributed network technology behind
-								the Musicoin system. The blockchain is what maintains the
-								integrity of all records and data, and it is the source from
-								which the MC cryptocurrency is derived.
-							</p>
-						</FeaturesItem>
-						<FeaturesItem title="Future potentials">
-							<p>
-								Apart from Pay-Per-Play, there are other contracts in
-								development, including playlist, sharing and additional licence
-								contracts. These contracts are intended to incentivize listeners
-								and other musicians to share and recycle music in different
-								formats and venues according to the permissions and the will of
-								the creator(s).
-							</p>
-						</FeaturesItem>
-					</Features>
-				</Section>
 			</div>
 		);
 	}
