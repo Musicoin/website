@@ -15,10 +15,12 @@ export default class Faq extends Component {
 				</Helmet>
 				<Media>
 					<MediaBody>
-						<Heading level={1}>FAQ</Heading>
+						<Heading level={1} prefix="Have a question?">
+							FAQ
+						</Heading>
 					</MediaBody>
 					<MediaImage>
-						<img src="/images/head-faq.png" width="300" alt="" />
+						<img src="/images/head-faq.svg" width="450" alt="" />
 					</MediaImage>
 				</Media>
 				<Content>
