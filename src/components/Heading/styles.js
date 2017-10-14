@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 const mediaExtraSmall = '(max-width: 680px)';
 
 const heading = css`
-	font-weight: bold;
+	font-weight: 900;
 	text-transform: uppercase;
 	line-height: 1;
 	text-align: ${props => (props.middle ? 'center' : 'inherit')};
