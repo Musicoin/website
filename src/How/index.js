@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
+import { Media, MediaBody, MediaButton } from '../components/Media';
 import { Features, FeaturesItem } from '../components/Features';
 import Heading from '../components/Heading';
 import ExternalLink from '../components/ExternalLink';
 import Section from '../components/Section';
-import { HeaderGraphic } from './styles';
+import { HeaderGraphic, Content, Item } from './styles';
 
 export default class How extends Component {
 	render() {
@@ -41,8 +41,8 @@ export default class How extends Component {
 					</HeaderGraphic>
 				</Media>
 
-				<Media>
-					<MediaBody>
+				<Content>
+					<Item>
 						<Heading level={2}>Sharism</Heading>
 						<p>
 							Sharism is the fundamental philosophy underlying the Musicoin
@@ -54,12 +54,8 @@ export default class How extends Component {
 							in a way that is in line with the principle of equal energy
 							exchange.
 						</p>
-					</MediaBody>
-					<MediaImage />
-				</Media>
-
-				<Media>
-					<MediaBody right>
+					</Item>
+					<Item>
 						<Heading level={2}>The currency</Heading>
 						<p>
 							The Founders of Musicoin designed a global currency (MC) to
@@ -83,12 +79,8 @@ export default class How extends Component {
 							authority (central bank etc.) is made obsolete, and a thing of the
 							past.
 						</p>
-					</MediaBody>
-					<MediaImage />
-				</Media>
-
-				<Media>
-					<MediaBody>
+					</Item>
+					<Item>
 						<Heading level={2}>Smart contracts</Heading>
 						<p>
 							With the trust-able and immutable MC currency, smart contracts can
@@ -112,12 +104,8 @@ export default class How extends Component {
 							and made visible on the network, eliminating any possibility of
 							tampering or removal.
 						</p>
-					</MediaBody>
-					<MediaImage />
-				</Media>
-
-				<Media>
-					<MediaBody right>
+					</Item>
+					<Item>
 						<Heading level={2}>Musiconomy</Heading>
 						<p>
 							The concept of Musicoin is to reconfigure the music industry in a
@@ -144,9 +132,8 @@ export default class How extends Component {
 							i.e. concert tickets, merchandise, tour packages, or potentially
 							even redeemed for general consumer goods, travel services etc.
 						</p>
-					</MediaBody>
-					<MediaImage />
-				</Media>
+					</Item>
+				</Content>
 
 				<Section>
 					<Features>

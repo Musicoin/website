@@ -9,10 +9,12 @@ export class FeaturesItem extends Component {
 	};
 
 	render() {
+		const icon = this.props.render.icon();
+
 		return (
 			<Feature>
 				<FeatureTitle>{this.props.title}</FeatureTitle>
-				<FeatureIcon children={this.props.render.icon()} />
+				{icon && <FeatureIcon children={icon} />}
 				{this.props.children}
 			</Feature>
 		);
