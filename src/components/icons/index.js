@@ -13,3 +13,6 @@ export { default as Logo } from './Logo';
 export { default as Shield } from './Shield';
 export { default as Star } from './Star';
 export { default as Transparent } from './Transparent';
+export { default as Direct } from './Direct';
+export { default as Enjoy } from './Enjoy';
+export { default as Free } from './Free';

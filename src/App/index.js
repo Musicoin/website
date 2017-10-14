@@ -11,6 +11,7 @@ import How from '../How';
 import Faq from '../Faq';
 import Currency from '../Currency';
 import Musicians from '../Musicians';
+import Listeners from '../Listeners';
 
 export default class App extends Component {
 	isHome = location => {
@@ -44,6 +45,7 @@ export default class App extends Component {
 											<Route path="/faq" component={Faq} />
 											<Route path="/currency" component={Currency} />
 											<Route path="/for-musicians" component={Musicians} />
+											<Route path="/for-listeners" component={Listeners} />
 											<Route>
 												<div>
 													<Heading prefix="404">Oops&hellip;</Heading>

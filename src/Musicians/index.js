@@ -49,7 +49,7 @@ export default class Musicians extends Component {
 						<FeaturesItem
 							title="High Industry Standards"
 							render={{
-								icon: () => <Star width="50" height="50" />,
+								icon: () => <Star />,
 							}}
 						>
 							<p>
@@ -95,16 +95,6 @@ export default class Musicians extends Component {
 								With Musicoin’s freemiums, you’re given the opportunities to
 								deepen the relationship with your fans and open collaborations
 								with your fellow musicians.
-							</p>
-						</FeaturesItem>
-						<FeaturesItem
-							title="A Paradigm Shift In Music"
-							render={{ icon: () => <Logo /> }}
-						>
-							<p>
-								By joining Musicoin and supporting our musicians, you're leading
-								a revolution in promoting a vast and equitable sharing
-								environment.
 							</p>
 						</FeaturesItem>
 					</Features>
