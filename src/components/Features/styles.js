@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import Icon from '../icons';
 
@@ -12,8 +13,8 @@ export const Features = styled.div`
 
 Features.displayName = 'Features';
 
-export const Feature = styled.div`
-	width: 30%;
+export const Feature = styled(({ width, ...props }) => <div {...props} />)`
+	width: ${props => (props.width ? props.width : '30%')};
 	text-align: center;
 	margin: 50px auto 0;
 
