@@ -39,4 +39,6 @@ export const PrimaryButtonField = ButtonField.extend`
 `;
 
 export const ButtonLink = ButtonField.withComponent(NavLink);
+export const ButtonAnchor = ButtonField.withComponent('a');
 export const PrimaryButtonLink = PrimaryButtonField.withComponent(NavLink);
+export const PrimaryButtonAnchor = PrimaryButtonField.withComponent('a');

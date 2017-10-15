@@ -45,10 +45,10 @@ export default class AppNav extends Component {
 				<NavItem to="/faq" tabIndex={tabIndex}>
 					FAQ
 				</NavItem>
-				<NavItemLogIn to="/welcome" tabIndex={tabIndex}>
+				<NavItemLogIn href="/welcome" tabIndex={tabIndex}>
 					Log in
 				</NavItemLogIn>
-				<NavItemJoin to="/welcome" tabIndex={tabIndex}>
+				<NavItemJoin href="/welcome" tabIndex={tabIndex}>
 					Sign up
 				</NavItemJoin>
 			</NavItems>

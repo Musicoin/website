@@ -75,7 +75,7 @@ export const NavItemLogIn = styled(PrimaryButton)`
 	}
 `;
 
-export const NavItemJoin = styled(NavLink)`
+export const NavItemJoin = styled.a`
 	background: #ffbb00;
 	color: inherit;
 	box-shadow: 0 8px 24px ${rgba('#ffc300', 0.2)};
