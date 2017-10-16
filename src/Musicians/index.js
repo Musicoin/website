@@ -35,7 +35,7 @@ export default class Musicians extends Component {
 							contract system, large scale transactions around music becomes
 							possible.
 						</p>
-						<MediaButton to="/welcome">Join Musicoin</MediaButton>
+						<MediaButton href="/welcome">Join Musicoin</MediaButton>
 					</MediaBody>
 					<MediaImage>
 						<img src="/images/head-musicians.svg" width="400" alt="" />

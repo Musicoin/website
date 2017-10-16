@@ -28,7 +28,7 @@ export default class Listeners extends Component {
 							personable connection between themselves and their favorite
 							musicians.
 						</p>
-						<MediaButton to="/welcome">Join Musicoin</MediaButton>
+						<MediaButton href="/welcome">Join Musicoin</MediaButton>
 					</MediaBody>
 					<MediaImage>
 						<img src="/images/head-listeners.svg" width="285" alt="" />

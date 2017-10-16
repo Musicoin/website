@@ -30,7 +30,7 @@ export default class How extends Component {
 						<ExternalLink href="https://medium.com/@musicoin/roadmap-of-musicoin-blockchain-4a65620fefce">
 							Road map
 						</ExternalLink>
-						<MediaButton to="https://hackernoon.com/musicoin-free-creations-while-rewarding-creators-2832f7d2bd33">
+						<MediaButton href="https://hackernoon.com/musicoin-free-creations-while-rewarding-creators-2832f7d2bd33">
 							White paper
 						</MediaButton>
 					</MediaBody>

@@ -27,7 +27,7 @@ export default class Currency extends Component {
 						<ExternalLink href="https://github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
 							Mine
 						</ExternalLink>
-						<MediaButton to="https://coinmarketcap.com/currencies/musicoin/#markets">
+						<MediaButton href="https://coinmarketcap.com/currencies/musicoin/#markets">
 							Trade Musicoin
 						</MediaButton>
 					</MediaBody>
