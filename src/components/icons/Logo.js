@@ -30,9 +30,9 @@ export default class Interactive extends Component {
 					fillRule="evenodd"
 				>
 					<mask fill="white">
-						<use href="#path" />
+						<use xlinkHref="#path" />
 					</mask>
-					<use fill="url(#gradient)" href="#path" />
+					<use fill="url(#gradient)" xlinkHref="#path" />
 				</g>
 			</Icon>
 		);

@@ -14,8 +14,6 @@ export const Article = styled.article`
 `;
 
 export const Toggle = styled.button`
-	display: flex;
-	justify-content: space-between;
 	border: 0;
 	background: transparent;
 	font-size: inherit;
@@ -25,6 +23,12 @@ export const Toggle = styled.button`
 	margin: -22px;
 	outline: none;
 	text-align: left;
+
+	span {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 `;
 
 export const ToggleArrow = styled(ArrowDown)`

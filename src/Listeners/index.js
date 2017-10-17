@@ -43,7 +43,7 @@ export default class Listeners extends Component {
 							title="Free listening"
 							width="45%"
 							render={{
-								icon: () => <Direct />,
+								icon: () => <Free />,
 							}}
 						>
 							<p>
@@ -55,7 +55,7 @@ export default class Listeners extends Component {
 						<FeaturesItem
 							title="Direct interaction with artists"
 							width="45%"
-							render={{ icon: () => <Enjoy /> }}
+							render={{ icon: () => <Direct /> }}
 						>
 							<p>
 								Stay up to date with the musicians you follow and give them
@@ -79,7 +79,7 @@ export default class Listeners extends Component {
 						<FeaturesItem
 							title="Enjoy global music"
 							width="45%"
-							render={{ icon: () => <Free /> }}
+							render={{ icon: () => <Enjoy /> }}
 						>
 							<p>
 								No matter where you are in the world, our wide selection of

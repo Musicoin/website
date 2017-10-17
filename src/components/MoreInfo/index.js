@@ -16,8 +16,10 @@ export default class MoreInfo extends Component {
 		return (
 			<Article className={this.props.className} style={this.props.style}>
 				<Toggle onClick={this.handleClick}>
-					{this.props.title}
-					<ToggleArrow open={this.state.open} />
+					<span>
+						{this.props.title}
+						<ToggleArrow open={this.state.open} />
+					</span>
 				</Toggle>
 				<Content open={this.state.open}>{this.props.children}</Content>
 			</Article>

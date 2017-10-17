@@ -10,7 +10,6 @@ import {
 	Transparent,
 	Fair,
 	Interactive,
-	Logo,
 } from '../components/icons';
 
 export default class Musicians extends Component {
