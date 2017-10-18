@@ -24,10 +24,10 @@ export default class Currency extends Component {
 							proven by Bitcoin over the past nine years to be supremely secure,
 							immutable, and transparent.
 						</p>
-						<ExternalLink href="https://github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
+						<ExternalLink href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
 							Mine
 						</ExternalLink>
-						<MediaButton href="https://coinmarketcap.com/currencies/musicoin/#markets">
+						<MediaButton href="//coinmarketcap.com/currencies/musicoin/#markets">
 							Trade Musicoin
 						</MediaButton>
 					</MediaBody>

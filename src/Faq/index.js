@@ -100,7 +100,7 @@ export default class Faq extends Component {
 							<p>
 								Your first step is to download go-musicoin client and then
 								follow{' '}
-								<a href="https://github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
+								<a href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
 									the mining guide
 								</a>. The client has similar functionality to go-ethereum
 								client, so the steps are identical.

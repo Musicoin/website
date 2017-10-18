@@ -5,6 +5,7 @@ import {
 	NavItem,
 	NavItemLogIn,
 	NavItemJoin,
+	NavItemExternal,
 } from './styles';
 
 export default class AppNav extends Component {
@@ -42,6 +43,12 @@ export default class AppNav extends Component {
 				<NavItem to="/currency" tabIndex={tabIndex}>
 					Currency
 				</NavItem>
+				<NavItemExternal
+					href="//github.com/Musicoin/desktop"
+					tabIndex={tabIndex}
+				>
+					Wallet
+				</NavItemExternal>
 				<NavItem to="/faq" tabIndex={tabIndex}>
 					FAQ
 				</NavItem>

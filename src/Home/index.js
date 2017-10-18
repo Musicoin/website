@@ -43,9 +43,7 @@ export default class Home extends Component {
 					<RightButton to="/for-listeners">I am a listener</RightButton>
 				</Right>
 				<Footer>
-					<a href="https://orbiter.musicoin.org/">
-						Powered by $MUSIC blockchain
-					</a>
+					<a href="//orbiter.musicoin.org/">Powered by $MUSIC blockchain</a>
 				</Footer>
 			</Wrapper>
 		);

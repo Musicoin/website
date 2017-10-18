@@ -15,22 +15,22 @@ export default class AppFooter extends Component {
 			<Wrapper {...props}>
 				<Logo width="134" height="38" fill="#ffc300" />
 				<SocialButtons>
-					<SocialButton href="https://www.facebook.com/lovemusicoin">
+					<SocialButton href="//www.facebook.com/lovemusicoin">
 						<Facebook />
 					</SocialButton>
-					<SocialButton href="https://twitter.com/musicoins">
+					<SocialButton href="//twitter.com/musicoins">
 						<Twitter />
 					</SocialButton>
-					<SocialButton href="http://slack.musicoin.org/">
+					<SocialButton href="//slack.musicoin.org/">
 						<Slack />
 					</SocialButton>
-					<SocialButton href="https://github.com/Musicoin">
+					<SocialButton href="//github.com/Musicoin">
 						<Github />
 					</SocialButton>
-					<SocialButton href="https://bitcointalk.org/index.php?topic=1776113.0">
+					<SocialButton href="//bitcointalk.org/index.php?topic=1776113.0">
 						<Bitcoin />
 					</SocialButton>
-					<SocialButton href="https://medium.com/@musicoin">
+					<SocialButton href="//medium.com/@musicoin">
 						<Medium />
 					</SocialButton>
 				</SocialButtons>

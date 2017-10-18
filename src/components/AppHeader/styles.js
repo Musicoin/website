@@ -44,7 +44,7 @@ export const LogoLink = styled(NavLink)`
 export const NavToggle = styled(PrimaryButton)`
 	order: 2;
 
-	@media ${mediaLarge} {
+	@media (min-width: 1175px) {
 		display: none;
 	}
 `;
@@ -52,7 +52,7 @@ export const NavToggle = styled(PrimaryButton)`
 export const Nav = styled(AppNav)`
 	order: 3;
 
-	@media ${mediaSmall} {
+	@media (max-width: 1175px) {
 		width: 100%;
 	}
 `;

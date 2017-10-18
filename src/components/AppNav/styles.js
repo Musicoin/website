@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { rgba } from 'polished';
 import { PrimaryButton } from '../buttons';
 
-export const mediaSmall = '(max-width: 1090px)';
-export const mediaLarge = '(min-width: 1090px)';
+export const mediaSmall = '(max-width: 1175px)';
+export const mediaLarge = '(min-width: 1175px)';
 
 const NavOpen = css`
 	opacity: 1;
@@ -64,6 +64,8 @@ export const NavItem = styled(NavLink)`
 		width: 100%;
 	}
 `;
+
+export const NavItemExternal = NavItem.withComponent('a');
 
 export const NavItemLogIn = styled(PrimaryButton)`
 	font-size: 12px;
