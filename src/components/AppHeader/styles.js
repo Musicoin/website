@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import AppNav from '../AppNav';
 
 export const mediaSmall = '(max-width: 1090px)';
-const mediaLarge = '(min-width: 1090px)';
 
 export const Wrapper = styled.header`
 	display: flex;
