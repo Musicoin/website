@@ -23,8 +23,8 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"release": "np",
 		"test": "react-scripts test --env=jsdom",
+		"release": "CI=true np",
 		"eject": "react-scripts eject",
 		"precommit": "lint-staged"
 	},
