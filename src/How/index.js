@@ -31,7 +31,10 @@ export default class How extends Component {
 							Road map
 						</ExternalLink>
 						<MediaButton href="//hackernoon.com/musicoin-free-creations-while-rewarding-creators-2832f7d2bd33">
-							White paper
+							White paper v1
+						</MediaButton>
+						<MediaButton href="//medium.com/@musicoin/musicoin-project-white-paper-v2-0-6be5fd53191b">
+							White paper v2
 						</MediaButton>
 					</MediaBody>
 					<HeaderGraphic>

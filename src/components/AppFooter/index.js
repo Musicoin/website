@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import { Wrapper, SocialButtons, SocialButton } from './styles';
 import Logo from '../Logo';
-import { Bitcoin, Facebook, Github, Medium, Slack, Twitter } from '../icons';
+import {
+	Bitcoin,
+	Facebook,
+	Github,
+	Medium,
+	Slack,
+	Twitter,
+	Discord,
+} from '../icons';
 
 export default class AppFooter extends Component {
 	render() {
@@ -32,6 +40,9 @@ export default class AppFooter extends Component {
 					</SocialButton>
 					<SocialButton href="//medium.com/@musicoin">
 						<Medium />
+					</SocialButton>
+					<SocialButton href="https://discord.gg/gA8gjxC">
+						<Discord />
 					</SocialButton>
 				</SocialButtons>
 				<small>&copy;2017 Musicoin.org</small>
