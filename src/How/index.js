@@ -18,14 +18,14 @@ export default class How extends Component {
 							how it works?
 						</Heading>
 						<p>
-							Musicoin is designed to support the creation, publication, and
-							consumption of music as a cycle. The system uses a special
-							algorithm to generate a currency called Musicoin (MC), as well as
-							another algorithm to support automated contracts ("smart
-							contracts") which enable creators and consumers to exchange value
+							Musicoin is designed to support the creation, distribution and
+							consumption of music in a cycle. The system uses a special
+							algorithm to generate a currency called Musicoin ($MUSIC), as well
+							as another algorithm to support automated contracts ("smart
+							contracts") which enable musicians and consumers to exchange value
 							in a frictionless environment. With a unique currency and a solid
-							contract system, large scale transactions around music becomes
-							possible.
+							peer-2-peer (P2P) contract system, large scale transactions around
+							music becomes possible.
 						</p>
 						<ExternalLink href="//medium.com/@musicoin/roadmap-of-musicoin-blockchain-4a65620fefce">
 							Road map
@@ -47,91 +47,56 @@ export default class How extends Component {
 						<Heading level={2}>Sharism</Heading>
 						<p>
 							Sharism is the fundamental philosophy underlying the Musicoin
-							system, and it is from this perspective that people are able to
-							share their creations online and be paid every time their creation
-							is played (or read, enjoyed, etc. depending on the context). So
-							for a musician's work that is released to a system, the system
-							traces the usage and returns the prescribed value directly to them
-							in a way that is in line with the principle of equal energy
-							exchange.
+							system. We believe that musicians, the content-creators, should be
+							rewarded the most for creating and sharing their music. And that
+							their compensation should increase in proportion to their activity
+							on the platform. In the words of Issac Mao, the chief architect of
+							the Musicoin blockchain, “The more you share, the more you
+							receive.”
 						</p>
 					</Item>
 					<Item>
-						<Heading level={2}>The currency</Heading>
+						<Heading level={2}>The Currency</Heading>
 						<p>
-							The Founders of Musicoin designed a global currency (MC) to
-							support the requirements of the Musicoin system.
+							We designed a global currency ($MUSIC) to support the global trade
+							surrounding music and music-related businesses.
 						</p>
 
 						<p>
 							The currency is not issued by a single entity, but by a network of
-							computers through a process known as ‘mining’. This system, which
-							has been proven by other cryptocurrencies such as Bitcoin,
-							Ethereum, Dash and others, involves many computers around the
-							globe running a complex computer algorithm, with the entire
+							computers through a process known as ‘mining’. This system has
+							been tested and proven by cryptocurrencies such as Bitcoin,
+							Ethereum, Dash and others. Mining involves many computers around
+							the globe running a complex computer algorithm, with the entire
 							network collaborating to generate a currency which can’t be
-							counterfeited, can’t be “double spent”, and can’t be manipulated
-							or otherwise damaged through negligence or malicious intent.
-						</p>
-
-						<p>
-							As a fully visible, transparent and decentralized system, the
-							traditional default of utilizing a centralized controlling
-							authority (central bank etc.) is made obsolete, and a thing of the
-							past.
+							counterfeited, can’t be “double spent” and can’t be manipulated or
+							otherwise damaged through negligence or malicious intent.
 						</p>
 					</Item>
 					<Item>
-						<Heading level={2}>Smart contracts</Heading>
+						<Heading level={2}>Smart Contracts</Heading>
 						<p>
-							With the trust-able and immutable MC currency, smart contracts can
-							then be created to run automatically to ensure that payments are
-							made correctly, directly and immediately, and also that the
-							correct content is shared to the requesting party.
-						</p>
-
-						<p>
-							A series of contract templates have been designed that can be used
-							by creators for different types of usage and consumption. The
-							first, and perhaps most important contract is the Pay-Per-Play
-							(PPP) contract.
-						</p>
-
-						<p>
-							PPP automates the unit consumption of music (i.e. streaming of one
-							song) so that once the listener clicks ‘play’, there is an
-							immediate transaction which pays the creator directly as specified
-							within the contract. Again, each and every transaction is recorded
-							and made visible on the network, eliminating any possibility of
-							tampering or removal.
+							Smart contracts are automated if-then triggers that distributes
+							$MUSIC, as payment, for all activity on the Musicoin platform. For
+							example, every time a song is streamed, a certain fixed amount of
+							$MUSIC is transferred to the artist, immediately and autonomously
+							by a Pay-Per-Play (PPP) smart contract. Similar smart contracts
+							for all kinds of music-related activities can be deployed on the
+							platform.
 						</p>
 					</Item>
 					<Item>
 						<Heading level={2}>Musiconomy</Heading>
 						<p>
-							The concept of Musicoin is to reconfigure the music industry in a
-							way that empowers musicians to publish and distribute their works
-							directly to the market, and be remunerated directly and
-							immediately by listeners. The result is an environment where there
-							is minimal need for intermediaries, and which features a positive
-							feedback loop of value exchange that supports an unfettered
-							expansion of the global music economy (musiconomy) as a whole.
-						</p>
-
-						<p>
-							The mechanisms described above are designed to set a foundation
-							that empowers musicians to release their works to the system,
-							while enabling listeners to enjoy them in a seamless, frictionless
-							flow. As this process expands and repeats itself, it is
-							anticipated that it will eventually become a large scale
-							phenomenon requiring no further intervention. The more releases,
-							the more listeners; the more listening, the more income to
-							musicians; the more income, the more creations. It is precisely
-							the positive feedback loop described by the Sharism philosophy. It
-							is even conceivable that Musicoin cryptocurrency could eventually
-							be redeemable for other types of music-related goods and services
-							i.e. concert tickets, merchandise, tour packages, or potentially
-							even redeemed for general consumer goods, travel services etc.
+							We envision a self-sustaining musical economy (Musiconomy) that
+							fosters the distribution of fair value to different participants,
+							based on their contribution in the network – musicians for
+							publishing their creative work, miners for providing computational
+							work to mine $MUSIC, Musicoin developers for innovating the
+							platform, third-party developers for increasing the value of the
+							platform by creating value-added goods and services, and
+							ultimately consumers for consuming and sharing content and
+							services on the network.
 						</p>
 					</Item>
 				</Content>

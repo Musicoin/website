@@ -18,10 +18,10 @@ export default class Currency extends Component {
 							currency
 						</Heading>
 						<p>
-							Musicoin ($MUSIC) is a money system running across a global
-							computer network generating blocks of data based on transactions.
-							The technology behind this is called Blockchain, which has been
-							proven by Bitcoin over the past nine years to be supremely secure,
+							Musicoin ($MUSIC) is a cryptocurrency that is mined by a global
+							network of computers by solving a cryptographic problem. The
+							technology behind this is called Blockchain, which has been proven
+							by Bitcoin, over the past nine years, to be supremely secure,
 							immutable, and transparent.
 						</p>
 						<ExternalLink href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
@@ -40,23 +40,23 @@ export default class Currency extends Component {
 						<Heading level={2}>Money Supply</Heading>
 						<p>
 							The annual growth in supply of coins has been carefully set to
-							follow the anticipated rate of growth of music publishing and
+							follow the anticipated rate of growth in music distribution and
 							consumption. Although there is no finite limit to the number of
-							coins that can be mined, a combination of market forces, mining
-							difficulty and network dynamics will ensure that supply is
-							sufficient to keep up with demand such that a fairly stable price
-							and value in relation to other currencies will be achieved.
+							coins that can be generated; a combination of market forces,
+							mining difficulty and network dynamics will ensure that supply is
+							sufficient to keep up with demand.
 						</p>
 					</Item>
 					<Item>
 						<Heading level={2}>Where do the coins come from?</Heading>
 						<p>
-							The process of generating MC is called mining (or minting). In
-							simple terms, mining is based on all computers in the Musicoin
-							network running the same software where the first one generating a
-							data block which is then confirmed by peers is rewarded with 314
-							coins. Computers, or pools running a greater amount of computer or
-							‘hash’ power, generally earn a greater share of rewards.
+							The process of generating $MUSIC is called mining (or minting). In
+							lay terms, all computers in the Musicoin network run the same
+							software, in order to solve a complex cryptographic problem. The
+							first computer to solve the problem, is awarded a block of 314
+							$MUSIC coins, and this transaction becomes a part of the
+							decentralised ledger (blockchain) that is immutable, transparent
+							and power all activity on the Musicoin platform.
 						</p>
 					</Item>
 					<Item>
@@ -76,21 +76,23 @@ export default class Currency extends Component {
 					<Item>
 						<Heading level={2}>Value</Heading>
 						<p>
-							While it is ultimately the market that defines the inherent value
-							of Musicoin, MC is closely linked with actual music consumption.
-							The fundamental unit of MC is based on a Pay-Per-Play methodology
-							in which one stream of a song is valued at 1 MC. (After 2017/9,
-							UBI scheme will be applied to PPP, one stream will be priced at a
-							guided price from 1MC to 0.1MC, etc.,based on market price of
-							$MUSIC, nevertheless will be the highest rate of music industry.)
+							We are building a musical ecosystem powered by $MUSIC, the
+							currency native to Musicoin blockchain. Currently, $MUSIC is used
+							for Pay-per-play payments for streaming and tipping of artists by
+							fans on the Musicoin platform. We are actively building novel
+							features onto the platform that utilises $MUSIC, beyond PPP and
+							tipping. Outside developers, developing hardware and software
+							applications on top of the Musicoin blockchain, will use $MUSIC as
+							the currency that power those applications.
 						</p>
 					</Item>
 					<Item>
 						<Heading level={2}>Can MC be used elsewhere?</Heading>
 						<p>
-							It is envisioned that MC will be tradable for other goods and
-							services beyond music consumption such as artist merchandise,
-							concert tickets and perhaps even non-music related items.
+							We are building $MUSIC to be a currency for all music related
+							goods and services, including but not limited to, artist
+							merchandise, concert tickets, music magazine subscriptions, music
+							hardwares and softwares.
 						</p>
 					</Item>
 				</Content>

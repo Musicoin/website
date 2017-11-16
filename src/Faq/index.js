@@ -26,27 +26,27 @@ export default class Faq extends Component {
 				<Content>
 					<Column>
 						<Heading level={2}>Musician</Heading>
-						<FirstQuestion title="Why should I link more than one social media account to verify?">
+						<FirstQuestion title="How do I sign up as a verified musician on the Musicoin platform?">
 							<p>
 								For now, Musicoin only accepts qualified musicians who can
-								provide a proof of claim of their musical history through their
-								previous participations on social media channels. Linking more
-								than one social media accounts to your profile will give our
-								support team a clear picture of your work, and give you a better
-								chance of getting verified. Also, if you lose access to your
-								Musicoin account, you can still log in through your social
-								medias. (Note: We highly recommend you avoid logging in with
-								SoundCloud as it creates login issues with Musicoin.)
+								provide a proof of their musical history through their previous
+								participations in social media channels. Linking more than one
+								social media accounts to your profile will give our support team
+								a clear picture of your work, and give you a better chance of
+								getting verified. Also, if you lose access to your Musicoin
+								account, you can still log in through your social media
+								accounts. (Note: We highly recommend that you avoid logging in
+								with SoundCloud as it creates login issues with Musicoin.)
 							</p>
 						</FirstQuestion>
-						<MoreInfo title="Are the Pay-Per-Play price fixed for all music?">
+						<MoreInfo title="Is the Pay-Per-Play price fixed for all music on the platform?">
 							<p>
-								Since Musicoin aims to give back full content control to the
-								musicians, they have the flexibility to set their own price that
-								listeners can pay to listen or follow our PPP model and get paid
-								automatically from each listen, as well as customizing their own
-								payment distribution. They can follow the license template
-								provided on the platform.
+								Musicoin provides full content-control to its musicians.
+								Musicians can either set their own price for their music or
+								accept our Pay-Per-Play model and get paid automatically from
+								each stream of music. Musicians can also customize their payment
+								distributions. License templates for each scenario are provided
+								on the platform.
 							</p>
 						</MoreInfo>
 						<MoreInfo title="What are ‘shares’? Can I define it in percentages instead?">
@@ -56,8 +56,8 @@ export default class Faq extends Component {
 								you’re in a three-person band and each member agrees to receive
 								equal number of shares, which means each will get 33.333%. The
 								main distributor can either split each input as 1 out of 3
-								shares, or 33 out of 100 shares. More information is on your
-								license preview page that explains the computed package.
+								shares, or 33 out of 100 shares. More information is provided on
+								your license preview page.
 							</p>
 						</MoreInfo>
 						<MoreInfo title="What should I enter in the 'recipient' field when creating a license?">
@@ -73,15 +73,14 @@ export default class Faq extends Component {
 						<MoreInfo title="Can my license work in conjunction with another license?">
 							<p>
 								Yes, of course! One of the great things about our PPP smart
-								contract is it allows one license to work with an existing one
-								under a collaborative environment provided that both parties
-								agree to each other’s terms. For example, if you’re sampling
-								part of another artist’s song and you both agree a 10% royalty
-								cut each time your song is played, you would enter that artist’s
+								contract is that it allows one license to work with another one,
+								in a collaborative environment, provided that both parties agree
+								to each other’s terms. For example, if you’re sampling part of
+								another artist’s song and you both agree on a 10% royalty share
+								each time your song is played, you would enter that artist’s
 								song license address in the recipient field under your license.
 								Now, every time your song is played, 10% of your revenue from
-								each play will automatically forward to their license and from
-								there they can distribute the payment as they normally would.
+								each play, will be automatically distributed to their license.
 							</p>
 						</MoreInfo>
 					</Column>
@@ -90,15 +89,15 @@ export default class Faq extends Component {
 						<FirstQuestion title="Where do I buy and sell Musicoin? How do I store them?">
 							<p>
 								Once you’ve bought Bitcoin, you can convert them into Musicoin
-								at Bittrex and Cryptopia exchange. Bittrex is recommended
-								because of its high liquidity. You can store your Musicoin
-								either in your web wallet at musicoin.org or download a
-								localized desktop wallet from our github page.
+								at Bittrex and Cryptopia cryptocurrency exchange. Bittrex is
+								recommended because of its higher liquidity. You can store your
+								Musicoin either in your web wallet at musicoin.org or download a
+								desktop wallet from our github page.
 							</p>
 						</FirstQuestion>
 						<MoreInfo title="How do I get started with mining Musicoin?">
 							<p>
-								Your first step is to download go-musicoin client and then
+								Your first step is to download the go-musicoin client and then
 								follow{' '}
 								<a href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
 									the mining guide
@@ -106,46 +105,38 @@ export default class Faq extends Component {
 								client, so the steps are identical.
 							</p>
 						</MoreInfo>
-						<MoreInfo title="Why does Musicoin pay for each play? Will it last forever?">
+						<MoreInfo title="Why is streaming free on Musicoin for listeners? How are musicians getting paid for streams of their music?">
 							<p>
-								Musicoin designed this new system by paying on listeners’ behalf
-								because we firmly believe that by offering a premium product for
-								free, it’ll increase our exposure from word of mouth, and help
-								generate more user growth to push our platform to mainstream
-								adoption. This has never been done before in the crypto-space,
-								and we want to experiment it. It’s a good opportunity for us and
-								everyone to observe how it all works. Essentially, musicians
-								won’t be giving away their music for free. Instead, the system
-								designates miners to contribute some of their portions to
-								musicians as well as to the project developers. However, this
-								won’t last forever as time is getting closer to difficulty bomb
-								and Proof-of-Share release.
+								We are trying to differentiate ourselves and penetrate the
+								streaming music industry, largely controlled by industry
+								behemoths like Spotify. Unlike any other music streaming
+								company, Musicoin will stream music for free and without ads.
+								This, we believe, will push our platform into mainstream
+								adoption and help create and sustain network effects for
+								Musicoin to flourish and prosper. Miners share a portion of the
+								mined $MUSIC for payments to musicians. For more information,
+								please refer to our whitepaper.
 							</p>
 						</MoreInfo>
 						<MoreInfo title="Why should I buy Musicoin if music playback is free?">
 							<p>
-								Free and legal music by itself is not motivating enough to
-								engage a dynamic listener-to-musician interaction. By offering
-								commercial and freemium products such as downloads, remixes,
-								radio tipping, merchandise, portable speakers etc., it’ll
-								further boost your engagement with the rest of Musicoin
-								community. This will encourage more currency circulation and
-								thus increases Musicoin’s intrinsic value and utility.
+								To tip your favorite artists, for now. We are building features
+								that will enable you to do other things with Musicoin, including
+								but not limited to, downloading audiophile quality songs, buying
+								fan merchandise, music magazine subscriptions etc. We are
+								building Musicoin to be the currency that powers all economic
+								activity around musical goods and services.
 							</p>
 						</MoreInfo>
-						<MoreInfo title="What incentive is there for fans to tip for music?">
+						<MoreInfo title="What incentive is there for fans to tip for music? ">
 							<p>
-								By tipping someone, you’re eliciting an emotional response to
-								feel receptive to something you’ve just experienced. The
-								incentive is your reward-motivated behavior triggered from
-								accepting another person’s perspective and feel empathy for
-								them. And backed by empirical facts, we know users are generally
-								happy with tipping to support their favorite musicians because
-								our simple and low-cost system facilitates a direct connection
-								between listeners and musicians. It is this very reason that
-								prevents piracy in the first place because piracy is driven by
-								convenience to disconnect between both parties, which causes
-								little incentive for user-interaction.
+								By tipping your favorite musician, you are supporting
+								independent musicians and helping foster raw talents. By
+								removing intermediaries, you are providing a fair and basic
+								income that supports the livelihood of these musicians. Since
+								streaming music is free on the platform, there is all the more
+								incentive to show your love and appreciation to your favorite
+								musicians by tipping them.
 							</p>
 						</MoreInfo>
 					</Column>

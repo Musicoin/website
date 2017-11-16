@@ -19,14 +19,20 @@ export default class Listeners extends Component {
 							listeners
 						</Heading>
 						<p>
-							Listeners uses Musicoin (MC) to circulate value within the
-							network. They drive the growth of the $MUSIC economy by listening
-							to musicians’ work and supporting them knowing that their monies
-							are going into the right pocket. By tipping, sharing songs,
-							purchasing merchandises, or even booking advanced show tickets,
-							they help bridge the participation gap and create a more
-							personable connection between themselves and their favorite
-							musicians.
+							At Musicoin, streaming music is free, and without ads. Our musical
+							economy empowers listeners to freely participate via various
+							value-added services that we have built and are actively building
+							on top of our platform. These services will require compensation
+							in $MUSIC, thereby creating and circulating value within the
+							network. Listeners are able to tip their favorite artists and will
+							be able to download audiophile quality songs, purchase band
+							merchandise, book live-show tickets and subscribe to music
+							magazines with $MUSIC, among other things. On the other hand,
+							listeners will be compensated in $MUSIC for activities that
+							enhances the value of the network like sharing content and
+							curating playlists. This will create a virtuous cycle of better
+							content by musicians and active participation by listeners in the
+							platform.
 						</p>
 						<MediaButton href="/welcome">Join Musicoin</MediaButton>
 					</MediaBody>
@@ -40,51 +46,51 @@ export default class Listeners extends Component {
 					</Heading>
 					<Features>
 						<FeaturesItem
-							title="Free listening"
+							title="Free Streaming"
 							width="45%"
 							render={{
 								icon: () => <Free />,
 							}}
 						>
 							<p>
-								At Musicoin, you get free and legal access to our diverse music
-								catalog uploaded and shared by our talented independent artists
-								that you don’t get to hear from anywhere else.
+								At Musicoin, you get free and legal access to our diverse and
+								exclusive catalog of music created by the brilliant artists on
+								our platform.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
-							title="Direct interaction with artists"
+							title="Direct Interaction with Artists"
 							width="45%"
 							render={{ icon: () => <Direct /> }}
 						>
 							<p>
-								Stay up to date with the musicians you follow and give them
-								feedback by commenting or tipping on their work. With Musicoin’s
-								freemiums, you are given the opportunity to get to know your
-								musicians better, and give them the encouragement they need to
-								provide you with the best quality music content.
+								Follow your favorite musicians and stay up to date on their
+								activities and creations. Communicate with them directly and
+								show your appreciation for their content by providing feedback,
+								tipping, sharing songs and curating playlists.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
-							title="A Paradigm Shift In Music"
+							title="Revolutionizing Music"
 							width="45%"
 							render={{ icon: () => <Logo /> }}
 						>
 							<p>
-								By joining Musicoin and supporting our musicians, you're leading
-								a revolution in promoting a vast and equitable sharing
-								environment.
+								By joining Musicoin, you are ushering a paradigm shift in the
+								music industry by revolutionizing how value is created and
+								shared in a musical economy.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
-							title="Enjoy global music"
+							title="Enjoy Music Globally"
 							width="45%"
 							render={{ icon: () => <Enjoy /> }}
 						>
 							<p>
-								No matter where you are in the world, our wide selection of
-								genres will have you discover new and unexpected songs that you
-								might love. Musicoin is truly a music without borders.
+								Musicoin is “Music without borders”. No matter where you are in
+								the world, there is something for everyone. Our eclectic catalog
+								of global content will keep you entertained and pleasantly
+								surprised. Discover new genres and find your passion.
 							</p>
 						</FeaturesItem>
 					</Features>

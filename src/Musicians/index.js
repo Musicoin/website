@@ -25,14 +25,15 @@ export default class Musicians extends Component {
 							musicians
 						</Heading>
 						<p>
-							Musicoin is designed to support the creation, publication, and
-							consumption of music as a cycle. The system uses a special
-							algorithm to generate a currency called Musicoin (MC), as well as
-							another algorithm to support automated contracts ("smart
-							contracts") which enable creators and consumers to exchange value
-							in a frictionless environment. With a unique currency and a solid
-							contract system, large scale transactions around music becomes
-							possible.
+							With a unique currency, fair compensation, transparent contracts
+							and no intermediaries; Musicoin is revolutionizing the creation
+							and distribution of value for musical activity. The Musicoin
+							Blockchain ensures each musician receive the most competitive
+							industry compensation, instantly and automatically, for each
+							stream of music. The Musicoin platform also provides the right
+							tools for musicians to enrich their interactions with fans and
+							collaborations with fellow musicians. Musicians can now focus
+							solely on the one thing they do best - create music!
 						</p>
 						<MediaButton href="/welcome-musician">Join Musicoin</MediaButton>
 					</MediaBody>
@@ -46,14 +47,15 @@ export default class Musicians extends Component {
 					</Heading>
 					<Features>
 						<FeaturesItem
-							title="High Industry Standards"
+							title="Best compensation in Music industry"
 							render={{
 								icon: () => <Star />,
 							}}
 						>
 							<p>
-								We make sure you receive the best rates in the industry so you
-								can focus on building your career out of your music.
+								We ensure that you receive the best compensation in the
+								industry, instantly and automatically, so you can focus on
+								building your musical career.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
@@ -61,9 +63,9 @@ export default class Musicians extends Component {
 							render={{ icon: () => <Shield /> }}
 						>
 							<p>
-								Your content rights are recorded publicly on the $MUSIC
-								Blockchain so you won’t have to worry about copyright
-								infringements coming your way.
+								Your content rights are recorded publicly on the Musicoin
+								Blockchain, so you won’t have to worry about copyright
+								infringement.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
@@ -73,27 +75,26 @@ export default class Musicians extends Component {
 							<p>
 								Our autonomous smart contract provides you with easy to
 								understand license terms and the flexibility to control your
-								revenues in a solo or multi-person band.
+								revenue in a solo or multi-person band.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
-							title="Fair Remuneration"
+							title="No Intermediaries"
 							render={{ icon: () => <Fair /> }}
 						>
 							<p>
-								Your music deserves every penny from each playback because no
-								one should have to take a percentage of your valued work into
-								their own pocket.
+								There are no intermediaries in the Musicoin platform. You get to
+								keep every last cent of your income.
 							</p>
 						</FeaturesItem>
 						<FeaturesItem
-							title="Interactive Engagement"
+							title="Enriched Ecosystem"
 							render={{ icon: () => <Interactive /> }}
 						>
 							<p>
-								With Musicoin’s freemiums, you’re given the opportunities to
-								deepen the relationship with your fans and open collaborations
-								with your fellow musicians.
+								With value-added goods and services built on the Musicoin
+								platform, you will have the tools to deepen your relationship
+								with fans and jumpstart collaborations with fellow musicians.
 							</p>
 						</FeaturesItem>
 					</Features>

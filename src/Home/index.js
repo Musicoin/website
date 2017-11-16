@@ -39,7 +39,9 @@ export default class Home extends Component {
 				{!this.state.small && <CentralLogo />}
 				<Right>
 					<Title>Play free</Title>
-					<p>Free streaming for listeners, indefinitely</p>
+					<p>
+						Free streaming<br /> for listeners
+					</p>
 					<RightButton to="/for-listeners">I am a listener</RightButton>
 				</Right>
 				<Footer>
