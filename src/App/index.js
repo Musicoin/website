@@ -9,6 +9,7 @@ import Analytics from '../components/Analytics';
 import Home from '../Home';
 import How from '../How';
 import Faq from '../Faq';
+import Bounty from '../Bounty';
 import Currency from '../Currency';
 import Musicians from '../Musicians';
 import Listeners from '../Listeners';
@@ -43,6 +44,7 @@ export default class App extends Component {
 											<Route exact path="/" component={Home} />
 											<Route path="/how-it-works" component={How} />
 											<Route path="/faq" component={Faq} />
+											<Route path="/bounty" component={Bounty} />
 											<Route path="/currency" component={Currency} />
 											<Route path="/for-musicians" component={Musicians} />
 											<Route path="/for-listeners" component={Listeners} />
