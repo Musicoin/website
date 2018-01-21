@@ -83,6 +83,12 @@ export default class Faq extends Component {
 								each play, will be automatically distributed to their license.
 							</p>
 						</MoreInfo>
+						<MoreInfo title="Can I embed the Musicoin player on other platforms?">
+							<p>
+								Yes, of course! Share your track link via Twitter and your songs
+								can be played from within Twitter.
+							</p>
+						</MoreInfo>
 					</Column>
 					<Column>
 						<Heading level={2}>Consumer</Heading>
