@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Button, PrimaryButton } from '../components/buttons';
-import LogoAnim from '../components/LogoAnim';
+import { Button, PrimaryButton } from 'shared/buttons';
+import LogoAnim from 'shared/LogoAnim';
 
 /**
  * 1. Create new stacking context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context

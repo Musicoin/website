@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import Heading from '../components/Heading';
+import Heading from 'shared/Heading';
 import { Content, Column, FirstQuestion } from './styles';
-import MoreInfo from '../components/MoreInfo';
-import { Media, MediaBody } from '../components/Media';
+import MoreInfo from 'shared/MoreInfo';
+import { Media, MediaBody } from 'shared/Media';
 import { HeaderGraphic as MediaImage } from './styles';
 
 export default class Bounty extends Component {
@@ -83,7 +83,7 @@ export default class Bounty extends Component {
 							<p>
 								If you have any doubts, feel free to approach the developers on {' '}
 								<a href="//discord.gg/gA8gjxC">Discord</a>
-								or  <a href="//slack.musicoin.org/">Slack</a>
+								or <a href="//slack.musicoin.org/">Slack</a>
 							</p>
 						</MoreInfo>
 						<MoreInfo title="What if I have a new task to propose for the bounty program?">

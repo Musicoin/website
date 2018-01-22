@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import MoreInfo from '../components/MoreInfo';
-import { MediaImage } from '../components/Media';
+import MoreInfo from 'shared/MoreInfo';
+import { MediaImage } from 'shared/Media';
 
 const mediaSmall = '(max-width: 900px)';
 

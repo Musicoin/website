@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Wrapper, Header as AppHeader, Main } from './styles';
-import AppFooter from '../components/AppFooter';
-import Heading from '../components/Heading';
-import { PrimaryButton } from '../components/buttons';
-import Analytics from '../components/Analytics';
+import { Wrapper, Main } from './styles';
+import Header from './Header';
+import Footer from './Footer';
+import Heading from 'shared/Heading';
+import { PrimaryButton } from 'shared/buttons';
+import Analytics from 'shared/Analytics';
 import Home from '../Home';
 import How from '../How';
 import Faq from '../Faq';
@@ -15,10 +16,6 @@ import Musicians from '../Musicians';
 import Listeners from '../Listeners';
 
 export default class App extends Component {
-	isHome = location => {
-		return location.pathname.match(/^\/$/);
-	};
-
 	render() {
 		const title = 'Musicoin';
 
@@ -38,7 +35,7 @@ export default class App extends Component {
 										titleTemplate={`%s - ${title}`}
 										defaultTitle={title}
 									/>
-									<AppHeader history={props.history} home={isHome} />
+									<Header history={props.history} home={isHome} />
 									<Main home={isHome}>
 										<Switch>
 											<Route exact path="/" component={Home} />
@@ -57,7 +54,7 @@ export default class App extends Component {
 											</Route>
 										</Switch>
 									</Main>
-									<AppFooter home={isHome} />
+									{!isHome && <Footer />}
 								</Wrapper>
 							</Analytics>
 						);

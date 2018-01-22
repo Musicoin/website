@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Section from '../components/Section';
+import Section from 'shared/Section';
 
 const mediaSmall = '(max-width: 1000px)';
 const mediaExtraSmall = '(max-width: 640px)';

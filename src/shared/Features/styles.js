@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from '../icons';
+import Icon from 'shared/icons';
 
 const mediaSmall = '(max-width: 1000px)';
 const mediaExtraSmall = '(max-width: 640px)';

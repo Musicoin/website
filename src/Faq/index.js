@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import Heading from '../components/Heading';
+import Heading from 'shared/Heading';
 import { Content, Column, FirstQuestion } from './styles';
-import MoreInfo from '../components/MoreInfo';
-import { Media, MediaBody } from '../components/Media';
+import MoreInfo from 'shared/MoreInfo';
+import { Media, MediaBody } from 'shared/Media';
 import { HeaderGraphic as MediaImage } from './styles';
 
 export default class Faq extends Component {

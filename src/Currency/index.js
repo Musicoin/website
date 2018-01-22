@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
-import Heading from '../components/Heading';
-import ExternalLink from '../components/ExternalLink';
+import { Media, MediaBody, MediaImage, MediaButton } from 'shared/Media';
+import Heading from 'shared/Heading';
+import ExternalLink from 'shared/ExternalLink';
 import { Content, Item, CurrencySymbol } from './styles';
 
 export default class Currency extends Component {

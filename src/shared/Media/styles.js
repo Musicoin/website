@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PrimaryButton } from '../buttons';
+import { PrimaryButton } from 'shared/buttons';
 
 const mediaSmall = '(max-width: 1005px)';
 

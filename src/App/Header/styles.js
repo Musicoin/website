@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
-import { PrimaryButton } from '../buttons';
+import { PrimaryButton } from 'shared/buttons';
 import { NavLink } from 'react-router-dom';
-import AppNav from '../AppNav';
 
 export const mediaSmall = '(max-width: 1090px)';
 
 export const Wrapper = styled.header`
+	flex: 0 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -45,13 +45,5 @@ export const NavToggle = styled(PrimaryButton)`
 
 	@media (min-width: 1175px) {
 		display: none;
-	}
-`;
-
-export const Nav = styled(AppNav)`
-	order: 3;
-
-	@media (max-width: 1175px) {
-		width: 100%;
 	}
 `;

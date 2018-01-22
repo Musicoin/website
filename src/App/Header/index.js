@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { mediaSmall, Wrapper, LogoLink, Nav, NavToggle } from './styles';
-import Logo from '../Logo';
+import { mediaSmall, Wrapper, LogoLink, NavToggle } from './styles';
+import Logo from 'shared/Logo';
+import Nav from 'App/Nav';
 
-export default class AppHeader extends Component {
+export default class Header extends Component {
 	mql = window.matchMedia(mediaSmall);
 
 	state = {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { MediaImage } from '../components/Media';
-import Section from '../components/Section';
+import { MediaImage } from 'shared/Media';
+import Section from 'shared/Section';
 
 export const HeaderGraphic = styled(MediaImage)`
 	margin-top: -50px;

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Media, MediaBody, MediaButton } from '../components/Media';
-import Heading from '../components/Heading';
-import ExternalLink from '../components/ExternalLink';
+import { Media, MediaBody, MediaButton } from 'shared/Media';
+import Heading from 'shared/Heading';
+import ExternalLink from 'shared/ExternalLink';
 import { HeaderGraphic, Content, Item } from './styles';
 
 export default class How extends Component {

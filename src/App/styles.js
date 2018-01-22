@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import AppHeader from '../components/AppHeader';
 
 export const Wrapper = styled.div`
 	max-width: 1920px;
@@ -8,10 +7,6 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-`;
-
-export const Header = styled(AppHeader)`
-	flex: 0 0 auto;
 `;
 
 export const Main = styled.main`

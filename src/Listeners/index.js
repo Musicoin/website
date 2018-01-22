@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Media, MediaBody, MediaImage, MediaButton } from '../components/Media';
-import Heading from '../components/Heading';
-import { Features, FeaturesItem } from '../components/Features';
-import Section from '../components/Section';
-import { Direct, Enjoy, Logo, Free } from '../components/icons';
+import { Media, MediaBody, MediaImage, MediaButton } from 'shared/Media';
+import Heading from 'shared/Heading';
+import { Features, FeaturesItem } from 'shared/Features';
+import Section from 'shared/Section';
+import { Direct, Enjoy, Logo, Free } from 'shared/icons';
 
 export default class Listeners extends Component {
 	render() {

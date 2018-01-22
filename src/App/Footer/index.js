@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Wrapper, SocialButtons, SocialButton } from './styles';
-import Logo from '../Logo';
+import Logo from 'shared/Logo';
 import {
 	Bitcoin,
 	Facebook,
@@ -9,18 +9,12 @@ import {
 	Slack,
 	Twitter,
 	Discord,
-} from '../icons';
+} from 'shared/icons';
 
-export default class AppFooter extends Component {
+export default class Footer extends Component {
 	render() {
-		const { home, ...props } = this.props;
-
-		if (home) {
-			return null;
-		}
-
 		return (
-			<Wrapper {...props}>
+			<Wrapper {...this.props}>
 				<Logo width="134" height="38" fill="#ffc300" />
 				<SocialButtons>
 					<SocialButton href="//www.facebook.com/lovemusicoin">

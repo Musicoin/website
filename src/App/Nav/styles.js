@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { rgba } from 'polished';
-import { PrimaryButton } from '../buttons';
+import { PrimaryButton } from 'shared/buttons';
 
 export const mediaSmall = '(max-width: 1175px)';
 export const mediaLarge = '(min-width: 1175px)';
@@ -25,6 +25,7 @@ export const NavItems = styled.nav`
 	align-items: flex-start;
 	flex-wrap: wrap;
 	padding: 2px 0;
+	order: 3;
 
 	@media ${mediaSmall} {
 		display: flex;
@@ -33,6 +34,7 @@ export const NavItems = styled.nav`
 		transition-property: opacity, margin-top, max-height;
 		position: relative;
 		${props => (props.open ? NavOpen : NavClosed)};
+		width: 100%;
 	}
 `;
 

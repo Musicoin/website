@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
-import { ArrowDown } from '../icons';
+import { ArrowDown } from 'shared/icons';
 
 export const Article = styled.article`
 	display: flex;

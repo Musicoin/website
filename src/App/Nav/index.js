@@ -8,7 +8,7 @@ import {
 	NavItemExternal,
 } from './styles';
 
-export default class AppNav extends Component {
+export default class Nav extends Component {
 	mql = window.matchMedia(mediaLarge);
 
 	state = {
