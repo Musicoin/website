@@ -1,18 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-	max-width: 1920px;
-	min-width: 320px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-`;
-
-export const Main = styled.main`
-	flex: 1 0 auto;
-	display: flex;
-	flex-direction: column;
-	padding: 0 ${props => (props.home ? 0 : '50px')}
-		${props => (props.home ? 0 : '50px')};
+	background: linear-gradient(to bottom, #26043d, #0f052c);
+	padding: 1px 0;
+	min-height: 100vh;
+	position: relative;
 `;

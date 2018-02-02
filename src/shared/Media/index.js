@@ -1,1 +1,1 @@
-export { Media, MediaBody, MediaImage, MediaButton } from './styles';
+export { Media, MediaContent, MediaImage } from './styles';

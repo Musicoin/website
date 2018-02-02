@@ -1,2 +1,7 @@
-export { default as Button } from './Button';
-export { default as PrimaryButton } from './PrimaryButton';
+export {
+	Button,
+	PrimaryButton,
+	SecondaryButton,
+	TertiaryButton,
+	ArrowButton,
+} from './styles';

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="152px" height="152px" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<g transform="translate(1.000000, 1.000000)" stroke="#FFBB00" stroke-width="1" fill="none" fill-rule="evenodd">
-		<circle opacity="0.2" cx="74.6938776" cy="74.6938776" r="46.5306122"></circle>
-		<circle opacity="0.25" cx="74.6938776" cy="74.6938776" r="30.6122449"></circle>
-		<circle opacity="0.1" cx="75" cy="75" r="59.0816327"></circle>
-		<circle opacity="0.05" cx="75" cy="75" r="75"></circle>
-	</g>
-</svg>

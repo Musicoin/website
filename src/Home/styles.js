@@ -1,116 +1,138 @@
+import React from 'react';
 import styled from 'styled-components';
-import { Button, PrimaryButton } from 'shared/buttons';
-import LogoAnim from 'shared/LogoAnim';
+import microphone from './images/microphone.jpg';
+import highlight from './images/highlight.png';
+import { Content } from 'shared/Content';
+import { PrettyText } from 'shared/PrettyText';
+import { Button } from 'shared/buttons';
+import { Media as SharedMedia } from 'shared/Media';
 
-/**
- * 1. Create new stacking context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
- */
+const bgGrad = `linear-gradient(to bottom, #260441 3%, #27033c 51%, #270337 100%)`;
+const overlayGrad = `linear-gradient(to bottom, rgba(23, 21, 30, 0) 0%, #17151e 100%)`;
+const innerGrad = `linear-gradient(to bottom, transparent 0%, #17151e 733px, rgba(23, 23, 23, 0) 100%)`;
 
-export const mediaSmall = '(max-width: 1090px)';
-const mediaExtraSmall = '(max-width: 690px)';
-
-export const Title = styled.h2`
-	font-size: 1.972em;
-	font-weight: 900;
-	line-height: 1.2;
-	text-transform: uppercase;
-`;
-
-export const Wrapper = styled.div`
-	flex: 1 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 100%;
+export const Wrapper = styled(({ children, ...props }) => (
+	<div {...props}>
+		<Background>{children}</Background>
+	</div>
+))`
+	background-image: ${bgGrad};
+	background-repeat: no-repeat;
+	background-size: 100% 733px;
+	min-height: 100vh;
 	position: relative;
-	padding: 0 80px;
-	flex-wrap: wrap;
 	overflow: hidden;
-	transform: translate3d(0, 0, 0); /* 1 */
-
-	${Title} {
-		margin: 0;
-	}
-
-	p {
-		margin: 0.5em 0;
-	}
+	transform: translate3d(0, 0, 0);
 
 	&::before {
 		content: '';
 		position: absolute;
-		right: 46%;
+		width: 100%;
+		height: 733px;
+		background: url(${microphone}) center top no-repeat;
+		z-index: -1;
 		top: 0;
-		width: 200%;
-		height: 200%;
-		background: linear-gradient(20deg, #ff9000, 50%, #ff9000, 80%, #fece00);
-		transform: rotate(10deg);
-		transform-origin: right top;
+		left: 0;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 733px;
+		background-image: ${overlayGrad};
+		z-index: -1;
+		top: 0;
+		left: 0;
+	}
+`;
+
+const Background = styled.div`
+	position: relative;
+	background: url(${highlight}) center 670px no-repeat;
+	transform: translate3d(0, 0, 0);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 1450px;
+		background-image: ${innerGrad};
 		z-index: -1;
 	}
+`;
 
-	@media ${mediaSmall} {
-		padding: 30px 30px 100px;
+export const Banner = styled.div`
+	min-height: 660px;
+	display: flex;
+	align-items: center;
 
-		&::before {
-			right: -25%;
-		}
+	${Button} {
+		font-size: 14px;
 	}
 `;
 
-export const Left = styled.div`
+export const BannerTitle = styled.h1`
+	max-width: 610px;
+	line-height: 1.3;
+	margin-bottom: 0.2em;
+`;
+
+export const BannerText = styled.p`
+	max-width: 485px;
+	margin-bottom: 50px;
+	font-size: 24px;
+`;
+
+export const Stats = styled.ul`
+	list-style: none;
+	margin: 100px 0;
+	display: flex;
+	justify-content: space-between;
+`;
+
+export const StatsItem = styled.li`
 	font-size: 36px;
-	width: 27%;
-
-	@media ${mediaSmall} {
-		width: 100%;
-		font-size: 30px;
-		text-align: center;
-		margin-top: 30px;
-	}
-
-	@media ${mediaExtraSmall} {
-		font-size: 22px;
-	}
+	font-weight: bold;
+	margin: 0;
 `;
 
-export const Right = styled(Left)`
-	color: #fbbf02;
-	text-align: right;
-
-	@media ${mediaSmall} {
-		text-align: center;
-		color: #fff;
-	}
+export const StatsLabel = styled.span`
+	display: block;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
 `;
 
-export const LeftButton = styled(Button)`
-	font-size: 12px;
-`;
-
-export const RightButton = styled(PrimaryButton)`
-	font-size: 12px;
-`;
-
-export const Footer = styled.p`
-	font-size: 12px;
-	font-family: 'Montserrat', sans-serif;
-	position: absolute;
-	bottom: 18px;
-	left: 50%;
-	transform: translateX(-50%);
+export const BlockTitle = styled.h3`
 	text-align: center;
+	font-weight: normal;
+	font-size: 48px;
+`;
 
-	a {
-		text-decoration: none;
+export const FirstContent = styled(Content)`
+	min-height: 720px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px;
+`;
+
+export const Media = styled(SharedMedia)`
+	margin-bottom: 150px;
+	margin-top: 80px;
+
+	& + & {
+		margin-top: 80px;
 	}
 `;
 
-export const CentralLogo = styled(LogoAnim)`
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 530px;
-	height: 530px;
+export const SectionTitle = PrettyText.withComponent('h3').extend`
+	display: inline-flex;
+	font-size: 36px;
+`;
+
+export const GetStarted = styled(Content)`
+	text-align: center;
 `;
