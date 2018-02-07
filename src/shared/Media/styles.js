@@ -1,18 +1,33 @@
+import React from 'react';
 import styled from 'styled-components';
-import { Content as SharedContent } from 'shared/Content';
 
-export const Media = styled(SharedContent)`
+export const Media = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 `;
 
 export const MediaContent = styled.div`
-	width: 556px;
-	text-align: ${props => props.align === 'right' && 'right'};
+	flex: 1 1 auto;
+	text-align: ${props => props.align};
 `;
 
-export const MediaImage = styled.img`
+export const MediaImage = styled(({ className, ...props }) => (
+	<div className={className}>
+		<img alt="" {...props} />
+	</div>
+))`
 	flex: 0 0 auto;
-	margin-left: ${props => `${props.pull}px`};
+	order: ${props => props.order};
+	text-align: ${props => props.align};
+
+	img {
+		position: relative;
+		left: ${props => props.pull && `-${props.pull}px`};
+		right: ${props => props.push && `-${props.push}px`};
+	}
 `;
+
+MediaImage.defaultProps = {
+	order: 0,
+};

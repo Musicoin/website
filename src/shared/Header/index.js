@@ -1,16 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import logo from 'assets/images/logo.svg';
-import { Wrapper, Image, Nav, NavItem } from './styles';
+import { Wrapper, Logo, Image, Nav, NavItem } from './styles';
 import { Content } from 'shared/Content';
 import { SecondaryButton, TertiaryButton } from 'shared/buttons/styles';
 
 export const Header = () => (
 	<Content>
 		<Wrapper>
-			<NavLink to="/">
+			<Logo to="/">
 				<Image src={logo} width="132" height="30" alt="Musicoin" />
-			</NavLink>
+			</Logo>
 			<Nav>
 				<NavItem to="/musicians">Musicians</NavItem>
 				<NavItem to="/discover">Discover</NavItem>

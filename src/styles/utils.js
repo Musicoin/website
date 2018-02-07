@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { rem } from 'polished';
 
 export const backgroundGradient = () => css`
 	background-image: #fece00;
@@ -23,3 +24,16 @@ export const borderGradient = () => css`
 	border-image: linear-gradient(to top right, #fece00 0%, #ff9000 80%);
 	border-image-slice: 1;
 `;
+
+export const getMedia = sizes => {
+	return Object.keys(sizes).reduce((accumulator, label) => {
+		const size = sizes[label];
+
+		accumulator[label] = (...args) => css`
+			@media (max-width: ${rem(size)}) {
+				${css(...args)};
+			}
+		`;
+		return accumulator;
+	}, {});
+};

@@ -10,6 +10,8 @@ import {
 	BlockTitle,
 	FirstContent,
 	Media,
+	MediaImage,
+	MediaContent,
 	SectionTitle,
 	GetStarted,
 } from './styles';
@@ -22,7 +24,6 @@ import supportMusicians from './images/support-musicians.svg';
 import joinRevolution from './images/revolution.svg';
 import musicoinForMusians from './images/musicoin-for-musicians.svg';
 import { SecondaryButton } from 'shared/buttons/styles';
-import { MediaContent, MediaImage } from 'shared/Media';
 import { Footer } from 'shared/Footer';
 import { Numeral } from 'shared/Numeral';
 import { TwitterFeed } from './TwitterFeed';
@@ -43,43 +44,59 @@ export const Home = () => (
 
 					<Stats>
 						<StatsItem>
-							<Numeral>3267</Numeral>
+							<PrettyText>
+								<Numeral>3267</Numeral>
+							</PrettyText>
 							<StatsLabel>Musicians</StatsLabel>
 						</StatsItem>
 						<StatsItem>
-							<Numeral>121377</Numeral>
+							<PrettyText>
+								<Numeral>121377</Numeral>
+							</PrettyText>
 							<StatsLabel>Tracks</StatsLabel>
 						</StatsItem>
 						<StatsItem>
-							<Numeral>567385948</Numeral>
+							<PrettyText>
+								<Numeral>567385948</Numeral>
+							</PrettyText>
 							<StatsLabel>Plays</StatsLabel>
 						</StatsItem>
 						<StatsItem>
-							<Numeral format="$0,0[.]00">1610233</Numeral>
+							<PrettyText>
+								<Numeral format="$0,0[.]00">1610233</Numeral>
+							</PrettyText>
 							<StatsLabel>Paid</StatsLabel>
 						</StatsItem>
 					</Stats>
 				</Content>
 			</Banner>
-			<BlockTitle>Musicoin changes the way you listen</BlockTitle>
-			<FirstContent>
-				<Media>
-					<MediaContent>
-						<SectionTitle>Ad free streaming</SectionTitle>
-						<p>
-							With the power of our blockchain platform, you can stream our
-							catalog of music from independent musicians. Absolutely free, and
-							absolutely without ads.
-						</p>
-					</MediaContent>
-					<MediaImage src={adFreeStreaming} width={486} height={484} />
-				</Media>
-			</FirstContent>
+			<Content>
+				<BlockTitle>Musicoin changes the way you listen</BlockTitle>
+				<FirstContent>
+					<Media>
+						<MediaImage
+							src={adFreeStreaming}
+							push={20}
+							order={1}
+							width={486}
+							height={484}
+						/>
+						<MediaContent>
+							<SectionTitle>Ad free streaming</SectionTitle>
+							<p>
+								With the power of our blockchain platform, you can stream our
+								catalog of music from independent musicians. Absolutely free,
+								and absolutely without ads.
+							</p>
+						</MediaContent>
+					</Media>
+				</FirstContent>
+			</Content>
 			<Content hasBg={true}>
 				<Media>
 					<MediaImage
 						src={supportMusicians}
-						pull={-38}
+						pull={40}
 						width={553}
 						height={522}
 					/>
@@ -94,6 +111,13 @@ export const Home = () => (
 					</MediaContent>
 				</Media>
 				<Media>
+					<MediaImage
+						src={joinRevolution}
+						push={75}
+						order={1}
+						width={510}
+						height={541}
+					/>
 					<MediaContent>
 						<h3>
 							<PrettyText>Join the revolution</PrettyText>
@@ -104,10 +128,14 @@ export const Home = () => (
 							in a musical economy.
 						</p>
 					</MediaContent>
-					<MediaImage src={joinRevolution} width={510} height={541} />
 				</Media>
 				<Media>
-					<MediaImage src={musicoinForMusians} width={513} height={555} />
+					<MediaImage
+						src={musicoinForMusians}
+						pull={38}
+						width={513}
+						height={555}
+					/>
 					<MediaContent align="right">
 						<h3>
 							<PrettyText>Musicoin for musicians</PrettyText>
@@ -140,10 +168,6 @@ export const Home = () => (
 			<aside>
 				<GetStarted>
 					<BlockTitle>Ready to get started?</BlockTitle>
-					<p>
-						Sign up now and receive your first <strong>100 $MUSIC</strong> for{' '}
-						<strong>FREE</strong>.
-					</p>
 					<PrimaryButton to="/join">Join the revolution</PrimaryButton>
 				</GetStarted>
 			</aside>
