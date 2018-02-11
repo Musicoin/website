@@ -4,9 +4,6 @@ import {
 	Banner,
 	BannerTitle,
 	BannerText,
-	Stats,
-	StatsItem,
-	StatsLabel,
 	BlockTitle,
 	FirstContent,
 	Media,
@@ -18,15 +15,14 @@ import {
 import { PrettyText } from 'shared/PrettyText';
 import { Header } from 'shared/Header';
 import { Content } from 'shared/Content';
-import { PrimaryButton, ArrowButton } from 'shared/buttons';
+import { Footer } from 'shared/Footer';
+import { PrimaryButton, SecondaryButton, ArrowButton } from 'shared/buttons';
+import { Stats } from './Stats';
+import { TwitterFeed } from './TwitterFeed';
 import adFreeStreaming from './images/ad-free-streaming.svg';
 import supportMusicians from './images/support-musicians.svg';
 import joinRevolution from './images/revolution.svg';
 import musicoinForMusians from './images/musicoin-for-musicians.svg';
-import { SecondaryButton } from 'shared/buttons/styles';
-import { Footer } from 'shared/Footer';
-import { Numeral } from 'shared/Numeral';
-import { TwitterFeed } from './TwitterFeed';
 
 export const Home = () => (
 	<Wrapper>
@@ -41,33 +37,7 @@ export const Home = () => (
 					</BannerText>
 					<PrimaryButton to="/join">Join the revolution</PrimaryButton>
 					<ArrowButton to="/how-it-works">How it works</ArrowButton>
-
-					<Stats>
-						<StatsItem>
-							<PrettyText>
-								<Numeral>3267</Numeral>
-							</PrettyText>
-							<StatsLabel>Musicians</StatsLabel>
-						</StatsItem>
-						<StatsItem>
-							<PrettyText>
-								<Numeral>121377</Numeral>
-							</PrettyText>
-							<StatsLabel>Tracks</StatsLabel>
-						</StatsItem>
-						<StatsItem>
-							<PrettyText>
-								<Numeral>567385948</Numeral>
-							</PrettyText>
-							<StatsLabel>Plays</StatsLabel>
-						</StatsItem>
-						<StatsItem>
-							<PrettyText>
-								<Numeral format="$0,0[.]00">1610233</Numeral>
-							</PrettyText>
-							<StatsLabel>Paid</StatsLabel>
-						</StatsItem>
-					</Stats>
+					<Stats />
 				</Content>
 			</Banner>
 			<Content>

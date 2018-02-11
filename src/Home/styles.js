@@ -138,35 +138,6 @@ export const BannerText = styled.p`
 	`};
 `;
 
-export const Stats = styled.ul`
-	list-style: none;
-	margin: 40px 0 70px;
-	display: flex;
-	justify-content: space-between;
-
-	${media.medium`
-		margin-bottom: 40px;
-		flex-wrap: wrap;
-	`};
-
-	${media.xsmall`
-		flex-direction: column;
-	`};
-`;
-
-export const StatsItem = styled.li`
-	font-size: ${rem(36)};
-	font-weight: bold;
-	margin: 0 0 30px;
-`;
-
-export const StatsLabel = styled.span`
-	display: block;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: ${rem(16)};
-`;
-
 export const BlockTitle = styled.h2`
 	text-align: center;
 	font-weight: normal;
