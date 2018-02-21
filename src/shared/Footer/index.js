@@ -19,7 +19,7 @@ import {
 	BitcoinIcon,
 	GitIcon,
 	FacebookIcon,
-} from 'shared/icons';
+} from '@/shared/icons';
 
 export const Footer = () => (
 	<Wrapper>

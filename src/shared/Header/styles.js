@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { rem, rgba } from 'polished';
-import { media } from 'styles/media';
-import { Button } from 'shared/buttons';
+import { media } from '@/styles/media';
+import { Button } from '@/shared/buttons';
 
 export const Wrapper = styled.header`
 	display: flex;

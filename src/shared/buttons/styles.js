@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { backgroundGradient } from 'styles/utils';
-import { Icon, ArrowRightIcon } from 'shared/icons';
+import { backgroundGradient } from '@/styles/utils';
+import { Icon, ArrowRightIcon } from '@/shared/icons';
 
 export const Button = styled(NavLink)`
 	border-radius: 4px;

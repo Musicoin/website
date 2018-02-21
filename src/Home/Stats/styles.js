@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { media } from 'styles/media';
+import { media } from '@/styles/media';
 
 export const Wrapper = styled.ul`
 	list-style: none;

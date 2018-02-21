@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { graphql, compose } from 'react-apollo';
-import { PrettyText } from 'shared/PrettyText';
-import { Numeral } from 'shared/Numeral';
+import { PrettyText } from '@/shared/PrettyText';
+import { Numeral } from '@/shared/Numeral';
 import { Wrapper, Item, Label } from './styles';
-import { mockClient } from 'client.mock';
 import { ALL_ARTISTS, ALL_RELEASES } from './queries';
+import { mockClient } from '@/client.mock';
 
 export const StatsBase = ({ data, release, artist }) => {
 	const loading = release.loading || artist.loading;

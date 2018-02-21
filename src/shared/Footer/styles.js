@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { rgba } from 'polished';
-import { media } from 'styles/media';
+import { media } from '@/styles/media';
 
 export const Wrapper = styled.footer`
 	padding: 130px 0 20px;

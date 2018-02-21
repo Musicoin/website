@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper } from './styles';
-import { TwitterIcon } from 'shared/icons';
+import { TwitterIcon } from '@/shared/icons';
 
 export const TwitterFeed = () => (
 	<Wrapper>

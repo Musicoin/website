@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from 'assets/images/logo.svg';
+import logo from '@/assets/images/logo.svg';
 import {
 	Wrapper,
 	Logo,
@@ -10,9 +10,9 @@ import {
 	NavToggle,
 	NavIcon,
 } from './styles';
-import { Content } from 'shared/Content';
-import { SecondaryButton, TertiaryButton } from 'shared/buttons/styles';
-import { mediaSizes } from 'styles/media';
+import { Content } from '@/shared/Content';
+import { SecondaryButton, TertiaryButton } from '@/shared/buttons/styles';
+import { mediaSizes } from '@/styles/media';
 
 export class Header extends Component {
 	mql = window.matchMedia(`(max-width: ${mediaSizes.large}px)`);

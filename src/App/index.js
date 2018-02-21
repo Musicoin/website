@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Wrapper } from './styles';
-import { Home } from '../Home';
+import { Home } from '@/Home';
 
 export const App = () => (
 	<Wrapper>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import squares from 'assets/images/squares.svg';
-import { media } from 'styles/media';
+import squares from '@/assets/images/squares.svg';
+import { media } from '@/styles/media';
 
 const CONTENT_WIDTH = '1080px';
 const CONTENT_MARGIN = '0 auto';

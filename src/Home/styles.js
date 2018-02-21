@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import microphone from './images/microphone.jpg';
 import highlight from './images/highlight.png';
-import { PrettyText } from 'shared/PrettyText';
-import { Button } from 'shared/buttons';
+import { PrettyText } from '@/shared/PrettyText';
+import { Button } from '@/shared/buttons';
 import { rem } from 'polished';
-import { media, mediaFontSize } from 'styles/media';
+import { media, mediaFontSize } from '@/styles/media';
 import {
 	Media as SharedMedia,
 	MediaImage as SharedMediaImage,
 	MediaContent as SharedMediaContent,
-} from 'shared/Media';
+} from '@/shared/Media';
 
 const bgGrad = `linear-gradient(to bottom, #260441 3%, #27033c 51%, #270337 100%)`;
 const overlayGrad = `linear-gradient(to bottom, rgba(23, 21, 30, 0) 0%, #17151e 100%)`;

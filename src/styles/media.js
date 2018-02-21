@@ -1,4 +1,4 @@
-import { getMedia } from 'styles/utils';
+import { getMedia } from '@/styles/utils';
 
 export const mediaSizes = {
 	xlarge: 1080,

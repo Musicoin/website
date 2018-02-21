@@ -1,9 +1,9 @@
 import { injectGlobal } from 'styled-components';
-import avenirBook from 'assets/fonts/avenir-book.woff';
-import avenirHeavy from 'assets/fonts/avenir-heavy.woff';
-import avenirBlack from 'assets/fonts/avenir-black.woff';
+import avenirBook from '@/assets/fonts/avenir-book.woff';
+import avenirHeavy from '@/assets/fonts/avenir-heavy.woff';
+import avenirBlack from '@/assets/fonts/avenir-black.woff';
 import { rem, normalize } from 'polished';
-import { media, mediaFontSize } from 'styles/media';
+import { media, mediaFontSize } from '@/styles/media';
 
 injectGlobal`
 	${normalize()};

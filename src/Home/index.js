@@ -12,11 +12,11 @@ import {
 	SectionTitle,
 	GetStarted,
 } from './styles';
-import { PrettyText } from 'shared/PrettyText';
-import { Header } from 'shared/Header';
-import { Content } from 'shared/Content';
-import { Footer } from 'shared/Footer';
-import { PrimaryButton, SecondaryButton, ArrowButton } from 'shared/buttons';
+import { PrettyText } from '@/shared/PrettyText';
+import { Header } from '@/shared/Header';
+import { Content } from '@/shared/Content';
+import { Footer } from '@/shared/Footer';
+import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
 import { Stats } from './Stats';
 import { TwitterFeed } from './TwitterFeed';
 import adFreeStreaming from './images/ad-free-streaming.svg';
