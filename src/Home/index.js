@@ -14,6 +14,7 @@ import {
 } from './styles';
 import { PrettyText } from '@/shared/PrettyText';
 import { Header } from '@/shared/Header';
+import { Main } from '@/shared/Main';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
 import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
@@ -27,7 +28,7 @@ import musicoinForMusians from './images/musicoin-for-musicians.svg';
 export const Home = () => (
 	<Wrapper>
 		<Header />
-		<main>
+		<Main>
 			<Banner>
 				<Content>
 					<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
@@ -133,7 +134,7 @@ export const Home = () => (
 				<BlockTitle>What musicians say</BlockTitle>
 				<TwitterFeed />
 			</Content>
-		</main>
+		</Main>
 		<Content hasBg={true}>
 			<aside>
 				<GetStarted>

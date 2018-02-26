@@ -4,4 +4,5 @@ export {
 	SecondaryButton,
 	TertiaryButton,
 	ArrowButton,
+	IconButton,
 } from './styles';

@@ -66,3 +66,16 @@ export const ArrowButton = styled(({ children, ...props }) => (
 		box-shadow: inset 0 0 0 2px #fbbf02;
 	}
 `;
+
+export const IconButton = styled.button.attrs({ type: 'button' })`
+	background: transparent;
+	border: 0;
+	line-height: 1;
+	padding: 0;
+	outline: none;
+	cursor: pointer;
+
+	${Icon} {
+		display: block;
+	}
+`;

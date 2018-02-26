@@ -7,3 +7,5 @@ export { MediumIcon } from './MediumIcon';
 export { BitcoinIcon } from './BitcoinIcon';
 export { GitIcon } from './GitIcon';
 export { FacebookIcon } from './FacebookIcon';
+export { PlayIcon } from './PlayIcon';
+export { SkipIcon } from './SkipIcon';

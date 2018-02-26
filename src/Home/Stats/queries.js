@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 
-export const ALL_RELEASES = gql`
-	query allReleases {
+export const ReleaseStats = gql`
+	query ReleaseStats {
 		allReleases {
 			count
 			totalPlays
@@ -9,8 +9,8 @@ export const ALL_RELEASES = gql`
 	}
 `;
 
-export const ALL_ARTISTS = gql`
-	query allArtists {
+export const ArtistStats = gql`
+	query ArtistStats {
 		allArtists {
 			count
 		}

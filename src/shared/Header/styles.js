@@ -12,6 +12,7 @@ export const Wrapper = styled.header`
 	align-items: center;
 	text-transform: uppercase;
 	font-weight: bold;
+	flex: 0 0 auto;
 `;
 
 export const Logo = styled(NavLink)`

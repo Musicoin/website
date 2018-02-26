@@ -11,20 +11,20 @@ import {
 	MediaImage as SharedMediaImage,
 	MediaContent as SharedMediaContent,
 } from '@/shared/Media';
+import { Page } from '@/shared/Page';
 
 const bgGrad = `linear-gradient(to bottom, #260441 3%, #27033c 51%, #270337 100%)`;
 const overlayGrad = `linear-gradient(to bottom, rgba(23, 21, 30, 0) 0%, #17151e 100%)`;
 const innerGrad = `linear-gradient(to bottom, transparent 0%, #17151e 733px, rgba(23, 23, 23, 0) 100%)`;
 
 export const Wrapper = styled(({ children, ...props }) => (
-	<div {...props}>
+	<Page {...props}>
 		<Background>{children}</Background>
-	</div>
+	</Page>
 ))`
 	background-image: ${bgGrad};
 	background-repeat: no-repeat;
 	background-size: 100% 733px;
-	min-height: 100vh;
 	position: relative;
 	overflow: hidden;
 	transform: translate3d(0, 0, 0);

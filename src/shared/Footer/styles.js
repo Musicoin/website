@@ -7,6 +7,7 @@ import { media } from '@/styles/media';
 export const Wrapper = styled.footer`
 	padding: 130px 0 20px;
 	font-size: 14px;
+	flex: 0 0 auto;
 `;
 
 export const Nav = styled.ul`

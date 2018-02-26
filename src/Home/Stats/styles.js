@@ -7,7 +7,6 @@ export const Wrapper = styled.ul`
 	margin: 40px 0 70px;
 	display: flex;
 	justify-content: space-between;
-	opacity: ${props => (props.loading ? 0 : 1)};
 	transition: opacity 200ms ease-in-out;
 
 	${media.medium`
