@@ -4,7 +4,7 @@ import { media } from '@/styles/media';
 
 export const Wrapper = styled.ul`
 	list-style: none;
-	margin: 40px 0 70px;
+	margin: 40px 0 0;
 	display: flex;
 	justify-content: space-between;
 	transition: opacity 200ms ease-in-out;

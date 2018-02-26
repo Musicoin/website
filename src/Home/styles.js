@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import microphone from './images/microphone.jpg';
 import highlight from './images/highlight.png';
 import { PrettyText } from '@/shared/PrettyText';
-import { Button } from '@/shared/buttons';
-import { rem } from 'polished';
-import { media, mediaFontSize } from '@/styles/media';
+import { media } from '@/styles/media';
 import {
 	Media as SharedMedia,
 	MediaImage as SharedMediaImage,
@@ -91,56 +89,8 @@ const Background = styled.div`
 	`};
 `;
 
-export const Banner = styled.div`
-	min-height: 660px;
-	display: flex;
-	align-items: center;
-	padding-top: 20px;
-
-	${Button} {
-		font-size: 14px;
-		margin-bottom: 30px;
-	}
-
-	${media.medium`
-		min-height: 520px;
-	`};
-
-	${media.xsmall`
-		text-align: center;
-
-		${Button} {
-			margin-left: 0;
-		}
-	`};
-`;
-
-export const BannerTitle = styled.h1`
-	max-width: 610px;
-	line-height: 1.3;
-	margin-bottom: 0.2em;
-
-	${media.xsmall`
-		max-width: none;
-		font-weight: normal;
-		margin-bottom: 14px;
-	`};
-`;
-
-export const BannerText = styled.p`
-	max-width: 485px;
-	margin-bottom: 50px;
-	font-size: ${rem(24)};
-
-	${media.xsmall`
-		max-width: none;
-		font-size: ${rem(16, mediaFontSize.small)};
-	`};
-`;
-
 export const BlockTitle = styled.h2`
 	text-align: center;
-	font-weight: normal;
 `;
 
 export const FirstContent = styled.div`

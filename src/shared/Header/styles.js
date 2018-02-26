@@ -123,7 +123,8 @@ export const NavItem = styled(NavLink)`
 	margin-right: ${rem(40)};
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&.active {
 		color: #fbbf02;
 	}
 

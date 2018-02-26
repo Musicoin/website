@@ -1,9 +1,6 @@
 import React from 'react';
 import {
 	Wrapper,
-	Banner,
-	BannerTitle,
-	BannerText,
 	BlockTitle,
 	FirstContent,
 	Media,
@@ -18,8 +15,9 @@ import { Main } from '@/shared/Main';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
 import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
+import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
+import { TwitterFeed } from '@/shared/TwitterFeed';
 import { Stats } from './Stats';
-import { TwitterFeed } from './TwitterFeed';
 import adFreeStreaming from './images/ad-free-streaming.svg';
 import supportMusicians from './images/support-musicians.svg';
 import joinRevolution from './images/revolution.svg';
@@ -34,7 +32,7 @@ export const Home = () => (
 					<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
 					<BannerText>
 						100% free streaming for listeners, industry best compensation for
-						musicians
+						musicians.
 					</BannerText>
 					<PrimaryButton to="/join">Join the revolution</PrimaryButton>
 					<ArrowButton to="/how-it-works">How it works</ArrowButton>
@@ -135,7 +133,7 @@ export const Home = () => (
 				<TwitterFeed />
 			</Content>
 		</Main>
-		<Content hasBg={true}>
+		<Content>
 			<aside>
 				<GetStarted>
 					<BlockTitle>Ready to get started?</BlockTitle>

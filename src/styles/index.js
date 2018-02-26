@@ -74,6 +74,7 @@ injectGlobal`
 
 	h1, h2 {
 		font-size: ${rem(48)};
+		font-weight: normal;
 
 		${media.xsmall`
 			font-size: ${rem(24, mediaFontSize.small)};
