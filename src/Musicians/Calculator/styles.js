@@ -11,3 +11,8 @@ export const Wrapper = styled(Box)`
 export const Title = styled.h3`
 	font-size: ${rem(20)};
 `;
+
+export const Plays = styled.span`
+	font-size: ${rem(72)};
+	display: block;
+`;
