@@ -1,20 +1,13 @@
 import React from 'react';
-import gql from 'graphql-tag';
-import { graphql } from 'react-apollo';
-import { Loading } from '@/shared/Loading';
+import { arrayOf, shape, string } from 'prop-types';
 import { Player } from '@/shared/Player';
+import { FeaturedArtistsQuery } from './FeaturedArtistsQuery';
 
-const FeaturedArtistsBase = ({ data }) => (
-	<Loading
-		loading={data.loading}
-		render={() => {
-			if (data.error) {
-				return 'Error';
-			}
-
-			const artist = data.featuredArtists[0];
+export const FeaturedArtists = ({ data }) => (
+	<FeaturedArtistsQuery
+		render={({ artists }) => {
+			const artist = artists[0];
 			const track = artist.releases[0];
-
 			return (
 				<Player
 					track={`${track.audioUrl}`}
@@ -26,15 +19,17 @@ const FeaturedArtistsBase = ({ data }) => (
 	/>
 );
 
-export const FeaturedArtists = graphql(gql`
-	query FeaturedArtists {
-		featuredArtists {
-			artistName
-			description
-			releases {
-				audioUrl
-				title
-			}
-		}
-	}
-`)(FeaturedArtistsBase);
+const ReleaseType = shape({
+	audioUrl: string.isRequired,
+	title: string.isRequired,
+});
+
+const ArtistType = shape({
+	artistName: string.isRequired,
+	description: string,
+	releases: arrayOf(ReleaseType).isRequired,
+});
+
+FeaturedArtists.propTypes = {
+	artists: arrayOf(ArtistType).isRequired,
+};

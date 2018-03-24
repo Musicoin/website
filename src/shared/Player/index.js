@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { string } from 'prop-types';
 import {
 	Wrapper,
 	Artist,
@@ -12,7 +13,8 @@ export class Player extends Component {
 	player;
 
 	componentWillMount() {
-		this.player = this.getPlayer(this.props.track);
+		const { track } = this.props;
+		this.player = this.getPlayer(track);
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -23,8 +25,8 @@ export class Player extends Component {
 	}
 
 	render() {
-		const { track, artist, title } = this.props;
-		console.log(this.player);
+		const { artist, title } = this.props;
+
 		return (
 			<Wrapper>
 				<Artist>{artist}</Artist>
@@ -38,7 +40,6 @@ export class Player extends Component {
 					)}
 					<SkipButton />
 				</Controls>
-				<audio track={track} controls />
 			</Wrapper>
 		);
 	}
@@ -54,6 +55,12 @@ export class Player extends Component {
 	};
 
 	getPlayer(track) {
-		return new Audio(`//musicoin.org${track}`);
+		return new Audio(`https://musicoin.org${track}`);
 	}
 }
+
+Player.propTypes = {
+	track: string.isRequired,
+	artist: string.isRequired,
+	title: string.isRequired,
+};

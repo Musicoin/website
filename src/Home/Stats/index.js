@@ -1,44 +1,36 @@
 import React, { Fragment } from 'react';
-import { graphql, compose } from 'react-apollo';
-import { mockClient } from '@/client.mock';
 import { PrettyText } from '@/shared/PrettyText';
 import { Numeral } from '@/shared/Numeral';
-import { Loading } from '@/shared/Loading';
-import { ReleaseStats, ArtistStats } from './queries';
 import { Wrapper, Item, Label } from './styles';
+import { StatsQuery } from './StatsQuery';
 
-export const StatsBase = ({ data, release, artist }) => {
-	const loading = release.loading || artist.loading;
-
+export const Stats = () => {
 	return (
 		<Wrapper>
-			<Loading
-				loading={loading}
-				render={() => (
+			<StatsQuery
+				render={({ totalArtists, totalReleases, totalPlays }) => (
 					<Fragment>
 						<Item>
 							<PrettyText>
-								<Numeral>{artist.allArtists.count}</Numeral>
+								<Numeral>{totalArtists}</Numeral>
 							</PrettyText>
 							<Label>Musicians</Label>
 						</Item>
 						<Item>
 							<PrettyText>
-								<Numeral>{release.allReleases.count}</Numeral>
+								<Numeral>{totalReleases}</Numeral>
 							</PrettyText>
 							<Label>Tracks</Label>
 						</Item>
 						<Item>
 							<PrettyText>
-								<Numeral>{release.allReleases.totalPlays}</Numeral>
+								<Numeral>{totalPlays}</Numeral>
 							</PrettyText>
 							<Label>Plays</Label>
 						</Item>
 						<Item>
 							<PrettyText>
-								<Numeral format="$0,0[.]00">
-									{release.allReleases.totalPlays * 0.03}
-								</Numeral>
+								<Numeral format="$0,0[.]00">{totalPlays * 0.03}</Numeral>
 							</PrettyText>
 							<Label>Paid</Label>
 						</Item>
@@ -48,10 +40,3 @@ export const StatsBase = ({ data, release, artist }) => {
 		</Wrapper>
 	);
 };
-
-const options = { options: { client: mockClient } };
-
-export const Stats = compose(
-	graphql(ReleaseStats, { name: 'release', ...options }),
-	graphql(ArtistStats, { name: 'artist', ...options })
-)(StatsBase);

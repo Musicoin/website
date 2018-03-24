@@ -1,16 +1,7 @@
 import { Component } from 'react';
-import PropTypes from 'prop-types';
+import { bool, func, number } from 'prop-types';
 
 export class Loading extends Component {
-	static defaultProps = {
-		delay: 500,
-	};
-
-	static propTypes = {
-		loading: PropTypes.bool.isRequired,
-		render: PropTypes.func.isRequired,
-	};
-
 	state = {
 		message: '',
 	};
@@ -18,7 +9,14 @@ export class Loading extends Component {
 	componentDidMount() {
 		const { delay } = this.props;
 		// Render loading message if loading for more than delay
-		window.setTimeout(() => this.setState({ message: 'Loading...' }), delay);
+		this.loading = window.setTimeout(
+			() => this.setState({ message: 'Loading...' }),
+			delay
+		);
+	}
+
+	componentWillUnmount() {
+		window.clearTimeout(this.loading);
 	}
 
 	render() {
@@ -27,3 +25,13 @@ export class Loading extends Component {
 		return loading ? message : render();
 	}
 }
+
+Loading.propTypes = {
+	loading: bool.isRequired,
+	render: func.isRequired,
+	delay: number,
+};
+
+Loading.defaultProps = {
+	delay: 500,
+};

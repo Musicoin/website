@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 import { Icon } from '.';
 
 export const ArrowRightIcon = ({ firstStop, lastStop, ...props }) => (
@@ -25,12 +25,12 @@ export const ArrowRightIcon = ({ firstStop, lastStop, ...props }) => (
 	</Icon>
 );
 
+ArrowRightIcon.propTypes = {
+	firstStop: string,
+	lastStop: string,
+};
+
 ArrowRightIcon.defaultProps = {
 	firstStop: '#FECE00',
 	lastStop: '#FF9000',
-};
-
-ArrowRightIcon.propTypes = {
-	firstStop: PropTypes.string,
-	lastStop: PropTypes.string,
 };

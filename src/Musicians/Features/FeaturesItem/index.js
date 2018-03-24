@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { node } from 'prop-types';
 import { Wrapper, FeaturesIcon } from './styles';
 
 export const FeaturesItem = ({ icon, children, ...props }) => (
@@ -10,5 +10,10 @@ export const FeaturesItem = ({ icon, children, ...props }) => (
 );
 
 FeaturesItem.propTypes = {
-	icon: PropTypes.node,
+	icon: node,
+	children: node.isRequired,
+};
+
+FeaturesItem.defaultProps = {
+	icon: undefined,
 };

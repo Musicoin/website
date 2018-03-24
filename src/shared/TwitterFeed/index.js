@@ -1,4 +1,5 @@
 import React from 'react';
+import { number } from 'prop-types';
 import { Wrapper, Items, Item, ItemHeader, UserImage } from './styles';
 import { TwitterIcon } from '@/shared/icons';
 import { PrettyText } from '@/shared/PrettyText';
@@ -14,8 +15,8 @@ export const TwitterFeed = ({ count, ...props }) => (
 			</defs>
 		</TwitterIcon>
 		<Items>
-			{[...Array(count)].map((_, index) => (
-				<Item key={index}>
+			{[...Array(count)].map(() => Math.random()).map(item => (
+				<Item key={item}>
 					<ItemHeader>
 						<UserImage
 							src="http://lorempixel.com/40/40/people"
@@ -36,6 +37,10 @@ export const TwitterFeed = ({ count, ...props }) => (
 		</Items>
 	</Wrapper>
 );
+
+TwitterFeed.propTypes = {
+	count: number,
+};
 
 TwitterFeed.defaultProps = {
 	count: 3,

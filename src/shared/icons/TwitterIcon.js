@@ -1,4 +1,5 @@
 import React from 'react';
+import { string, node } from 'prop-types';
 import { Icon } from '.';
 
 export const TwitterIcon = ({ fill, children, ...props }) => (
@@ -13,6 +14,12 @@ export const TwitterIcon = ({ fill, children, ...props }) => (
 	</Icon>
 );
 
+TwitterIcon.propTypes = {
+	fill: string,
+	children: node,
+};
+
 TwitterIcon.defaultProps = {
 	fill: 'currentColor',
+	children: undefined,
 };

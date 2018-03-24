@@ -1,3 +1,30 @@
 {
-  "extends": "react-app"
+	"extends": ["react-app", "plugin:react/recommended"],
+	"plugins": ["react"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"react/boolean-prop-naming": "error",
+		"react/button-has-type": "error",
+		"react/default-props-match-prop-types": "error",
+		"react/destructuring-assignment": "error",
+		"react/forbid-prop-types": "error",
+		"react/no-access-state-in-setstate": "error",
+		"react/no-array-index-key": "error",
+		"react/no-did-mount-set-state": "error",
+		"react/no-did-update-set-state": "error",
+		"react/no-multi-comp": "error",
+		"react/no-typos": "error",
+		"react/no-unused-state": "error",
+		"react/no-will-update-set-state": "error",
+		"react/prefer-stateless-function": "error",
+		"react/require-default-props": "error",
+		"react/jsx-boolean-value": ["error", "always"],
+		"react/jsx-handler-names": "error",
+		"react/jsx-pascal-case": "error",
+		"react/prop-types": ["error", { "ignore": ["data"] }]
+	}
 }

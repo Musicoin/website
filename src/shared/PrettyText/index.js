@@ -1,5 +1,5 @@
-// export { PrettyText } from './styles';
 import React, { Component } from 'react';
+import { node } from 'prop-types';
 import TextGradient from 'text-gradient';
 
 export class PrettyText extends Component {
@@ -13,6 +13,7 @@ export class PrettyText extends Component {
 
 	render() {
 		const { children, ...props } = this.props;
+
 		return (
 			<span {...props} ref={ref => (this.node = ref)}>
 				{children}
@@ -20,3 +21,7 @@ export class PrettyText extends Component {
 		);
 	}
 }
+
+PrettyText.propTypes = {
+	children: node.isRequired,
+};
