@@ -6,11 +6,11 @@ import { PrettyText } from '@/shared/PrettyText';
 
 export const TwitterFeed = ({ count, ...props }) => (
 	<Wrapper {...props}>
-		<TwitterIcon fill="url(#purple-grad)" width="56" height="56">
+		<TwitterIcon fill="url(#twitter-grad)" width="56" height="56">
 			<defs>
-				<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="purple-grad">
-					<stop stopColor="#FF9000" offset="0%" />
-					<stop stopColor="#FECE00" offset="100%" />
+				<linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="twitter-grad">
+					<stop stopColor="#FECE00" offset="0%" />
+					<stop stopColor="#FF9000" offset="100%" />
 				</linearGradient>
 			</defs>
 		</TwitterIcon>

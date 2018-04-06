@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import squares from '@/assets/images/squares.svg';
+import styled, { css } from 'styled-components';
+import bg from './images/bg.png';
 import { media } from '@/styles/media';
 
 const CONTENT_WIDTH = '1080px';
@@ -8,7 +8,11 @@ const CONTENT_MARGIN = '0 auto';
 export const Wrapper = styled.div`
 	width: 100%;
 	${props =>
-		props.hasBg && `background: url(${squares}) bottom center repeat-y`};
+		props.hasBg &&
+		css`
+			background: url(${bg}) bottom center repeat-y;
+			background-size: 1383px auto;
+		`};
 `;
 
 export const Inner = styled.div`

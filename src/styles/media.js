@@ -1,11 +1,11 @@
 import { getMedia } from '@/styles/utils';
 
 export const mediaSizes = {
-	xlarge: 1080,
-	large: 1024,
-	medium: 930,
-	small: 768,
-	xsmall: 680,
+	xlarge: 0, // 1080,
+	large: 0, // 1024,
+	medium: 0, // 930,
+	small: 0, // 768,
+	xsmall: 0, // 680,
 };
 
 export const mediaFontSize = {

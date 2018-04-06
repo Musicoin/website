@@ -1,31 +1,37 @@
-import React from 'react';
 import styled from 'styled-components';
+import { media } from '@/styles/media';
 
 export const Media = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	${media.xsmall`
+		flex-direction: column;
+	`};
 `;
 
 export const MediaContent = styled.div`
-	flex: 1 1 auto;
 	text-align: ${props => props.align};
+	flex: 1 1 auto;
+
+	${media.xsmall`
+		text-align: center;
+	`};
 `;
 
-export const MediaImage = styled(({ className, ...props }) => (
-	<div className={className}>
-		<img alt="" {...props} />
-	</div>
-))`
-	flex: 0 0 auto;
+export const MediaImage = styled.img`
 	order: ${props => props.order};
-	text-align: ${props => props.align};
+	left: ${props => props.pull && `-${props.pull}px`};
+	right: ${props => props.push && `-${props.push}px`};
+	position: relative;
 
-	img {
-		position: relative;
-		left: ${props => props.pull && `-${props.pull}px`};
-		right: ${props => props.push && `-${props.push}px`};
-	}
+	${media.xsmall`
+		margin-bottom: 30px;
+		order: 0;
+		right: auto;
+		left: auto;
+	`};
 `;
 
 MediaImage.defaultProps = {

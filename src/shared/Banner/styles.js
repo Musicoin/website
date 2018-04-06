@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 import { media, mediaFontSize } from '@/styles/media';
 import { Button } from '@/shared/buttons';
+import { Content } from '@/shared/Content';
 
-export const Banner = styled.div`
+export const Banner = styled(Content)`
 	padding: 60px 0;
 
 	${Button} {
@@ -12,7 +13,6 @@ export const Banner = styled.div`
 	}
 
 	${media.medium`
-		min-height: 520px;
 		padding: 40px 0;
 	`};
 

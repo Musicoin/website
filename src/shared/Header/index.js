@@ -11,7 +11,7 @@ import {
 	NavIcon,
 } from './styles';
 import { Content } from '@/shared/Content';
-import { SecondaryButton, TertiaryButton } from '@/shared/buttons/styles';
+import { TertiaryButton } from '@/shared/buttons/styles';
 import { mediaSizes } from '@/styles/media';
 
 export class Header extends Component {
@@ -61,8 +61,7 @@ export class Header extends Component {
 							<NavItem to="/how-it-works">How it works</NavItem>
 							<NavItem to="/resources">Resources</NavItem>
 							<NavItem to="/faq">FAQ</NavItem>
-							<SecondaryButton to="/log-in">Log in</SecondaryButton>
-							<TertiaryButton to="/join">Sign up</TertiaryButton>
+							<TertiaryButton to="/join">Log in / Sign up</TertiaryButton>
 						</NavItems>
 					</Nav>
 				</Wrapper>

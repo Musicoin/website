@@ -8,7 +8,7 @@ import { Discover } from '@/Discover';
 export const App = () => (
 	<Wrapper>
 		<Switch>
-			<Route path="/" exact component={Home} />
+			<Route path="/" exact={true} component={Home} />
 			<Route path="/musicians" component={Musicians} />
 			<Route path="/discover" component={Discover} />
 			<Route>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { rem, rgba } from 'polished';
 import { media } from '@/styles/media';
@@ -83,27 +83,31 @@ export const NavIcon = styled(props => (
 			transform: translateY(8px);
 		}
 
-		&:nth-child(1) {
-			transform: ${props => props.open && 'translateY(4px) rotate(45deg)'};
-		}
+		${props =>
+			props.open &&
+			css`
+				&:nth-child(1) {
+					transform: translateY(4px) rotate(45deg);
+				}
 
-		&:nth-child(2) {
-			transform: ${props => props.open && 'translateY(4px) rotate(-45deg)'};
-		}
+				&:nth-child(2) {
+					transform: translateY(4px) rotate(-45deg);
+				}
 
-		&:nth-child(3) {
-			width: ${props => props.open && '100%'};
-			height: ${props => props.open && '1px'};
-			transform: ${props => props.open && 'translateY(20px)'};
-			opacity: ${props => props.open && 0};
-		}
+				&:nth-child(3) {
+					width: 100%;
+					height: 1px;
+					transform: translateY(20px);
+					opacity: 0;
+				}
+			`}
 	}
 }
 `;
 
 export const NavItems = styled.div`
 	${media.large`
-		background: linear-gradient(to bottom, #26043d, #0f052c);
+		background-color: #000;
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -111,8 +115,8 @@ export const NavItems = styled.div`
 		width: 320px;
 		z-index: 1;
 		transform: translateX(${props => (props.open ? 0 : '120%')});
-		transition: transform 200ms;
 		transition-timing-function: ${props => (props.open ? 'ease-out' : 'ease-in')};
+		transition: transform 200ms;
 		box-shadow: 0 0 30px ${rgba('#000', 0.5)};
 		padding: 7em 30px 30px;
 	`};

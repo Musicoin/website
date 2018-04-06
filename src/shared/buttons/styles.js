@@ -4,7 +4,11 @@ import { NavLink } from 'react-router-dom';
 import { backgroundGradient } from '@/styles/utils';
 import { Icon, ArrowRightIcon } from '@/shared/icons';
 
-export const Button = styled(NavLink)`
+export const Button = styled(({ to, children, className, ...props }) => (
+	<NavLink to={to} className={className}>
+		{children}
+	</NavLink>
+))`
 	border-radius: 4px;
 	text-transform: uppercase;
 	padding: 0 26px;

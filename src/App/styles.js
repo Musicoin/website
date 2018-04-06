@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+/**
+ * 1. TODO - Switch back to 320px when we do responsive
+ */
+
 export const Wrapper = styled.div`
-	background: #17151e;
-	padding: 1px 0;
 	min-height: 100vh;
-	min-width: 320px;
+	min-width: 1080px; /* 1 */
 	position: relative;
 `;

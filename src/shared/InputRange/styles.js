@@ -63,7 +63,7 @@ export const Rail = styled.div`
 `;
 
 export const Handle = styled.div`
-	background-image: linear-gradient(to top right, #FECE00, #FF9000);
+	background-image: linear-gradient(to top right, #fece00, #ff9000);
 	position: absolute;
 	width: ${HANDLE_SIZE};
 	height: ${HANDLE_SIZE};

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { Box } from '@/shared/Box';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
 	text-align: center;
 	margin-bottom: 80px;
 `;
@@ -14,7 +13,7 @@ export const Items = styled.div`
 	justify-content: space-between;
 `;
 
-export const Item = Box.withComponent('article').extend`
+export const Item = styled.article`
 	flex: 0 0 auto;
 	width: calc((100% - 80px) / 3);
 	margin-top: 40px;

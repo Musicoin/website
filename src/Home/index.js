@@ -2,21 +2,29 @@ import React from 'react';
 import {
 	Wrapper,
 	BlockTitle,
-	FirstContent,
-	Media,
-	MediaImage,
-	MediaContent,
-	SectionTitle,
+	HomeMedia,
+	HomeMediaImage,
+	Post,
+	PostHeader,
+	PostTitle,
+	PostDate,
+	PostButton,
 	GetStarted,
+	GetStartedBody,
+	GetStartedTitle,
 } from './styles';
 import { PrettyText } from '@/shared/PrettyText';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
+import { MediaContent } from '@/shared/Media';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
 import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
 import { TwitterFeed } from '@/shared/TwitterFeed';
+import { Box } from '@/shared/Box';
+import { LogoIcon } from '@/shared/icons';
+import { Strip } from '@/shared/Strip';
 import { Stats } from './Stats';
 import adFreeStreaming from './images/ad-free-streaming.svg';
 import supportMusicians from './images/support-musicians.svg';
@@ -28,22 +36,23 @@ export const Home = () => (
 		<Header />
 		<Main>
 			<Banner>
+				<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
+				<BannerText>
+					100% free streaming for listeners, industry best compensation for
+					musicians.
+				</BannerText>
+				<PrimaryButton to="/join">Join the revolution</PrimaryButton>
+				<ArrowButton to="/how-it-works">How it works</ArrowButton>
+			</Banner>
+			<section>
 				<Content>
-					<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
-					<BannerText>
-						100% free streaming for listeners, industry best compensation for
-						musicians.
-					</BannerText>
-					<PrimaryButton to="/join">Join the revolution</PrimaryButton>
-					<ArrowButton to="/how-it-works">How it works</ArrowButton>
 					<Stats />
 				</Content>
-			</Banner>
-			<Content>
-				<BlockTitle>Musicoin changes the way you listen</BlockTitle>
-				<FirstContent>
-					<Media>
-						<MediaImage
+			</section>
+			<section>
+				<Content hasBg={true}>
+					<HomeMedia>
+						<HomeMediaImage
 							src={adFreeStreaming}
 							push={20}
 							order={1}
@@ -51,95 +60,144 @@ export const Home = () => (
 							height={484}
 						/>
 						<MediaContent>
-							<SectionTitle>Ad free streaming</SectionTitle>
+							<h3>
+								<PrettyText>Ad free streaming</PrettyText>
+							</h3>
 							<p>
 								With the power of our blockchain platform, you can stream our
 								catalog of music from independent musicians. Absolutely free,
 								and absolutely without ads.
 							</p>
 						</MediaContent>
-					</Media>
-				</FirstContent>
-			</Content>
-			<Content hasBg={true}>
-				<Media>
-					<MediaImage
-						src={supportMusicians}
-						pull={40}
-						width={553}
-						height={522}
-					/>
-					<MediaContent align="right">
-						<SectionTitle>Directly support musicians</SectionTitle>
-						<p>
-							Follow your favorite musicians and stay up to date in their
-							activities and creations. Communicate with them directly and show
-							your appreciation for their content by providing feedback,
-							tipping, sharing songs and curating playlists.
-						</p>
-					</MediaContent>
-				</Media>
-				<Media>
-					<MediaImage
-						src={joinRevolution}
-						push={75}
-						order={1}
-						width={510}
-						height={541}
-					/>
-					<MediaContent>
-						<h3>
-							<PrettyText>Join the revolution</PrettyText>
-						</h3>
-						<p>
-							By joining Musicoin, you are ushering a paradigm shift in the
-							music industry by revolutionizing how value is created and shared
-							in a musical economy.
-						</p>
-					</MediaContent>
-				</Media>
-				<Media>
-					<MediaImage
-						src={musicoinForMusians}
-						pull={38}
-						width={513}
-						height={555}
-					/>
-					<MediaContent align="right">
-						<h3>
-							<PrettyText>Musicoin for musicians</PrettyText>
-						</h3>
-						<p>
-							With a unique currency, fair compensation, transparent contracts
-							and no intermediaries;
-						</p>
+					</HomeMedia>
+					<HomeMedia>
+						<HomeMediaImage
+							src={supportMusicians}
+							pull={40}
+							width={553}
+							height={522}
+						/>
+						<MediaContent align="right">
+							<h3>
+								<PrettyText>Directly support musicians</PrettyText>
+							</h3>
+							<p>
+								Follow your favorite musicians and stay up to date in their
+								activities and creations. Communicate with them directly and
+								show your appreciation for their content by providing feedback,
+								tipping, sharing songs and curating playlists.
+							</p>
+						</MediaContent>
+					</HomeMedia>
+					<HomeMedia>
+						<HomeMediaImage
+							src={joinRevolution}
+							push={40}
+							order={1}
+							width={510}
+							height={541}
+						/>
+						<MediaContent>
+							<h3>
+								<PrettyText>Join the revolution</PrettyText>
+							</h3>
+							<p>
+								By joining Musicoin, you are ushering a paradigm shift in the
+								music industry by revolutionizing how value is created and
+								shared in a musical economy.
+							</p>
+						</MediaContent>
+					</HomeMedia>
+					<HomeMedia>
+						<HomeMediaImage
+							src={musicoinForMusians}
+							pull={38}
+							width={513}
+							height={555}
+						/>
+						<MediaContent align="right">
+							<h3>
+								<PrettyText>Musicoin for musicians</PrettyText>
+							</h3>
+							<p>
+								With a unique currency, fair compensation, transparent contracts
+								and no intermediaries;
+							</p>
 
-						<p>
-							Musicoin is revolutionizing the creation and distribution of value
-							for musical activity.
-						</p>
+							<p>
+								Musicoin is revolutionizing the creation and distribution of
+								value for musical activity.
+							</p>
 
+							<p>
+								The Musicoin Blockchain ensures each musicians receive the most
+								competitive industry compensation, instantly and automatically,
+								for each stream of music.
+							</p>
+							<SecondaryButton to="/for-musicians">
+								For Musicians
+							</SecondaryButton>
+						</MediaContent>
+					</HomeMedia>
+				</Content>
+			</section>
+			<section>
+				<Content>
+					<h3>Musicoin in the media</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
+						urna a viverra congue. Quisque eu est consectetur, euismod elit
+						vitae, vulputate arcu.
+					</p>
+				</Content>
+				<Box>
+					<Post>
+						<PostHeader>
+							<PostTitle>
+								Blockchain startup Musicoin aims to disintermediate the music
+								industry
+							</PostTitle>
+							<PostDate>03/02/2018</PostDate>
+						</PostHeader>
 						<p>
-							The Musicoin Blockchain ensures each musicians receive the most
-							competitive industry compensation, instantly and automatically,
-							for each stream of music.
+							The music industry has many gatekeepers and intermediaries in the
+							form of record labels, distributors, magazines and radio stations,
+							which can make it difficult for musicians to get their music heard
+							but also to be adequately remunerated for their work.
 						</p>
-						<SecondaryButton to="/for-musicians">For Musicians</SecondaryButton>
-					</MediaContent>
-				</Media>
-			</Content>
-			<Content>
-				<BlockTitle>What musicians say</BlockTitle>
-				<TwitterFeed />
-			</Content>
+						<PostButton to="#">Read full article</PostButton>
+					</Post>
+				</Box>
+			</section>
+			<Strip>
+				<Content>
+					<BlockTitle>What artists are saying</BlockTitle>
+					<TwitterFeed />
+					<GetStarted>
+						<LogoIcon fill="url(#logo-grad)" width="112" height="112">
+							<defs>
+								<linearGradient
+									x1="0%"
+									y1="0%"
+									x2="100%"
+									y2="0%"
+									id="logo-grad"
+								>
+									<stop stopColor="#FECE00" offset="0%" />
+									<stop stopColor="#FF9000" offset="100%" />
+								</linearGradient>
+							</defs>
+						</LogoIcon>
+						<GetStartedBody>
+							<GetStartedTitle>Join Musicoin</GetStartedTitle>
+							<p>The worlds first smart cryptocurrency for music.</p>
+						</GetStartedBody>
+						<PrimaryButton to="/join">Join now</PrimaryButton>
+					</GetStarted>
+				</Content>
+			</Strip>
 		</Main>
 		<Content>
-			<aside>
-				<GetStarted>
-					<BlockTitle>Ready to get started?</BlockTitle>
-					<PrimaryButton to="/join">Join the revolution</PrimaryButton>
-				</GetStarted>
-			</aside>
 			<Footer />
 		</Content>
 	</Wrapper>
