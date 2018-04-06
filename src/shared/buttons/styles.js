@@ -76,6 +76,6 @@ export const IconButton = styled.button.attrs({ type: 'button' })`
 	cursor: pointer;
 
 	${Icon} {
-		display: block;
+		vertical-align: middle;
 	}
 `;
