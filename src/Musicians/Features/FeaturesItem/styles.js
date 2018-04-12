@@ -7,6 +7,7 @@ import background from './images/bg.svg';
 export const Wrapper = styled.li`
 	font-size: ${rem(12)};
 	text-align: center;
+	flex: 1 1 0px;
 
 	& + & {
 		margin-left: 30px;

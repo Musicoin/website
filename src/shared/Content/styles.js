@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import bg from './images/bg.png';
 import { media } from '@/styles/media';
 
-const CONTENT_WIDTH = '1080px';
+const CONTENT_WIDTH = '1140px';
 const CONTENT_MARGIN = '0 auto';
 
 export const Wrapper = styled.div`
@@ -16,8 +16,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Inner = styled.div`
-	padding: 0 40px;
-	width: ${CONTENT_WIDTH};
+	padding: 0 30px;
+	max-width: ${CONTENT_WIDTH};
 	margin: ${CONTENT_MARGIN};
 
 	${media.xlarge`

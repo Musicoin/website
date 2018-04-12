@@ -1,7 +1,6 @@
 import React from 'react';
 import {
 	Wrapper,
-	BlockTitle,
 	HomeMedia,
 	HomeMediaImage,
 	Post,
@@ -13,7 +12,6 @@ import {
 	GetStartedBody,
 	GetStartedTitle,
 } from './styles';
-import { PrettyText } from '@/shared/PrettyText';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
 import { MediaContent } from '@/shared/Media';
@@ -25,6 +23,7 @@ import { TwitterFeed } from '@/shared/TwitterFeed';
 import { Box } from '@/shared/Box';
 import { LogoIcon } from '@/shared/icons';
 import { Strip } from '@/shared/Strip';
+import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { Stats } from './Stats';
 import adFreeStreaming from './images/ad-free-streaming.svg';
 import supportMusicians from './images/support-musicians.svg';
@@ -54,15 +53,14 @@ export const Home = () => (
 					<HomeMedia>
 						<HomeMediaImage
 							src={adFreeStreaming}
-							push={20}
 							order={1}
 							width={486}
 							height={484}
 						/>
 						<MediaContent>
-							<h3>
-								<PrettyText>Ad free streaming</PrettyText>
-							</h3>
+							<TertiaryHeading level={2} isPretty={true}>
+								Ad free streaming
+							</TertiaryHeading>
 							<p>
 								With the power of our blockchain platform, you can stream our
 								catalog of music from independent musicians. Absolutely free,
@@ -71,16 +69,11 @@ export const Home = () => (
 						</MediaContent>
 					</HomeMedia>
 					<HomeMedia>
-						<HomeMediaImage
-							src={supportMusicians}
-							pull={40}
-							width={553}
-							height={522}
-						/>
+						<HomeMediaImage src={supportMusicians} width={553} height={522} />
 						<MediaContent align="right">
-							<h3>
-								<PrettyText>Directly support musicians</PrettyText>
-							</h3>
+							<TertiaryHeading level={2} isPretty={true}>
+								Directly support musicians
+							</TertiaryHeading>
 							<p>
 								Follow your favorite musicians and stay up to date in their
 								activities and creations. Communicate with them directly and
@@ -92,15 +85,14 @@ export const Home = () => (
 					<HomeMedia>
 						<HomeMediaImage
 							src={joinRevolution}
-							push={40}
 							order={1}
 							width={510}
 							height={541}
 						/>
 						<MediaContent>
-							<h3>
-								<PrettyText>Join the revolution</PrettyText>
-							</h3>
+							<TertiaryHeading level={2} isPretty={true}>
+								Join the revolution
+							</TertiaryHeading>
 							<p>
 								By joining Musicoin, you are ushering a paradigm shift in the
 								music industry by revolutionizing how value is created and
@@ -109,16 +101,11 @@ export const Home = () => (
 						</MediaContent>
 					</HomeMedia>
 					<HomeMedia>
-						<HomeMediaImage
-							src={musicoinForMusians}
-							pull={38}
-							width={513}
-							height={555}
-						/>
+						<HomeMediaImage src={musicoinForMusians} width={513} height={555} />
 						<MediaContent align="right">
-							<h3>
-								<PrettyText>Musicoin for musicians</PrettyText>
-							</h3>
+							<TertiaryHeading level={2} isPretty={true}>
+								Musicoin for musicians
+							</TertiaryHeading>
 							<p>
 								With a unique currency, fair compensation, transparent contracts
 								and no intermediaries;
@@ -143,7 +130,7 @@ export const Home = () => (
 			</section>
 			<section>
 				<Content>
-					<h3>Musicoin in the media</h3>
+					<SecondaryHeading level={2}>Musicoin in the media</SecondaryHeading>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
 						urna a viverra congue. Quisque eu est consectetur, euismod elit
@@ -170,9 +157,11 @@ export const Home = () => (
 				</Box>
 			</section>
 			<Strip>
+				<SecondaryHeading level={2} isCenter={true}>
+					What artists are saying
+				</SecondaryHeading>
+				<TwitterFeed />
 				<Content>
-					<BlockTitle>What artists are saying</BlockTitle>
-					<TwitterFeed />
 					<GetStarted>
 						<LogoIcon fill="url(#logo-grad)" width="112" height="112">
 							<defs>
@@ -189,7 +178,9 @@ export const Home = () => (
 							</defs>
 						</LogoIcon>
 						<GetStartedBody>
-							<GetStartedTitle>Join Musicoin</GetStartedTitle>
+							<GetStartedTitle level={2} isPretty={false}>
+								Join Musicoin
+							</GetStartedTitle>
 							<p>The worlds first smart cryptocurrency for music.</p>
 						</GetStartedBody>
 						<PrimaryButton to="/join">Join now</PrimaryButton>

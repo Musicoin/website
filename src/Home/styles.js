@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import microphone from './images/microphone.jpg';
@@ -5,6 +6,7 @@ import { media } from '@/styles/media';
 import { Media, MediaImage } from '@/shared/Media';
 import { Page } from '@/shared/Page';
 import { ArrowButton } from '@/shared/buttons';
+import { TertiaryHeading } from '@/shared/headings';
 
 export const Wrapper = styled(Page)`
 	background: url(${microphone}) center top no-repeat;
@@ -38,10 +40,6 @@ export const HomeMediaImage = styled(MediaImage)`
 	${media.medium`
 		max-width: 300px;
 	`};
-`;
-
-export const BlockTitle = styled.h2`
-	text-align: center;
 `;
 
 export const Post = styled.article`
@@ -80,7 +78,6 @@ export const GetStartedBody = styled.div`
 	padding-left: 1em;
 `;
 
-export const GetStartedTitle = styled.h2`
-	font-size: ${rem(36)};
+export const GetStartedTitle = styled(props => <TertiaryHeading {...props} />)`
 	margin: 0.7em 0 0.2em;
 `;

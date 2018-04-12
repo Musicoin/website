@@ -22,8 +22,6 @@ export const MediaContent = styled.div`
 
 export const MediaImage = styled.img`
 	order: ${props => props.order};
-	left: ${props => props.pull && `-${props.pull}px`};
-	right: ${props => props.push && `-${props.push}px`};
 	position: relative;
 
 	${media.xsmall`

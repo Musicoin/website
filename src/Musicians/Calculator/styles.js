@@ -1,18 +1,33 @@
 import styled from 'styled-components';
-import { rem } from 'polished';
-import { Box } from '@/shared/Box';
+import { rgba, rem } from 'polished';
+import { PrettyText } from '@/shared/PrettyText';
 
-export const Wrapper = styled(Box)`
-	width: 420px;
-	flex: 0 0 420px;
-	margin-right: 70px;
-`;
-
-export const Title = styled.h3`
-	font-size: ${rem(20)};
-`;
-
-export const Plays = styled.span`
+export const Wrapper = styled.div`
+	border-bottom: 1px solid ${rgba('#000', 0.1)};
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	font-size: ${rem(72)};
+`;
+
+export const PlaysLabel = styled.label`
+	font-size: ${rem(16)};
+	text-transform: uppercase;
+	font-weight: bold;
 	display: block;
 `;
+
+export const PlaysInput = styled.input`
+	border: 0;
+	padding: 0;
+	width: 460px;
+	outline: none;
+
+	&::placeholder {
+		color: ${rgba('#000', 0.2)};
+	}
+`;
+
+export const EarningsLabel = PlaysLabel.extend`
+	text-align: right;
+`.withComponent(PrettyText);

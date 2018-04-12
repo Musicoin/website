@@ -17,4 +17,5 @@ export const FeaturesTitle = styled(({ children, ...props }) => (
 	</h2>
 ))`
 	font-size: ${rem(16)};
+	font-weight: bold;
 `;

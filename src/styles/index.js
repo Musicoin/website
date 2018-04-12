@@ -1,7 +1,8 @@
 import { injectGlobal } from 'styled-components';
-import avenirBook from '@/assets/fonts/avenir-book.woff';
-import avenirHeavy from '@/assets/fonts/avenir-heavy.woff';
-import avenirBlack from '@/assets/fonts/avenir-black.woff';
+import notoSansRegular from '@/assets/fonts/notosans-regular.woff';
+import notoSansItalic from '@/assets/fonts/notosans-italic.woff';
+import notoSansBold from '@/assets/fonts/notosans-bold.woff';
+import notoSansBoldItalic from '@/assets/fonts/notosans-bold-italic.woff';
 import { rem, normalize } from 'polished';
 import { media, mediaFontSize } from '@/styles/media';
 
@@ -9,25 +10,32 @@ injectGlobal`
 	${normalize()};
 
 	@font-face {
-			font-family: 'Avenir';
-			src: url(${avenirBook}) format('woff');
-			font-weight: normal;
-			font-style: normal;
-		}
+		font-family: 'NotoSans';
+		src: url(${notoSansRegular}) format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
 
-		@font-face {
-			font-family: 'Avenir';
-			src: url(${avenirHeavy}) format('woff');
-			font-weight: bold;
-			font-style: normal;
-		}
+	@font-face {
+		font-family: 'NotoSans';
+		src: url(${notoSansItalic}) format('woff');
+		font-weight: normal;
+		font-style: italic;
+	}
 
-		@font-face {
-			font-family: 'Avenir';
-			src: url(${avenirBlack}) format('woff');
-			font-weight: 900;
-			font-style: normal;
-		}
+	@font-face {
+		font-family: 'NotoSans';
+		src: url(${notoSansBold}) format('woff');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'NotoSans';
+		src: url(${notoSansBoldItalic}) format('woff');
+		font-weight: bold;
+		font-style: italic;
+	}
 
 	*,
 	*::before,
@@ -36,7 +44,7 @@ injectGlobal`
 	}
 
 	html {
-		font-family: Avenir, sans-serif;
+		font-family: NotoSans, sans-serif;
 		font-size: 16px;
 		line-height: 1.6;
 		background: #000;
@@ -69,24 +77,8 @@ injectGlobal`
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;
 		margin-bottom: 0.8em;
-		line-height: 1.2;
-	}
-
-	h1, h2 {
-		font-size: ${rem(48)};
-		font-weight: normal;
-
-		${media.xsmall`
-			font-size: ${rem(24, mediaFontSize.small)};
-		`};
-	}
-
-	h2 {
-		font-weight: normal;
-	}
-
-	h3 {
-		font-size: ${rem(36)};
+		line-height: 1.3;
+		font-weight: bold;
 	}
 
 	svg {

@@ -1,8 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import { media, mediaFontSize } from '@/styles/media';
 import { Button } from '@/shared/buttons';
 import { Content } from '@/shared/Content';
+import { PrimaryHeading } from '@/shared/headings';
 
 export const Banner = styled(Content)`
 	padding: 60px 0;
@@ -26,9 +28,10 @@ export const Banner = styled(Content)`
 	`};
 `;
 
-export const BannerTitle = styled.h1`
+export const BannerTitle = styled(props => (
+	<PrimaryHeading level={1} {...props} />
+))`
 	max-width: 610px;
-	line-height: 1.3;
 	margin-bottom: 0.2em;
 
 	${media.xsmall`

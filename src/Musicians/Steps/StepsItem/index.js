@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { node } from 'prop-types';
 import { Wrapper, StepsIcon } from './styles';
 
 export const StepsItem = ({ icon, children, ...props }) => (
@@ -10,5 +10,10 @@ export const StepsItem = ({ icon, children, ...props }) => (
 );
 
 StepsItem.propTypes = {
-	icon: PropTypes.node,
+	children: node.isRequired,
+	icon: node,
+};
+
+StepsItem.defaultProps = {
+	icon: undefined,
 };
