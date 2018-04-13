@@ -8,6 +8,10 @@ export const Heading = styled(({ isCenter, ...props }) => (
 	<HeadingTag {...props} />
 ))`
 	text-align: ${props => props.isCenter && 'center'};
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0.8em;
+	line-height: 1.3;
 `;
 
 export const PrimaryHeading = styled(Heading)`
@@ -25,5 +29,4 @@ export const SecondaryHeading = styled(PrimaryHeading)`
 export const TertiaryHeading = styled(Heading)`
 	font-size: ${rem(36)};
 	font-weight: bold;
-	color: #000;
 `;

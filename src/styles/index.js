@@ -1,8 +1,6 @@
 import { injectGlobal } from 'styled-components';
-import notoSansRegular from '@/assets/fonts/notosans-regular.woff';
-import notoSansItalic from '@/assets/fonts/notosans-italic.woff';
-import notoSansBold from '@/assets/fonts/notosans-bold.woff';
-import notoSansBoldItalic from '@/assets/fonts/notosans-bold-italic.woff';
+import ubuntuRegular from '@/assets/fonts/ubuntu-regular.woff';
+import ubuntuBold from '@/assets/fonts/ubuntu-bold.woff';
 import { rem, normalize } from 'polished';
 import { media, mediaFontSize } from '@/styles/media';
 
@@ -10,31 +8,17 @@ injectGlobal`
 	${normalize()};
 
 	@font-face {
-		font-family: 'NotoSans';
-		src: url(${notoSansRegular}) format('woff');
+		font-family: 'Ubuntu';
+		src: url(${ubuntuRegular}) format('woff');
 		font-weight: normal;
 		font-style: normal;
 	}
 
 	@font-face {
-		font-family: 'NotoSans';
-		src: url(${notoSansItalic}) format('woff');
-		font-weight: normal;
-		font-style: italic;
-	}
-
-	@font-face {
-		font-family: 'NotoSans';
-		src: url(${notoSansBold}) format('woff');
+		font-family: 'Ubuntu';
+		src: url(${ubuntuBold}) format('woff');
 		font-weight: bold;
 		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'NotoSans';
-		src: url(${notoSansBoldItalic}) format('woff');
-		font-weight: bold;
-		font-style: italic;
 	}
 
 	*,
@@ -44,7 +28,7 @@ injectGlobal`
 	}
 
 	html {
-		font-family: NotoSans, sans-serif;
+		font-family: Ubuntu, sans-serif;
 		font-size: 16px;
 		line-height: 1.6;
 		background: #000;
@@ -72,13 +56,6 @@ injectGlobal`
 
 	#root {
 		height: 100%;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		margin-top: 0;
-		margin-bottom: 0.8em;
-		line-height: 1.3;
-		font-weight: bold;
 	}
 
 	svg {

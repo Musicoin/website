@@ -1,48 +1,46 @@
 import React from 'react';
 import {
 	Wrapper,
-	HomeMedia,
-	HomeMediaImage,
 	Post,
 	PostHeader,
 	PostTitle,
 	PostDate,
 	PostButton,
-	GetStarted,
-	GetStartedBody,
-	GetStartedTitle,
 } from './styles';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
-import { MediaContent } from '@/shared/Media';
+import { Media, MediaImage, MediaContent } from '@/shared/Media';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
 import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
 import { TwitterFeed } from '@/shared/TwitterFeed';
 import { Box } from '@/shared/Box';
-import { LogoIcon } from '@/shared/icons';
 import { Strip } from '@/shared/Strip';
+import { GetStarted } from '@/shared/GetStarted';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { Stats } from './Stats';
-import adFreeStreaming from './images/ad-free-streaming.svg';
-import supportMusicians from './images/support-musicians.svg';
-import joinRevolution from './images/revolution.svg';
-import musicoinForMusians from './images/musicoin-for-musicians.svg';
+
+import adFreeStreamingImage from './images/ad-free-streaming.svg';
+import supportMusiciansImage from './images/support-musicians.svg';
+import joinRevolutionImage from './images/revolution.svg';
+import musicoinForMusiansImage from './images/musicoin-for-musicians.svg';
 
 export const Home = () => (
 	<Wrapper>
 		<Header />
 		<Main>
-			<Banner>
-				<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
-				<BannerText>
-					100% free streaming for listeners, industry best compensation for
-					musicians.
-				</BannerText>
-				<PrimaryButton to="/join">Join the revolution</PrimaryButton>
-				<ArrowButton to="/how-it-works">How it works</ArrowButton>
-			</Banner>
+			<Content>
+				<Banner>
+					<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
+					<BannerText>
+						100% free streaming for listeners, industry best compensation for
+						musicians.
+					</BannerText>
+					<PrimaryButton to="/join">Join the revolution</PrimaryButton>
+					<ArrowButton to="/how-it-works">How it works</ArrowButton>
+				</Banner>
+			</Content>
 			<section>
 				<Content>
 					<Stats />
@@ -50,9 +48,9 @@ export const Home = () => (
 			</section>
 			<section>
 				<Content hasBg={true}>
-					<HomeMedia>
-						<HomeMediaImage
-							src={adFreeStreaming}
+					<Media>
+						<MediaImage
+							src={adFreeStreamingImage}
 							order={1}
 							width={486}
 							height={484}
@@ -67,9 +65,9 @@ export const Home = () => (
 								and absolutely without ads.
 							</p>
 						</MediaContent>
-					</HomeMedia>
-					<HomeMedia>
-						<HomeMediaImage src={supportMusicians} width={553} height={522} />
+					</Media>
+					<Media>
+						<MediaImage src={supportMusiciansImage} width={553} height={522} />
 						<MediaContent align="right">
 							<TertiaryHeading level={2} isPretty={true}>
 								Directly support musicians
@@ -81,10 +79,10 @@ export const Home = () => (
 								tipping, sharing songs and curating playlists.
 							</p>
 						</MediaContent>
-					</HomeMedia>
-					<HomeMedia>
-						<HomeMediaImage
-							src={joinRevolution}
+					</Media>
+					<Media>
+						<MediaImage
+							src={joinRevolutionImage}
 							order={1}
 							width={510}
 							height={541}
@@ -99,9 +97,13 @@ export const Home = () => (
 								shared in a musical economy.
 							</p>
 						</MediaContent>
-					</HomeMedia>
-					<HomeMedia>
-						<HomeMediaImage src={musicoinForMusians} width={513} height={555} />
+					</Media>
+					<Media>
+						<MediaImage
+							src={musicoinForMusiansImage}
+							width={513}
+							height={555}
+						/>
 						<MediaContent align="right">
 							<TertiaryHeading level={2} isPretty={true}>
 								Musicoin for musicians
@@ -125,9 +127,11 @@ export const Home = () => (
 								For Musicians
 							</SecondaryButton>
 						</MediaContent>
-					</HomeMedia>
+					</Media>
 				</Content>
 			</section>
+		</Main>
+		<aside>
 			<section>
 				<Content>
 					<SecondaryHeading level={2}>Musicoin in the media</SecondaryHeading>
@@ -156,38 +160,18 @@ export const Home = () => (
 					</Post>
 				</Box>
 			</section>
-			<Strip>
-				<SecondaryHeading level={2} isCenter={true}>
-					What artists are saying
-				</SecondaryHeading>
-				<TwitterFeed />
-				<Content>
-					<GetStarted>
-						<LogoIcon fill="url(#logo-grad)" width="112" height="112">
-							<defs>
-								<linearGradient
-									x1="0%"
-									y1="0%"
-									x2="100%"
-									y2="0%"
-									id="logo-grad"
-								>
-									<stop stopColor="#FECE00" offset="0%" />
-									<stop stopColor="#FF9000" offset="100%" />
-								</linearGradient>
-							</defs>
-						</LogoIcon>
-						<GetStartedBody>
-							<GetStartedTitle level={2} isPretty={false}>
-								Join Musicoin
-							</GetStartedTitle>
-							<p>The worlds first smart cryptocurrency for music.</p>
-						</GetStartedBody>
-						<PrimaryButton to="/join">Join now</PrimaryButton>
-					</GetStarted>
-				</Content>
-			</Strip>
-		</Main>
+			<section>
+				<Strip>
+					<SecondaryHeading level={2} isCenter={true}>
+						What artists are saying
+					</SecondaryHeading>
+					<TwitterFeed />
+					<Content>
+						<GetStarted />
+					</Content>
+				</Strip>
+			</section>
+		</aside>
 		<Content>
 			<Footer />
 		</Content>

@@ -29,7 +29,7 @@ export const Musicians = () => (
 	<Wrapper>
 		<Header />
 		<Main>
-			<section>
+			<Content>
 				<Banner>
 					<BannerTitle>Musicoin for musicians</BannerTitle>
 					<BannerText>
@@ -41,42 +41,40 @@ export const Musicians = () => (
 					</BannerText>
 					<PrimaryButton to="/join">Join now</PrimaryButton>
 				</Banner>
-				<Content>
-					<Features>
-						<FeaturesItem icon={<HighStandardsIcon />}>
-							<FeaturesTitle>High industry standards</FeaturesTitle>
-							<p>
-								We make sure you receive the best rates in the industry so you
-								can focus on building your career out of your music.
-							</p>
-						</FeaturesItem>
-						<FeaturesItem icon={<FairIcon />}>
-							<FeaturesTitle>Fair remuneration</FeaturesTitle>
-							<p>
-								Your music deserves every penny from each playback because no
-								one should have to take a percentage of your valued work into
-								their own pocket.
-							</p>
-						</FeaturesItem>
-						<FeaturesItem icon={<TransparentIcon />}>
-							<FeaturesTitle>Transparent licenses</FeaturesTitle>
-							<p>
-								Our autonomous smart contract provides you with an easy to
-								understand license terms and the flexibility to control your
-								revenues in a solo or multi-person band.
-							</p>
-						</FeaturesItem>
-						<FeaturesItem icon={<InteractiveIcon />}>
-							<FeaturesTitle>Interactive engagement</FeaturesTitle>
-							<p>
-								With Musicoin’s freemiums, you’re given the opportunities to
-								deepen the relationship with you fans and open collaborations
-								with your fellow musicians.
-							</p>
-						</FeaturesItem>
-					</Features>
-				</Content>
-			</section>
+				<Features>
+					<FeaturesItem icon={<HighStandardsIcon />}>
+						<FeaturesTitle>High industry standards</FeaturesTitle>
+						<p>
+							We make sure you receive the best rates in the industry so you can
+							focus on building your career out of your music.
+						</p>
+					</FeaturesItem>
+					<FeaturesItem icon={<FairIcon />}>
+						<FeaturesTitle>Fair remuneration</FeaturesTitle>
+						<p>
+							Your music deserves every penny from each playback because no one
+							should have to take a percentage of your valued work into their
+							own pocket.
+						</p>
+					</FeaturesItem>
+					<FeaturesItem icon={<TransparentIcon />}>
+						<FeaturesTitle>Transparent licenses</FeaturesTitle>
+						<p>
+							Our autonomous smart contract provides you with an easy to
+							understand license terms and the flexibility to control your
+							revenues in a solo or multi-person band.
+						</p>
+					</FeaturesItem>
+					<FeaturesItem icon={<InteractiveIcon />}>
+						<FeaturesTitle>Interactive engagement</FeaturesTitle>
+						<p>
+							With Musicoin’s freemiums, you’re given the opportunities to
+							deepen the relationship with you fans and open collaborations with
+							your fellow musicians.
+						</p>
+					</FeaturesItem>
+				</Features>
+			</Content>
 			<section>
 				<Content>
 					<SecondaryHeading level={2}>

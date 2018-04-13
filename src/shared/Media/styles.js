@@ -5,9 +5,12 @@ export const Media = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 110px;
+	flex-direction: ${props => props.isRows && 'column'};
 
 	${media.xsmall`
 		flex-direction: column;
+		margin-bottom: 70px;
 	`};
 `;
 
@@ -23,6 +26,16 @@ export const MediaContent = styled.div`
 export const MediaImage = styled.img`
 	order: ${props => props.order};
 	position: relative;
+	margin-left: ${props => props.order === 1 && !props.isBlock && '50px'};
+	margin-right: ${props => props.order === 0 && !props.isBlock && '50px'};
+
+	${media.large`
+		max-width: 400px;
+	`};
+
+	${media.medium`
+		max-width: 300px;
+	`};
 
 	${media.xsmall`
 		margin-bottom: 30px;
