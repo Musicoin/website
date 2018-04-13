@@ -7,6 +7,7 @@ import { PrimaryHeading } from '@/shared/headings';
 
 export const Banner = styled.div`
 	padding: 60px 0;
+	text-align: ${props => props.isCenter && 'center'};
 
 	${Button} {
 		font-size: 14px;
@@ -27,11 +28,11 @@ export const Banner = styled.div`
 	`};
 `;
 
-export const BannerTitle = styled(props => (
+export const BannerTitle = styled(({ isWide, ...props }) => (
 	<PrimaryHeading level={1} {...props} />
 ))`
-	max-width: 610px;
 	margin-bottom: 0.2em;
+	max-width: ${props => !props.isWide && '60%'};
 
 	${media.xsmall`
 		max-width: none;
@@ -39,6 +40,10 @@ export const BannerTitle = styled(props => (
 		margin-bottom: 14px;
 	`};
 `;
+
+BannerTitle.defaultProps = {
+	isWide: true,
+};
 
 export const BannerText = styled.p`
 	max-width: 75%;

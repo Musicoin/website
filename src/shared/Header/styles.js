@@ -28,6 +28,8 @@ export const Nav = styled.nav`
 	font-size: 12px;
 	white-space: nowrap;
 	margin-left: ${rem(10)};
+	position: relative;
+	z-index: 1;
 
 	${media.large`
 		${Button} {

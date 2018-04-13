@@ -32,7 +32,9 @@ export const Home = () => (
 		<Main>
 			<Content>
 				<Banner>
-					<BannerTitle>Revolutionizing music with the blockchain</BannerTitle>
+					<BannerTitle isWide={false}>
+						Revolutionizing music with the blockchain
+					</BannerTitle>
 					<BannerText>
 						100% free streaming for listeners, industry best compensation for
 						musicians.
