@@ -6,25 +6,23 @@ import { Query } from '@/shared/Query';
 
 const GET_STATS = gql`
 	{
-		allArtists {
-			count
+		stats {
 			totalReleases
+			totalArtists
 			totalPlays
 		}
 	}
 `;
 
 export const StatsQuery = ({ render }) => (
-	<Query query={GET_STATS} isMock={true}>
+	<Query query={GET_STATS}>
 		{({ loading, error, data }) => {
-			return error ? (
-				'Error'
-			) : (
+			return error ? null : (
 				<Loading
 					loading={loading}
 					render={() => {
-						const { count, totalReleases, totalPlays } = data.allArtists;
-						return render({ totalArtists: count, totalReleases, totalPlays });
+						const { totalArtists, totalReleases, totalPlays } = data.stats;
+						return render({ totalArtists, totalReleases, totalPlays });
 					}}
 				/>
 			);
