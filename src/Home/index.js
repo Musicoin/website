@@ -125,9 +125,7 @@ export const Home = () => (
 								competitive industry compensation, instantly and automatically,
 								for each stream of music.
 							</p>
-							<SecondaryButton to="/for-musicians">
-								For Musicians
-							</SecondaryButton>
+							<SecondaryButton to="/musicians">For Musicians</SecondaryButton>
 						</MediaContent>
 					</Media>
 				</Content>
@@ -150,7 +148,7 @@ export const Home = () => (
 								Blockchain startup Musicoin aims to disintermediate the music
 								industry
 							</PostTitle>
-							<PostDate>03/02/2018</PostDate>
+							<PostDate>18/02/2018</PostDate>
 						</PostHeader>
 						<p>
 							The music industry has many gatekeepers and intermediaries in the
@@ -158,7 +156,9 @@ export const Home = () => (
 							which can make it difficult for musicians to get their music heard
 							but also to be adequately remunerated for their work.
 						</p>
-						<PostButton to="#">Read full article</PostButton>
+						<PostButton href="https://btcmanager.com/blockchain-startup-musicoin-aims-to-disintermediate-the-music-industry/">
+							Read full article
+						</PostButton>
 					</Post>
 				</Box>
 			</section>
