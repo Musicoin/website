@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import {
 	Wrapper,
 	Nav,
@@ -7,7 +8,6 @@ import {
 	NavItems,
 	NavItem,
 	SubNav,
-	Language,
 	SocialLink,
 	SmallPrint,
 } from './styles';
@@ -25,75 +25,85 @@ export const Footer = () => (
 	<Wrapper>
 		<Nav>
 			<NavGroup>
-				<NavTitle>For musicians</NavTitle>
+				<NavTitle>About</NavTitle>
 				<NavItems>
-					<NavItem to="/">How to start</NavItem>
-					<NavItem to="/">Features</NavItem>
-					<NavItem to="/">Payments</NavItem>
-					<NavItem to="/">Testimonials</NavItem>
+					<NavItem>
+						<NavLink to="/how-it-works">What is musicoin?</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink to="/musicians">For musicians</NavLink>
+					</NavItem>
+					<NavItem>
+						<a href="//www.scribd.com/document/362834077/Musicoin-White-Paper-v2-0-0">
+							Whitepaper
+						</a>
+					</NavItem>
 				</NavItems>
 			</NavGroup>
 			<NavGroup>
 				<NavTitle>Discover</NavTitle>
 				<NavItems>
-					<NavItem to="/join">Web</NavItem>
-					<NavItem to="/">Desktop</NavItem>
-					<NavItem to="/">Mobile</NavItem>
-				</NavItems>
-			</NavGroup>
-			<NavGroup>
-				<NavTitle>How it works</NavTitle>
-				<NavItems>
-					<NavItem to="/">Blockchain</NavItem>
-					<NavItem to="/">Musicoin</NavItem>
-					<NavItem to="/">Whitepaper</NavItem>
-					<NavItem to="/">Roadmap</NavItem>
+					<NavItem>
+						<NavLink to="/join">Web Application</NavLink>
+					</NavItem>
+					<NavItem>
+						<a href="//github.com/Musicoin/desktop/releases">Desktop Wallet</a>
+					</NavItem>
 				</NavItems>
 			</NavGroup>
 			<NavGroup>
 				<NavTitle>Resources</NavTitle>
 				<NavItems>
-					<NavItem to="/">Wallet</NavItem>
-					<NavItem to="/">Blockchange explorer</NavItem>
-					<NavItem to="/">Bounty</NavItem>
-					<NavItem to="/">Social media</NavItem>
+					<NavItem>
+						<a href="//explorer.musicoin.org">Blockchain Explorer</a>
+					</NavItem>
+					<NavItem>
+						<a href="//github.com/Musicoin/desktop/issues?q=is%3Aissue+is%3Aopen+label%3ABounty">
+							Bounty
+						</a>
+					</NavItem>
 				</NavItems>
 			</NavGroup>
 			<NavGroup>
 				<NavTitle>Help</NavTitle>
 				<NavItems>
-					<NavItem to="/">FAQ</NavItem>
-					<NavItem to="/">Support</NavItem>
-					<NavItem to="/">Contact</NavItem>
+					<NavItem>
+						<a href="//forum.musicoin.org">Forum</a>
+					</NavItem>
+					<NavItem>
+						<NavLink to="/resources/faq">FAQ</NavLink>
+					</NavItem>
 				</NavItems>
 			</NavGroup>
 		</Nav>
 		<SubNav>
-			<Language>English</Language>
+			<SmallPrint>&copy; 2018, musicoin.org</SmallPrint>
 			<div>
-				<SocialLink href="#" title="Musicoin Forum">
+				<SocialLink href="//forum.musicoin.org" title="Musicoin Forum">
 					<LogoIcon />
 				</SocialLink>
-				<SocialLink href="#" title="Twitter">
+				<SocialLink href="//twitter.com/musicoins" title="Twitter">
 					<TwitterIcon />
 				</SocialLink>
-				<SocialLink href="#" title="Reddit">
+				<SocialLink href="//reddit.com/r/musicoin" title="Reddit">
 					<RedditIcon />
 				</SocialLink>
-				<SocialLink href="#" title="Medium">
+				<SocialLink href="//medium.com/@musicoin" title="Medium">
 					<MediumIcon />
 				</SocialLink>
-				<SocialLink href="#" title="BitcoinTalk">
+				<SocialLink
+					href="//bitcointalk.org/index.php?topic=1776113.0"
+					title="BitcoinTalk"
+				>
 					<BitcoinIcon />
 				</SocialLink>
-				<SocialLink href="#" title="Github">
+				<SocialLink href="//github.com/musicoin" title="Github">
 					<GitIcon />
 				</SocialLink>
-				<SocialLink href="#" title="Facebook">
+				<SocialLink href="//www.facebook.com/lovemusicoin/" title="Facebook">
 					<FacebookIcon />
 				</SocialLink>
 			</div>
 		</SubNav>
-		<SmallPrint>&copy; 2018, musicoin.org</SmallPrint>
 	</Wrapper>
 );

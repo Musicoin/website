@@ -1,11 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
 import { rgba } from 'polished';
 import { media } from '@/styles/media';
 
 export const Wrapper = styled.footer`
-	padding: 130px 0 20px;
+	padding: 60px 0 20px;
 	font-size: 14px;
 	flex: 0 0 auto;
 `;
@@ -17,10 +15,10 @@ export const Nav = styled.ul`
 	margin: 0;
 	font-size: 12px;
 	width: calc(100% + 20px);
+	justify-content: space-between;
 `;
 
 export const NavGroup = styled.li`
-	flex: 1 1 auto;
 	margin-bottom: 30px;
 	margin-right: 20px;
 `;
@@ -38,11 +36,7 @@ export const NavItems = styled.ul`
 	margin: 0;
 `;
 
-export const NavItem = styled(({ children, to, ...props }) => (
-	<li {...props}>
-		<NavLink to={to}>{children}</NavLink>
-	</li>
-))`
+export const NavItem = styled.li`
 	opacity: 0.75;
 	transition: 200ms ease-in-out;
 
@@ -57,7 +51,7 @@ export const SubNav = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border: 1px solid ${rgba('#fff', 0.08)};
+	border: 1px solid ${rgba('#fff', 0.1)};
 	border-width: 1px 0;
 	margin-bottom: 20px;
 
