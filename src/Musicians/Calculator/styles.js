@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rgba, rem } from 'polished';
 import { PrettyText } from '@/shared/PrettyText';
 
-export const Wrapper = styled.div`
+export const Group = styled.div`
 	border-bottom: 1px solid ${rgba('#000', 0.1)};
 	display: flex;
 	align-items: center;

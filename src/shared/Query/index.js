@@ -17,7 +17,11 @@ export const Query = ({ isMock, ...props }) => {
 };
 
 Query.propTypes = {
-	isMock: bool.isRequired,
+	isMock: bool,
+};
+
+Query.defaultProps = {
+	isMock: false,
 };
 
 class MockQueryRender extends Component {

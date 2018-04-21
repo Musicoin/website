@@ -23,7 +23,6 @@ import {
 } from './icons';
 import { Wrapper, SocialMedia, GetStarted, FirstStep } from './styles';
 import { SecondaryHeading } from '@/shared/headings';
-import { Box } from '@/shared/Box';
 
 export const Musicians = () => (
 	<Wrapper>
@@ -76,19 +75,7 @@ export const Musicians = () => (
 				</Features>
 			</Content>
 			<section>
-				<Content>
-					<SecondaryHeading level={2}>
-						Discover how much you could get paid
-					</SecondaryHeading>
-					<p>
-						Musicians are paid with $MUSIC tokens that can be easily exchanged
-						for any other cryptocurrecy or fiat money on crypto trading
-						platforms.
-					</p>
-				</Content>
-				<Box>
-					<Calculator />
-				</Box>
+				<Calculator />
 			</section>
 			<section>
 				<SocialMedia>
