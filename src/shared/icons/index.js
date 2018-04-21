@@ -9,3 +9,4 @@ export { GitIcon } from './GitIcon';
 export { FacebookIcon } from './FacebookIcon';
 export { PlayIcon } from './PlayIcon';
 export { SkipIcon } from './SkipIcon';
+export { GoogleIcon } from './GoogleIcon';

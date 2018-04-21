@@ -80,8 +80,7 @@ injectGlobal`
 	textarea,
 	select,
 	button {
-		font-size: inherit;
-		line-height: inherit;
+		font: inherit;
 		color: inherit;
 	}
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rem } from 'polished';
 import { Page } from '@/shared/Page';
 import { StepsItem } from './Steps';
 import { Strip } from '@/shared/Strip';
@@ -12,6 +13,7 @@ export const Wrapper = styled(Page)`
 
 export const GetStarted = styled.div`
 	display: flex;
+	font-size: ${rem(16)};
 `;
 
 export const FirstStep = styled(StepsItem)`

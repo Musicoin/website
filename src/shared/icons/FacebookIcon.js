@@ -1,13 +1,23 @@
 import React from 'react';
+import { string, node } from 'prop-types';
 import { Icon } from '.';
 
-export const FacebookIcon = props => (
+export const FacebookIcon = ({ fill, children, ...props }) => (
 	<Icon {...props}>
+		{children}
 		<path
-			stroke="none"
-			fill="currentColor"
-			fillRule="nonzero"
-			d="M5.4 36L5.4 20.4 0 20.4 0 13.2 5.4 13.2 5.4 8.2C5.4 2.7 8.8 0 13.7 0 16 0 18.1 0.2 18.6 0.3L18.6 6 15.3 6C12.6 6 12 7.2 12 9.1L12 13.2 19.2 13.2 16.8 20.4 12 20.4 12 36 5.4 36Z"
+			fill={fill}
+			d="M15 34V19h-5v-5h5v-4c.025-5.349 3.067-8 8-8 1.638 0 3.467.155 4 0v5h-3c-2.498.313-2.965 1.436-3 3v4h6l-1 5h-5v15h-6z"
 		/>
 	</Icon>
 );
+
+FacebookIcon.propTypes = {
+	fill: string,
+	children: node,
+};
+
+FacebookIcon.defaultProps = {
+	fill: 'currentColor',
+	children: undefined,
+};
