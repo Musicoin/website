@@ -10,6 +10,7 @@ const GET_STATS = gql`
 			totalReleases
 			totalArtists
 			totalPlays
+			priceUsd
 		}
 	}
 `;
@@ -18,13 +19,7 @@ export const StatsQuery = ({ render }) => (
 	<Query query={GET_STATS}>
 		{({ loading, error, data }) => {
 			return error ? null : (
-				<Loading
-					loading={loading}
-					render={() => {
-						const { totalArtists, totalReleases, totalPlays } = data.stats;
-						return render({ totalArtists, totalReleases, totalPlays });
-					}}
-				/>
+				<Loading loading={loading} render={() => render(data.stats)} />
 			);
 		}}
 	</Query>

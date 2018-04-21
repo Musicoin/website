@@ -8,7 +8,7 @@ export const Stats = () => {
 	return (
 		<Wrapper>
 			<StatsQuery
-				render={({ totalArtists, totalReleases, totalPlays }) => (
+				render={({ totalArtists, totalReleases, totalPlays, priceUsd }) => (
 					<Fragment>
 						<Item>
 							<PrettyText>
@@ -30,7 +30,7 @@ export const Stats = () => {
 						</Item>
 						<Item>
 							<PrettyText>
-								<Numeral format="$0,0[.]00">{totalPlays * 0.03}</Numeral>
+								<Numeral format="$0,0[.]00">{totalPlays * priceUsd}</Numeral>
 							</PrettyText>
 							<Label>Paid</Label>
 						</Item>
