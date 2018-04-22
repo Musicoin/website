@@ -10,7 +10,3 @@ export const ResourcesImage = styled.img.attrs({ src })`
 	margin-top: -60px;
 	vertical-align: bottom;
 `;
-
-export const Section = styled.section`
-	margin-bottom: 100px;
-`;

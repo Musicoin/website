@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 
+export const BOX_CONTENT_PADDING = '30px';
+
 export const BoxWrapper = styled.div`
 	padding-bottom: 10px;
 	position: relative;
@@ -21,7 +23,7 @@ export const BoxContent = styled.div`
 	border-radius: 4px;
 	background: #fff;
 	box-shadow: 0 28px 45px 0 ${rgba('#373737', 0.1)};
-	padding: 30px;
+	padding: ${BOX_CONTENT_PADDING};
 	position: relative;
 	z-index: 1;
 	color: #000;

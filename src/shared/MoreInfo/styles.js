@@ -1,7 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
 import { rgba } from 'polished';
-
-// TODO: Improve code here
+import { ArrowIcon } from './ArrowIcon';
 
 export const Article = styled.article`
 	display: flex;
@@ -21,9 +21,6 @@ export const Article = styled.article`
 export const Toggle = styled.button`
 	border: 0;
 	background: transparent;
-	font-size: inherit;
-	font-family: inherit;
-	color: inherit;
 	padding: 22px;
 	margin: -22px;
 	outline: none;
@@ -31,14 +28,20 @@ export const Toggle = styled.button`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	cursor: pointer;
 `;
 
-export const ToggleArrow = styled.span`
+export const ToggleArrow = styled.span.attrs({
+	children: <ArrowIcon width="14" height="15" />,
+})`
+	display: block;
 	margin-left: 10px;
-	transform: ${props => (props.isOpen ? 'rotate(-90deg)' : 'rotate(90deg)')};
+	transform: ${props => props.isOpen && 'rotate(-180deg)'};
 	color: ${props => (props.isOpen ? '#fece00' : 'inherit')};
 	transition: 200ms ease-in-out;
 	transition-property: transform, color;
+	flex: 0 0 auto;
+
 	${Toggle}:hover &,
 	${Toggle}:focus & {
 		color: #fece00;
@@ -48,6 +51,6 @@ export const ToggleArrow = styled.span`
 export const Content = styled.div`
 	opacity: 0.5;
 	max-height: ${props => (props.isOpen ? '500px' : 0)};
-	transition: max-height 200ms ease;
+	transition: max-height 300ms ease-in-out;
 	overflow: hidden;
 `;
