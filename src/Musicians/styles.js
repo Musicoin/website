@@ -17,7 +17,7 @@ export const GetStarted = styled.div`
 `;
 
 export const FirstStep = styled(StepsItem)`
-	margin-top: 18px;
+	margin-top: 4px;
 	margin-left: -80px;
 	position: relative;
 
@@ -28,8 +28,8 @@ export const FirstStep = styled(StepsItem)`
 		background: #101010;
 		border-radius: 120px;
 		position: absolute;
-		top: -18px;
-		left: -40px;
+		top: -4px;
+		left: -39px;
 	}
 `;
 
