@@ -21,10 +21,10 @@ import { GetStarted } from '@/shared/GetStarted';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { Stats } from './Stats';
 
-import adFreeStreamingImage from './images/ad-free-streaming.svg';
-import supportMusiciansImage from './images/support-musicians.svg';
-import joinRevolutionImage from './images/revolution.svg';
-import musicoinForMusiansImage from './images/musicoin-for-musicians.svg';
+import adFreeStreamingImage from './images/ad-free-streaming.png';
+import supportMusiciansImage from './images/support-musicians.png';
+import joinRevolutionImage from './images/revolution.png';
+import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
 
 export const Home = () => (
 	<Wrapper>
@@ -54,8 +54,8 @@ export const Home = () => (
 						<MediaImage
 							src={adFreeStreamingImage}
 							order={1}
-							width={486}
-							height={484}
+							width={477}
+							height={422}
 						/>
 						<MediaContent>
 							<TertiaryHeading level={2} isPretty={true}>
@@ -69,7 +69,7 @@ export const Home = () => (
 						</MediaContent>
 					</Media>
 					<Media>
-						<MediaImage src={supportMusiciansImage} width={553} height={522} />
+						<MediaImage src={supportMusiciansImage} width={516} height={500} />
 						<MediaContent align="right">
 							<TertiaryHeading level={2} isPretty={true}>
 								Directly support musicians
@@ -86,8 +86,8 @@ export const Home = () => (
 						<MediaImage
 							src={joinRevolutionImage}
 							order={1}
-							width={510}
-							height={541}
+							width={460}
+							height={450}
 						/>
 						<MediaContent>
 							<TertiaryHeading level={2} isPretty={true}>
@@ -103,8 +103,8 @@ export const Home = () => (
 					<Media>
 						<MediaImage
 							src={musicoinForMusiansImage}
-							width={513}
-							height={555}
+							width={509}
+							height={542}
 						/>
 						<MediaContent align="right">
 							<TertiaryHeading level={2} isPretty={true}>
