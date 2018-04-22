@@ -5,7 +5,7 @@ import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
 import { PrimaryButton } from '@/shared/buttons';
-import { TwitterFeed } from '@/shared/TwitterFeed';
+import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
 import { Features, FeaturesItem, FeaturesTitle } from './Features';
 import { Steps, StepsItem, StepsTitle, StepsText } from './Steps';
 import { Calculator } from './Calculator';
@@ -79,10 +79,12 @@ export const Musicians = () => (
 			</section>
 			<section>
 				<SocialMedia>
-					<SecondaryHeading level={2} isCenter={true}>
-						What artists are saying
-					</SecondaryHeading>
-					<TwitterFeed />
+					<Content>
+						<SecondaryHeading level={2} isCenter={true}>
+							What artists are saying
+						</SecondaryHeading>
+						<TwitterFeedContainer />
+					</Content>
 				</SocialMedia>
 			</section>
 			<section>

@@ -14,10 +14,10 @@ import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
 import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
-import { TwitterFeed } from '@/shared/TwitterFeed';
 import { Box } from '@/shared/Box';
 import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
+import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { Stats } from './Stats';
 
@@ -164,11 +164,11 @@ export const Home = () => (
 			</section>
 			<section>
 				<Strip>
-					<SecondaryHeading level={2} isCenter={true}>
-						What artists are saying
-					</SecondaryHeading>
-					<TwitterFeed />
 					<Content>
+						<SecondaryHeading level={2} isCenter={true}>
+							What artists are saying
+						</SecondaryHeading>
+						<TwitterFeedContainer />
 						<GetStarted />
 					</Content>
 				</Strip>
