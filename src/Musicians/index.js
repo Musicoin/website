@@ -80,9 +80,6 @@ export const Musicians = () => (
 			<section>
 				<SocialMedia>
 					<Content>
-						<SecondaryHeading level={2} isCenter={true}>
-							What artists are saying
-						</SecondaryHeading>
 						<TwitterFeedContainer />
 					</Content>
 				</SocialMedia>

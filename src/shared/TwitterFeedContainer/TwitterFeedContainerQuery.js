@@ -1,7 +1,6 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import { func } from 'prop-types';
-import { Loading } from '@/shared/Loading';
 import { Query } from '@/shared/Query';
 
 const GET_TWEETS = gql`
@@ -14,16 +13,13 @@ const GET_TWEETS = gql`
 `;
 
 export const TwitterFeedContainerQuery = ({ render }) => {
-	const query = `-from:@musicoins -from:@musicoinFrance -from:@musicoinCanada
-	@musicoins AND Platform -filter:retweets`;
+	const query = `-from:@musicoins AND -from:@musicoinFrance AND -from:@musicoinCanada
+	Musicoin AND Platform -filter:retweets`;
 
 	return (
 		<Query query={GET_TWEETS} variables={{ query, count: 3 }}>
-			{({ loading, error, data }) => {
-				return error ? null : (
-					<Loading loading={loading} render={() => render(data.tweets)} />
-				);
-			}}
+			{({ loading, error, data }) =>
+				error || loading ? null : render(data.tweets)}
 		</Query>
 	);
 };

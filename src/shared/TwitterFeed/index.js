@@ -9,10 +9,7 @@ export class TwitterFeed extends Component {
 	node;
 
 	componentDidMount() {
-		const script = document.createElement('script');
-		script.async = true;
-		script.innerHTML = this.getTwitterEmbedScript();
-		this.node.appendChild(script);
+		window.twttr.widgets.load(this.node);
 	}
 
 	render() {
@@ -30,25 +27,6 @@ export class TwitterFeed extends Component {
 				<Items>{children}</Items>
 			</Wrapper>
 		);
-	}
-
-	getTwitterEmbedScript() {
-		return `window.twttr = (function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0],
-				t = window.twttr || {};
-			if (d.getElementById(id)) return t;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = "https://platform.twitter.com/widgets.js";
-			fjs.parentNode.insertBefore(js, fjs);
-
-			t._e = [];
-			t.ready = function(f) {
-				t._e.push(f);
-			};
-
-			return t;
-		}(document, "script", "twitter-wjs"));`;
 	}
 }
 
