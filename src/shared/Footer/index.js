@@ -58,12 +58,10 @@ export const Footer = () => (
 						<NavLink to="/resources/developers">Developers</NavLink>
 					</NavItem>
 					<NavItem>
-						<a href="//explorer.musicoin.org">Blockchain Explorer</a>
+						<NavLink to="/resources/bounty">Bounty program</NavLink>
 					</NavItem>
 					<NavItem>
-						<a href="//github.com/Musicoin/desktop/issues?q=is%3Aissue+is%3Aopen+label%3ABounty">
-							Bounty
-						</a>
+						<a href="//explorer.musicoin.org">Blockchain explorer</a>
 					</NavItem>
 				</NavItems>
 			</NavGroup>
