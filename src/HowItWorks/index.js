@@ -46,7 +46,7 @@ export const HowItWorks = () => (
 									without ads, while musicians are compensated more fairly than
 									Spotify, Apple Music, or Tidal.
 								</p>
-								<PrimaryButton to="/join">Join now</PrimaryButton>
+								<PrimaryButton to="/welcome-musician">Join now</PrimaryButton>
 							</MediaContent>
 						</FirstMedia>
 					</Banner>

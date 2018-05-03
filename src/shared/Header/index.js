@@ -59,7 +59,9 @@ export class Header extends Component {
 							<NavItem to="/musicians">Musicians</NavItem>
 							<NavItem to="/how-it-works">How it works</NavItem>
 							<NavItem to="/resources">Resources</NavItem>
-							<TertiaryButton to="/join">Log in / Sign up</TertiaryButton>
+							<TertiaryButton to="/welcome-musician">
+								Log in / Sign up
+							</TertiaryButton>
 						</NavItems>
 					</Nav>
 				</Wrapper>
