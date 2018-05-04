@@ -38,7 +38,7 @@ export const Musicians = () => (
 						ensures each musician receives the most competitive industry
 						compensation, instantly and automatically, for each stream of music.
 					</BannerText>
-					<PrimaryButton to="/welcome-musician">Join now</PrimaryButton>
+					<PrimaryButton to="/welcome">Join now</PrimaryButton>
 				</Banner>
 				<Features>
 					<FeaturesItem icon={<HighStandardsIcon />}>
@@ -59,17 +59,17 @@ export const Musicians = () => (
 					<FeaturesItem icon={<TransparentIcon />}>
 						<FeaturesTitle>Transparent licenses</FeaturesTitle>
 						<p>
-							Our autonomous smart contract provides you with an easy to
-							understand license terms and the flexibility to control your
-							revenues in a solo or multi-person band.
+							Our autonomous smart contract provides you with easy to understand
+							license terms and the flexibility to control your revenues in a
+							solo or multi-person band.
 						</p>
 					</FeaturesItem>
 					<FeaturesItem icon={<InteractiveIcon />}>
 						<FeaturesTitle>Interactive engagement</FeaturesTitle>
 						<p>
 							With Musicoin’s freemiums, you’re given the opportunities to
-							deepen the relationship with you fans and open collaborations with
-							your fellow musicians.
+							deepen the relationship with your fans and open collaborations
+							with your fellow musicians.
 						</p>
 					</FeaturesItem>
 				</Features>
@@ -102,7 +102,7 @@ export const Musicians = () => (
 							<StepsItem icon={<UploadIcon />}>
 								<StepsTitle>Upload</StepsTitle>
 								<StepsText>
-									Upload and share your musical creation on our platform.
+									Upload and share your musical creations on our platform.
 								</StepsText>
 							</StepsItem>
 							<StepsItem icon={<PayPerPlayIcon />}>

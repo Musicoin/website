@@ -121,7 +121,7 @@ export const Home = () => (
 							</p>
 
 							<p>
-								The Musicoin Blockchain ensures each musicians receive the most
+								The Musicoin Blockchain ensures each musician receives the most
 								competitive industry compensation, instantly and automatically,
 								for each stream of music.
 							</p>
@@ -135,11 +135,6 @@ export const Home = () => (
 			<section>
 				<Content>
 					<SecondaryHeading level={2}>Musicoin in the media</SecondaryHeading>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
-						urna a viverra congue. Quisque eu est consectetur, euismod elit
-						vitae, vulputate arcu.
-					</p>
 				</Content>
 				<Box>
 					<Post>

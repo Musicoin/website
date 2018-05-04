@@ -19,6 +19,6 @@ export const GetStarted = () => (
 			</Title>
 			<p>The worlds first smart cryptocurrency for music.</p>
 		</Body>
-		<PrimaryButton to="/welcome-musician">Join now</PrimaryButton>
+		<PrimaryButton to="/welcome">Join now</PrimaryButton>
 	</Wrapper>
 );
