@@ -50,7 +50,7 @@ export const ToggleArrow = styled.span.attrs({
 
 export const Content = styled.div`
 	opacity: 0.5;
-	max-height: ${props => (props.isOpen ? '1500px' : 0)};
+	display: ${props => (props.isOpen ? 'block' : 'none')};
 	transition: max-height 300ms ease-in-out;
-	overflow: hidden;
+	overflow: auto;
 `;
