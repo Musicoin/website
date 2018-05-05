@@ -6,7 +6,7 @@ import { Section, Link } from './styles';
 export const BountyStub = () => (
 	<Fragment>
 		<SecondaryHeading level={2} isCenter={true}>
-			Bounty program
+			Musicoin Bounty Program
 		</SecondaryHeading>
 		<p>
 			Musicoin has a bounty program offered for contributions to the Musicoin
