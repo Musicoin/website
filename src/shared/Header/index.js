@@ -59,6 +59,8 @@ export class Header extends Component {
 							<NavItem to="/musicians">Musicians</NavItem>
 							<NavItem to="/how-it-works">How it works</NavItem>
 							<NavItem to="/resources">Resources</NavItem>
+							<NavItem to="/gettingstarted">Getting Started</NavItem>
+							<NavItem to="/developers">Developers</NavItem>
 							<SecondaryButton to="/welcome-musician">Log in</SecondaryButton>
 							<TertiaryButton to="/welcome">Sign up</TertiaryButton>
 						</NavItems>

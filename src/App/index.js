@@ -8,6 +8,8 @@ import { Musicians } from '@/Musicians';
 import { Discover } from '@/Discover';
 import { HowItWorks } from '@/HowItWorks';
 import { Resources } from '@/Resources';
+import { Developers } from '@/Developers';
+import { GettingStarted } from '@/GettingStarted';
 
 export class AppBase extends Component {
 	componentDidUpdate(prevProps) {
@@ -25,6 +27,8 @@ export class AppBase extends Component {
 					<Route path="/discover" component={Discover} />
 					<Route path="/how-it-works" component={HowItWorks} />
 					<Route path="/resources" component={Resources} />
+					<Route path="/gettingstarted" component={GettingStarted} />
+					<Route path="/developers" component={Developers} />
 					<Route>
 						<div>404</div>
 					</Route>
