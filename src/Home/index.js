@@ -134,26 +134,44 @@ export const Home = () => (
 		<aside>
 			<section>
 				<Content>
-					<SecondaryHeading level={2}>Musicoin in the media</SecondaryHeading>
+					<SecondaryHeading level={2}>In the media</SecondaryHeading>
 				</Content>
 				<Box>
 					<Post>
 						<PostHeader>
 							<PostTitle>
-								Blockchain startup Musicoin aims to disintermediate the music
-								industry
+								<img
+									src="http://www.taittowers.com/wp-content/uploads/2016/07/WORKS_wired-magazine.jpg"
+									width="195"
+									length="195"
+									onClick="location.href='http://www.wired.co.uk/article/blockchain-disrupting-music-mycelia'"
+								/>
+								<img
+									src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/45/ae/1e/45ae1ec2-b7b7-27c2-8fdd-d7eeeb23605f/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/1200x630bb.jpg"
+									width="195"
+									length="195"
+									onClick="location.href='https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/shermanlee/2018/04/25/embracing-blockchain-could-completely-change-the-way-artists-sell-music-and-interact-with-fans/&refURL=https://www.google.com/&referrer=https://www.google.com/'"
+								/>
+								<img
+									src="https://www.underconsideration.com/brandnew/archives/nasdaq_icon_detail.jpg"
+									width="195"
+									length="195"
+									onClick="location.href='https://www.nasdaq.com/article/how-the-blockchain-lets-musicians-connect-with-fans-and-get-paid-cm755712'"
+								/>
+								<img
+									src="http://www.icphusa.org/wp-content/uploads/2016/10/I58EQMCH.jpg"
+									width="195"
+									length="195"
+									onClick="location.href='https://www.huffingtonpost.com/entry/volareo-musicoin-alexa-on-blockchain-steroids_us_5a55c4ace4b0baa6abf162ba'"
+								/>
+								<img
+									src="https://fs.bitcoinmagazine.com/img/square_logo.png"
+									width="195"
+									length="195"
+									onClick="location.href='https://bitcoinmagazine.com/articles/how-blockchain-lets-musicians-connect-fans-and-get-paid/'"
+								/>
 							</PostTitle>
-							<PostDate>18/02/2018</PostDate>
 						</PostHeader>
-						<p>
-							The music industry has many gatekeepers and intermediaries in the
-							form of record labels, distributors, magazines and radio stations,
-							which can make it difficult for musicians to get their music heard
-							but also to be adequately remunerated for their work.
-						</p>
-						<PostButton href="https://btcmanager.com/blockchain-startup-musicoin-aims-to-disintermediate-the-music-industry/">
-							Read full article
-						</PostButton>
 					</Post>
 				</Box>
 			</section>
