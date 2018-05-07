@@ -26,8 +26,8 @@ export class AppBase extends Component {
 					<Route path="/musicians" component={Musicians} />
 					<Route path="/discover" component={Discover} />
 					<Route path="/how-it-works" component={HowItWorks} />
-					<Route path="/resources" component={Resources} />
 					<Route path="/gettingstarted" component={GettingStarted} />
+					<Route path="/resources" component={Resources} />
 					<Route path="/developers" component={Developers} />
 					<Route>
 						<div>404</div>
