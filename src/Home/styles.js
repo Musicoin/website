@@ -6,6 +6,7 @@ import { Page } from '@/shared/Page';
 import { ArrowButton } from '@/shared/buttons';
 
 export const Wrapper = styled(Page)`
+	@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 	background: url(${microphone}) center top no-repeat;
 	background-repeat: no-repeat;
 	background-size: auto 740px;
