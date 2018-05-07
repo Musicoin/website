@@ -21,7 +21,7 @@ export const Resources = ({ match }) => (
 			<Content hasBg={true}>
 				<ResourcesBanner isCenter={true}>
 					<BannerTitle>Resources</BannerTitle>
-					<ResourcesImage width={831} height={549} alt="" />
+					<ResourcesImage width={831} height={549}/>
 				</ResourcesBanner>
 			</Content>
 			<Box>
