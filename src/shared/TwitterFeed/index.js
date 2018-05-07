@@ -9,7 +9,9 @@ export class TwitterFeed extends Component {
 	node;
 
 	componentDidMount() {
+		if (window.twttr && window.twttr.widgets) {
 		window.twttr.widgets.load(this.node);
+		} else {}
 	}
 
 	render() {
