@@ -12,7 +12,6 @@ import { BannerTitle } from '@/shared/Banner';
 import { Box } from '@/shared/Box';
 import { Nav, NavLink } from './Nav';
 import { ResourcesBanner } from './styles';
-import { ApiStub } from './Api';
 import { BountyStub } from './Bounty';
 
 export const Developers = ({ match }) => (
@@ -26,7 +25,6 @@ export const Developers = ({ match }) => (
 			</Content>
 			<Box>
 				<Nav>
-					<NavLink to={`${match.url}/api`}>API</NavLink>
 					<NavLink to={`${match.url}/bounty`}>Bounty program</NavLink>
 				</Nav>
 			</Box>
@@ -34,7 +32,6 @@ export const Developers = ({ match }) => (
 				<Content>
 					<Switch>
 						<Route path={`${match.url}/bounty`} component={BountyStub} />
-						<Route path={`${match.url}/api`} component={ApiStub} />
 					</Switch>
 				</Content>
 				<aside>
