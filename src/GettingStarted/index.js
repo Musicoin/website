@@ -29,7 +29,7 @@ export const GettingStarted = ({ match }) => (
 			<Box>
 				<Nav>
 					<NavLink to={`${match.url}/wallet`}>Desktop Wallet</NavLink>
-					<NavLink to={`${match.url}/mycrypto`}>MyCrypto</NavLink>
+					<NavLink to={`${match.url}/my-crypto`}>MyCrypto</NavLink>
 					<NavLink to={`${match.url}/coinomi`}>Coinomi App</NavLink>
 					<NavLink to={`${match.url}/exchange`}>Exchanges</NavLink>
 				</Nav>
@@ -37,8 +37,13 @@ export const GettingStarted = ({ match }) => (
 			<Strip>
 				<Content>
 					<Switch>
-						<Route path={`${match.url}/MyCrypto`} component={MyCryptoStub} />
+						<Redirect
+							from={`${match.url}`}
+							to={`${match.url}/wallet`}
+							exact={true}
+						/>
 						<Route path={`${match.url}/wallet`} component={WalletStub} />
+						<Route path={`${match.url}/my-crypto`} component={MyCryptoStub} />
 						<Route path={`${match.url}/coinomi`} component={CoinomiStub} />
 						<Route path={`${match.url}/exchange`} component={ExchangeStub} />
 					</Switch>
