@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-	Wrapper,
-	Post,
-	PostHeader,
-	PostTitle,
-	PostDate,
-	PostButton,
-} from './styles';
+import { Wrapper, Post, PostHeader, PostTitle } from './styles';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
 import { Media, MediaImage, MediaContent } from '@/shared/Media';
@@ -19,6 +12,7 @@ import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
+import { Player } from '@/shared/Player';
 import { Stats } from './Stats';
 
 import adFreeStreamingImage from './images/ad-free-streaming.png';
@@ -35,23 +29,27 @@ export const Home = () => (
 					<BannerTitle isWide={false}>
 						Revolutionizing music with the blockchain
 					</BannerTitle>
-					Listen to Artist of the week<span>
-						<br />
-					</span>
-					<iframe
-						id="embedded-player-preview-frame"
-						src="https://musicoin.org/embedded-player/0x859dc166c7c2a87bae4ebca55daae166cde3d59d?embedded=true&autoQueue=true&preview=true"
-					/>
 					<BannerText>
 						100% free streaming for listeners, industry best compensation for
 						musicians.
 					</BannerText>
-					<PrimaryButton to="https://musicoin.org/welcome">Join the revolution</PrimaryButton>
+					<PrimaryButton to="https://musicoin.org/welcome">
+						Join the revolution
+					</PrimaryButton>
 					<ArrowButton to="/how-it-works">How it works</ArrowButton>
 				</Banner>
 			</Content>
 			<section>
 				<Content>
+					<SecondaryHeading level={2}>Artist of the week</SecondaryHeading>
+					<Player
+						artist="IXIISIS"
+						title="Vertigo"
+						track="/ppp/38fb0550a162cd13e5d749fd9977f7e6f19532fbbfdeec469b15dcd81392eeab8eced6b6fcbac9ca89268fb5f66894c9b5bcff5fc326e032"
+						coverSrc="/media/cf392d93aff3f8147aa516d4da0e12e1ff5bd52317037d982034a18aa1ad1f80574c506190aa012e3d4f7c2e895b"
+						tipCount={1092}
+						style={{ marginBottom: '60px' }}
+					/>
 					<Stats />
 				</Content>
 			</section>
@@ -147,36 +145,61 @@ export const Home = () => (
 					<Post>
 						<PostHeader>
 							<PostTitle>
-								<img
-									src="http://www.taittowers.com/wp-content/uploads/2016/07/WORKS_wired-magazine.jpg"
-									width="195"
-									length="195"
-									onClick="location.href='http://www.wired.co.uk/article/blockchain-disrupting-music-mycelia'"
-								/>
-								<img
-									src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/45/ae/1e/45ae1ec2-b7b7-27c2-8fdd-d7eeeb23605f/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/1200x630bb.jpg"
-									width="195"
-									length="195"
-									onClick="location.href='https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/shermanlee/2018/04/25/embracing-blockchain-could-completely-change-the-way-artists-sell-music-and-interact-with-fans/&refURL=https://www.google.com/&referrer=https://www.google.com/'"
-								/>
-								<img
-									src="https://www.underconsideration.com/brandnew/archives/nasdaq_icon_detail.jpg"
-									width="195"
-									length="195"
-									onClick="location.href='https://www.nasdaq.com/article/how-the-blockchain-lets-musicians-connect-with-fans-and-get-paid-cm755712'"
-								/>
-								<img
-									src="http://www.icphusa.org/wp-content/uploads/2016/10/I58EQMCH.jpg"
-									width="195"
-									length="195"
-									onClick="location.href='https://www.huffingtonpost.com/entry/volareo-musicoin-alexa-on-blockchain-steroids_us_5a55c4ace4b0baa6abf162ba'"
-								/>
-								<img
-									src="https://fs.bitcoinmagazine.com/img/square_logo.png"
-									width="195"
-									length="195"
-									onClick="location.href='https://bitcoinmagazine.com/articles/how-blockchain-lets-musicians-connect-fans-and-get-paid/'"
-								/>
+								<a
+									href="http://www.wired.co.uk/article/blockchain-disrupting-music-mycelia"
+									title="The blockchain will disrupt the music business and beyond"
+								>
+									<img
+										src="http://www.taittowers.com/wp-content/uploads/2016/07/WORKS_wired-magazine.jpg"
+										width="195"
+										length="195"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://www.forbes.com/sites/shermanlee/2018/04/25/embracing-blockchain-could-completely-change-the-way-artists-sell-music-and-interact-with-fans/#177871941a25"
+									title="Embracing Blockchain Could Completely Change The Way Artists Sell Music And Interact With Fans"
+								>
+									<img
+										src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/45/ae/1e/45ae1ec2-b7b7-27c2-8fdd-d7eeeb23605f/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-5.png/1200x630bb.jpg"
+										width="195"
+										length="195"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://www.nasdaq.com/article/how-the-blockchain-lets-musicians-connect-with-fans-and-get-paid-cm755712"
+									title="How the Blockchain Lets Musicians Connect with Fans (and Get Paid)"
+								>
+									<img
+										src="https://www.underconsideration.com/brandnew/archives/nasdaq_icon_detail.jpg"
+										width="195"
+										length="195"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://www.huffingtonpost.com/entry/volareo-musicoin-alexa-on-blockchain-steroids_us_5a55c4ace4b0baa6abf162ba"
+									title="Volareo + Musicoin = Alexa on Blockchain Steroids"
+								>
+									<img
+										src="http://www.icphusa.org/wp-content/uploads/2016/10/I58EQMCH.jpg"
+										width="195"
+										length="195"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://bitcoinmagazine.com/articles/how-blockchain-lets-musicians-connect-fans-and-get-paid/"
+									title="How the Blockchain Lets Musicians Connect with Fans (and Get Paid)"
+								>
+									<img
+										src="https://fs.bitcoinmagazine.com/img/square_logo.png"
+										width="195"
+										length="195"
+										alt=""
+									/>
+								</a>
 							</PostTitle>
 						</PostHeader>
 					</Post>
