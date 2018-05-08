@@ -1,6 +1,6 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { Page } from '@/shared/Page';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';

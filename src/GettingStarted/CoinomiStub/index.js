@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
-import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
-import { MoreInfo } from '@/shared/MoreInfo';
-import { Section, Link } from './styles';
+import { SecondaryHeading } from '@/shared/headings';
+import { Link } from './styles';
 
 export const CoinomiStub = () => (
 	<Fragment>
