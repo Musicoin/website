@@ -39,7 +39,7 @@ export const Home = () => (
 					Listen to Artist of the week<span>
 						<br />
 					</span>
-					<EPlayer src="https://musicoin.org/embedded-player/0x859dc166c7c2a87bae4ebca55daae166cde3d59d?embedded=true&autoQueue=true&preview=true" />
+					``<EPlayer src="https://musicoin.org/embedded-player2/0x859dc166c7c2a87bae4ebca55daae166cde3d59d?embedded=true&autoQueue=true&preview=true" />
 					<BannerText>
 						100% free streaming for listeners, industry best compensation for
 						musicians.
