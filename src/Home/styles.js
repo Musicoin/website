@@ -29,6 +29,12 @@ export const Post = styled.article`
 	}
 `;
 
+export const EPlayer = styled.iframe`
+	width: 100%;
+	border: none !important;
+	padding-top: 10px;
+`;
+
 export const PostButton = styled(ArrowButton)`
 	float: right;
 `;

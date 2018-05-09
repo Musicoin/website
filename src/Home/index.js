@@ -1,5 +1,13 @@
 import React from 'react';
-import { Wrapper, Post, PostHeader, PostTitle } from './styles';
+import {
+	Wrapper,
+	Post,
+	PostHeader,
+	PostTitle,
+	PostDate,
+	PostButton,
+	EPlayer,
+} from './styles';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
 import { Media, MediaImage, MediaContent } from '@/shared/Media';
@@ -12,7 +20,6 @@ import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
-import { Player } from '@/shared/Player';
 import { Stats } from './Stats';
 
 import adFreeStreamingImage from './images/ad-free-streaming.png';
@@ -29,6 +36,10 @@ export const Home = () => (
 					<BannerTitle isWide={false}>
 						Revolutionizing music with the blockchain
 					</BannerTitle>
+					Listen to Artist of the week<span>
+						<br />
+					</span>
+					<EPlayer src="https://musicoin.org/embedded-player/0x859dc166c7c2a87bae4ebca55daae166cde3d59d?embedded=true&autoQueue=true&preview=true" />
 					<BannerText>
 						100% free streaming for listeners, industry best compensation for
 						musicians.
@@ -41,15 +52,6 @@ export const Home = () => (
 			</Content>
 			<section>
 				<Content>
-					<SecondaryHeading level={2}>Artist of the week</SecondaryHeading>
-					<Player
-						artist="IXIISIS"
-						title="Vertigo"
-						track="/ppp/38fb0550a162cd13e5d749fd9977f7e6f19532fbbfdeec469b15dcd81392eeab8eced6b6fcbac9ca89268fb5f66894c9b5bcff5fc326e032"
-						coverSrc="/media/cf392d93aff3f8147aa516d4da0e12e1ff5bd52317037d982034a18aa1ad1f80574c506190aa012e3d4f7c2e895b"
-						tipCount={1092}
-						style={{ marginBottom: '60px' }}
-					/>
 					<Stats />
 				</Content>
 			</section>
