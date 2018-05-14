@@ -22,7 +22,13 @@
     "react-scripts": "^1.1.1",
     "styled-components": "^2.2.3",
     "text-gradient": "^0.2.0",
-    "typography": "^0.16.6"
+    "typography": "^0.16.6",
+    "extract-react-intl-messages": "^0.7.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4",
+    "react-app-rewire-styled-components": "^3.0.0",
+    "react-app-rewired": "^1.3.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -30,14 +36,6 @@
     "test": "react-app-rewired test --env=jsdom",
     "precommit": "lint-staged",
     "extract-translations": "NODE_ENV=production extract-messages -l=ru,fr,es,en -o src/assets/translations -d en --flat true 'src/**/i18n.js'"
-  },
-  "devDependencies": {
-    "extract-react-intl-messages": "^0.7.1",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.3.0",
-    "prettier": "^1.7.4",
-    "react-app-rewire-styled-components": "^3.0.0",
-    "react-app-rewired": "^1.3.4"
   },
   "lint-staged": {
     "*.js": [
