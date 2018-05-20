@@ -15,7 +15,7 @@ export const WalletStub = () => (
 			&nbsp;is the most secure way to interact with the Musicoin Blockchain.
 			Developed by the Musicoin Team, the Musicoin Desktop Wallet constantly
 			evolves to keep in touch with the best security practices and provides an
-			interactive UI for users to interact with the blcokchain.
+			interactive UI for users to interact with the blockchain.
 		</p>
 	</Fragment>
 );
