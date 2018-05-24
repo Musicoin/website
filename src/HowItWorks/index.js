@@ -44,9 +44,11 @@ export const HowItWorks = () => (
 									music in a shared economy. Listeners can stream songs from
 									independent musicians on our platform absolutely free and
 									without ads, while musicians are compensated more fairly than
-									Spotify, Apple Music, or Tidal.
+									major music streaming platforms in the industry.
 								</p>
-								<PrimaryButton to="https://musicoin.org/welcome">Join now</PrimaryButton>
+								<PrimaryButton to="https://musicoin.org/welcome">
+									Join now
+								</PrimaryButton>
 							</MediaContent>
 						</FirstMedia>
 					</Banner>
