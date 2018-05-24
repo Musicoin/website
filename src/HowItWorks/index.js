@@ -46,9 +46,7 @@ export const HowItWorks = () => (
 									without ads, while musicians are compensated more fairly than
 									major music streaming platforms in the industry.
 								</p>
-								<PrimaryButton to="https://musicoin.org/welcome">
-									Join now
-								</PrimaryButton>
+								<PrimaryButton to="https://musicoin.org/welcome" target="_blank">Join now</PrimaryButton>
 							</MediaContent>
 						</FirstMedia>
 					</Banner>
