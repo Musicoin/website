@@ -175,11 +175,11 @@ export const Home = () => (
 						<PostHeader>
 							<PostTitle>
 								<a
-									href="http://www.wired.co.uk/article/blockchain-disrupting-music-mycelia"
+									href="https://www.wired.co.uk/article/blockchain-disrupting-music-mycelia"
 									title="The blockchain will disrupt the music business and beyond"
 								>
 									<img
-										src="http://www.taittowers.com/wp-content/uploads/2016/07/WORKS_wired-magazine.jpg"
+										src="https://www.taittowers.com/wp-content/uploads/2016/07/WORKS_wired-magazine.jpg"
 										width="195"
 										length="195"
 										alt=""
@@ -212,7 +212,7 @@ export const Home = () => (
 									title="Volareo + Musicoin = Alexa on Blockchain Steroids"
 								>
 									<img
-										src="http://www.icphusa.org/wp-content/uploads/2016/10/I58EQMCH.jpg"
+										src="https://www.icphusa.org/wp-content/uploads/2016/10/I58EQMCH.jpg"
 										width="195"
 										length="195"
 										alt=""
