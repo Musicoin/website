@@ -7,7 +7,6 @@ import {
 	PostTitle,
 	PostDate,
 	PostButton,
-	EPlayer,
 } from './styles';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
@@ -21,7 +20,6 @@ import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
-import { Stats } from './Stats';
 
 import adFreeStreamingImage from './images/ad-free-streaming.png';
 import supportMusiciansImage from './images/support-musicians.png';
@@ -74,7 +72,6 @@ export const Home = () => (
 					Listen to Artist of the week<span>
 						<br />
 					</span>
-					<EPlayer src="https://musicoin.org/embedded-player/0x0f178a287c2d469578704cae44f957239c01f3ae?embedded=true&autoQueue=true&preview=true" />
 					<BannerText>
 						100% free streaming for listeners, industry best compensation for
 						musicians.
@@ -85,11 +82,6 @@ export const Home = () => (
 					<ArrowButton to="/how-it-works">How it works</ArrowButton>
 				</Banner>
 			</Content>
-			<section>
-				<Content>
-					<Stats />
-				</Content>
-			</section>
 			<section>
 				<Content hasBg={true}>
 					<Media>
