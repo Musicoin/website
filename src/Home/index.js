@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
 	Wrapper,
 	Post,
@@ -27,6 +28,40 @@ import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
 
 export const Home = () => (
 	<Wrapper>
+		<Helmet
+			title="Musicoin Project"
+			description="Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain."
+			meta={[
+				{ name: 'author', content: 'Musicoin Project' },
+				{
+					name: 'description',
+					content:
+						'Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain. ',
+				},
+
+				{ name: 'twitter:site', content: 'musicoins' },
+				{ name: 'twitter:creator', content: 'Musicoin Project' },
+				{ name: 'twitter:title', content: 'Musicoin Project' },
+				{
+					name: 'twitter:image',
+					content: 'https://musicoin.org/og-musicoin.jpg',
+				},
+
+				{ property: 'og:title', content: 'Musicoin Project' },
+				{ property: 'og:site_name', content: 'Musicoin Project' },
+				{ property: 'og:type', content: 'website' },
+				{ property: 'og:url', content: 'https://musicoin.org/' },
+				{
+					property: 'og:description',
+					content:
+						'Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain. ',
+				},
+				{
+					property: 'og:image',
+					content: 'https://musicoin.org/og-musicoin.jpg',
+				},
+			]}
+		/>
 		<Header />
 		<Main>
 			<Content>
