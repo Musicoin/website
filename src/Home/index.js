@@ -76,7 +76,7 @@ export const Home = () => (
 						100% free streaming for listeners, industry best compensation for
 						musicians.
 					</BannerText>
-					<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
+					<PrimaryButton to="https://staging.musicoin.org/welcome" target="_blank">
 						Join the revolution
 					</PrimaryButton>
 					<ArrowButton to="/how-it-works">How it works</ArrowButton>

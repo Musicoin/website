@@ -62,12 +62,12 @@ export class Header extends Component {
 							<NavItem to="/gettingstarted">Getting Started</NavItem>
 							<NavItem to="/developers">Developers</NavItem>
 							<SecondaryButton
-								to="https://musicoin.org/welcome-musician"
+								to="https://staging.musicoin.org/welcome-musician"
 								target="_blank"
 							>
 								Log in
 							</SecondaryButton>
-							<TertiaryButton to="https://musicoin.org/welcome" target="_blank">
+							<TertiaryButton to="https://staging.musicoin.org/welcome" target="_blank">
 								Sign up
 							</TertiaryButton>
 						</NavItems>
