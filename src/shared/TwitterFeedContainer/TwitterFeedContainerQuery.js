@@ -13,7 +13,7 @@ const GET_TWEETS = gql`
 `;
 
 export const TwitterFeedContainerQuery = ({ render }) => {
-	const query = `-from:@musicoins AND -from:@musicoinFrance AND -from:@musicoinCanada
+	const query = `-from:@musicoins AND -from:@renascencemusic AND -from:@musicoinFrance AND -from:@musicoinCanada
 	Musicoin AND Platform -filter:retweets`;
 
 	return (
