@@ -61,6 +61,7 @@ export class Header extends Component {
 							<NavItem to="/resources">Resources</NavItem>
 							<NavItem to="/gettingstarted">Getting Started</NavItem>
 							<NavItem to="/developers">Developers</NavItem>
+							<NavItem to="/privacy">Privacy</NavItem>
 							<SecondaryButton
 								to="https://musicoin.org/welcome-musician"
 								target="_blank"
