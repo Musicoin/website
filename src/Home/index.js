@@ -1,13 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import {
-	Wrapper,
-	Post,
-	PostHeader,
-	PostTitle,
-	PostDate,
-	PostButton,
-} from './styles';
+import { Wrapper, Post, PostHeader, PostTitle } from './styles';
 import { Header } from '@/shared/Header';
 import { Main } from '@/shared/Main';
 import { Media, MediaImage, MediaContent } from '@/shared/Media';
@@ -20,6 +13,7 @@ import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
+import { Stats } from './Stats';
 
 import adFreeStreamingImage from './images/ad-free-streaming.png';
 import supportMusiciansImage from './images/support-musicians.png';
@@ -82,6 +76,11 @@ export const Home = () => (
 					<ArrowButton to="/how-it-works">How it works</ArrowButton>
 				</Banner>
 			</Content>
+			<section>
+				<Content>
+					<Stats />
+				</Content>
+			</section>
 			<section>
 				<Content hasBg={true}>
 					<Media>
@@ -248,4 +247,3 @@ export const Home = () => (
 		</Content>
 	</Wrapper>
 );
-
