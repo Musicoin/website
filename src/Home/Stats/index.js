@@ -30,7 +30,7 @@ export const Stats = () => {
 						</Item>
 						<Item>
 							<PrettyText>
-								<Numeral format="$0,0[.]00">{totalPlays * priceUsd}</Numeral>
+								<Numeral format="MUSIC0,0[.]00">{totalPlays}</Numeral>
 							</PrettyText>
 							<Label>Paid</Label>
 						</Item>
