@@ -14,25 +14,19 @@ export const Stats = () => {
 							<PrettyText>
 								<Numeral>{totalArtists}</Numeral>
 							</PrettyText>
-							<Label>Musicians</Label>
+							<Label>Verified Musicians</Label>
 						</Item>
 						<Item>
 							<PrettyText>
 								<Numeral>{totalReleases}</Numeral>
 							</PrettyText>
-							<Label>Tracks</Label>
+							<Label>Verified Tracks</Label>
 						</Item>
 						<Item>
 							<PrettyText>
 								<Numeral>{totalPlays}</Numeral>
 							</PrettyText>
-							<Label>Plays</Label>
-						</Item>
-						<Item>
-							<PrettyText>
-								<Numeral format="MUSIC0,0[.]00">{totalPlays}</Numeral>
-							</PrettyText>
-							<Label>Paid</Label>
+							<Label>Total Plays</Label>
 						</Item>
 					</Fragment>
 				)}
