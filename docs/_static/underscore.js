@@ -31,7 +31,7 @@
 					a.ignoreCase == c.ignoreCase
 				);
 		}
-		if (typeof a !== 'object' || typeof c !== 'object') return false;
+		if (typeof a != 'object' || typeof c != 'object') return false;
 		for (var f = d.length; f--; ) if (d[f] == a) return true;
 		d.push(a);
 		var f = 0,

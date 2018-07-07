@@ -1,3 +1,0 @@
-# Musicoin
-
-Welcome to Musicoin's API docs

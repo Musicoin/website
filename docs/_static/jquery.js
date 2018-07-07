@@ -1,6 +1,7 @@
 /*! jQuery v3.2.1 | (c) JS Foundation and other contributors | jquery.org/license */
 !(function(a, b) {
-	'object' === typeof module && 'object' === typeof module.exports
+	'use strict';
+	'object' == typeof module && 'object' == typeof module.exports
 		? (module.exports = a.document
 				? b(a, !0)
 				: function(a) {
@@ -9,7 +10,8 @@
 						return b(a);
 				  })
 		: b(a);
-})('undefined' !== typeof window ? window : this, function(a, b) {
+})('undefined' != typeof window ? window : this, function(a, b) {
+	'use strict';
 	var c = [],
 		d = a.document,
 		e = Object.getPrototypeOf,
@@ -95,8 +97,8 @@
 				i = arguments.length,
 				j = !1;
 			for (
-				'boolean' === typeof g && ((j = g), (g = arguments[h] || {}), h++),
-					'object' === typeof g || r.isFunction(g) || (g = {}),
+				'boolean' == typeof g && ((j = g), (g = arguments[h] || {}), h++),
+					'object' == typeof g || r.isFunction(g) || (g = {}),
 					h === i && ((g = this), h--);
 				h < i;
 				h++
@@ -137,7 +139,7 @@
 					!(!a || '[object Object]' !== k.call(a)) &&
 					(!(b = e(a)) ||
 						((c = l.call(b, 'constructor') && b.constructor),
-						'function' === typeof c && m.call(c) === n))
+						'function' == typeof c && m.call(c) === n))
 				);
 			},
 			isEmptyObject: function(a) {
@@ -148,7 +150,7 @@
 			type: function(a) {
 				return null == a
 					? a + ''
-					: 'object' === typeof a || 'function' === typeof a
+					: 'object' == typeof a || 'function' == typeof a
 						? j[k.call(a)] || 'object'
 						: typeof a;
 			},
@@ -175,7 +177,7 @@
 				return (
 					null != a &&
 						(w(Object(a))
-							? r.merge(c, 'string' === typeof a ? [a] : a)
+							? r.merge(c, 'string' == typeof a ? [a] : a)
 							: h.call(c, a)),
 					c
 				);
@@ -207,7 +209,7 @@
 			proxy: function(a, b) {
 				var c, d, e;
 				if (
-					('string' === typeof b && ((c = a[b]), (b = a), (a = c)),
+					('string' == typeof b && ((c = a[b]), (b = a), (a = c)),
 					r.isFunction(a))
 				)
 					return (
@@ -222,8 +224,7 @@
 			now: Date.now,
 			support: o,
 		}),
-		'function' === typeof Symbol &&
-			(r.fn[Symbol.iterator] = c[Symbol.iterator]),
+		'function' == typeof Symbol && (r.fn[Symbol.iterator] = c[Symbol.iterator]),
 		r.each(
 			'Boolean Number String Function Array Date RegExp Object Error Symbol'.split(
 				' '
@@ -240,7 +241,7 @@
 			!r.isWindow(a) &&
 			('array' === c ||
 				0 === b ||
-				('number' === typeof b && b > 0 && b - 1 in a))
+				('number' == typeof b && b > 0 && b - 1 in a))
 		);
 	}
 	var x = (function(a) {
@@ -407,7 +408,7 @@
 				w = b ? b.nodeType : 9;
 			if (
 				((d = d || []),
-				'string' !== typeof a || !a || (1 !== w && 9 !== w && 11 !== w))
+				'string' != typeof a || !a || (1 !== w && 9 !== w && 11 !== w))
 			)
 				return d;
 			if (
@@ -530,7 +531,7 @@
 			});
 		}
 		function qa(a) {
-			return a && 'undefined' !== typeof a.getElementsByTagName && a;
+			return a && 'undefined' != typeof a.getElementsByTagName && a;
 		}
 		(c = ga.support = {}),
 			(f = ga.isXML = function(a) {
@@ -575,7 +576,7 @@
 									};
 							  }),
 							  (d.find.ID = function(a, b) {
-									if ('undefined' !== typeof b.getElementById && p) {
+									if ('undefined' != typeof b.getElementById && p) {
 										var c = b.getElementById(a);
 										return c ? [c] : [];
 									}
@@ -584,13 +585,13 @@
 									var b = a.replace(_, aa);
 									return function(a) {
 										var c =
-											'undefined' !== typeof a.getAttributeNode &&
+											'undefined' != typeof a.getAttributeNode &&
 											a.getAttributeNode('id');
 										return c && c.value === b;
 									};
 							  }),
 							  (d.find.ID = function(a, b) {
-									if ('undefined' !== typeof b.getElementById && p) {
+									if ('undefined' != typeof b.getElementById && p) {
 										var c,
 											d,
 											e,
@@ -610,7 +611,7 @@
 							  })),
 					  (d.find.TAG = c.getElementsByTagName
 							? function(a, b) {
-									return 'undefined' !== typeof b.getElementsByTagName
+									return 'undefined' != typeof b.getElementsByTagName
 										? b.getElementsByTagName(a)
 										: c.qsa
 											? b.querySelectorAll(a)
@@ -630,7 +631,7 @@
 					  (d.find.CLASS =
 							c.getElementsByClassName &&
 							function(a, b) {
-								if ('undefined' !== typeof b.getElementsByClassName && p)
+								if ('undefined' != typeof b.getElementsByClassName && p)
 									return b.getElementsByClassName(a);
 							}),
 					  (r = []),
@@ -834,7 +835,7 @@
 					f = a.nodeType;
 				if (f) {
 					if (1 === f || 9 === f || 11 === f) {
-						if ('string' === typeof a.textContent) return a.textContent;
+						if ('string' == typeof a.textContent) return a.textContent;
 						for (a = a.firstChild; a; a = a.nextSibling) c += e(a);
 					} else if (3 === f || 4 === f) return a.nodeValue;
 				} else while ((b = a[d++])) c += e(b);
@@ -907,8 +908,8 @@
 							((b = new RegExp('(^|' + K + ')' + a + '(' + K + '|$)')) &&
 								y(a, function(a) {
 									return b.test(
-										('string' === typeof a.className && a.className) ||
-											('undefined' !== typeof a.getAttribute &&
+										('string' == typeof a.className && a.className) ||
+											('undefined' != typeof a.getAttribute &&
 												a.getAttribute('class')) ||
 											''
 									);
@@ -1417,7 +1418,7 @@
 					j,
 					k,
 					l,
-					m = 'function' === typeof a && a,
+					m = 'function' == typeof a && a,
 					n = !e && g((a = m.selector || a));
 				if (((c = c || []), 1 === n.length)) {
 					if (
@@ -1544,7 +1545,7 @@
 				? r.grep(a, function(a) {
 						return (a === b) !== c;
 				  })
-				: 'string' !== typeof b
+				: 'string' != typeof b
 					? r.grep(a, function(a) {
 							return i.call(b, a) > -1 !== c;
 					  })
@@ -1577,7 +1578,7 @@
 					c,
 					d = this.length,
 					e = this;
-				if ('string' !== typeof a)
+				if ('string' != typeof a)
 					return this.pushStack(
 						r(a).filter(function() {
 							for (b = 0; b < d; b++) if (r.contains(e[b], this)) return !0;
@@ -1593,11 +1594,8 @@
 				return this.pushStack(E(this, a || [], !0));
 			},
 			is: function(a) {
-				return !!E(
-					this,
-					'string' === typeof a && A.test(a) ? r(a) : a || [],
-					!1
-				).length;
+				return !!E(this, 'string' == typeof a && A.test(a) ? r(a) : a || [], !1)
+					.length;
 			},
 		});
 	var F,
@@ -1605,7 +1603,7 @@
 		H = (r.fn.init = function(a, b, c) {
 			var e, f;
 			if (!a) return this;
-			if (((c = c || F), 'string' === typeof a)) {
+			if (((c = c || F), 'string' == typeof a)) {
 				if (
 					((e =
 						'<' === a[0] && '>' === a[a.length - 1] && a.length >= 3
@@ -1659,7 +1657,7 @@
 				d = 0,
 				e = this.length,
 				f = [],
-				g = 'string' !== typeof a && r(a);
+				g = 'string' != typeof a && r(a);
 			if (!A.test(a))
 				for (; d < e; d++)
 					for (c = this[d]; c && c !== b; c = c.parentNode)
@@ -1676,7 +1674,7 @@
 		},
 		index: function(a) {
 			return a
-				? 'string' === typeof a
+				? 'string' == typeof a
 					? i.call(r(a), this[0])
 					: i.call(this, a.jquery ? a[0] : a)
 				: this[0] && this[0].parentNode
@@ -1742,7 +1740,7 @@
 				var e = r.map(this, b, c);
 				return (
 					'Until' !== a.slice(-5) && (d = c),
-					d && 'string' === typeof d && (e = r.filter(d, e)),
+					d && 'string' == typeof d && (e = r.filter(d, e)),
 					this.length > 1 &&
 						(J[a] || r.uniqueSort(e), I.test(a) && e.reverse()),
 					this.pushStack(e)
@@ -1761,7 +1759,7 @@
 		);
 	}
 	r.Callbacks = function(a) {
-		a = 'string' === typeof a ? M(a) : r.extend({}, a);
+		a = 'string' == typeof a ? M(a) : r.extend({}, a);
 		var b,
 			c,
 			d,
@@ -1935,7 +1933,7 @@
 												throw new TypeError('Thenable self-resolution');
 											(j =
 												a &&
-												('object' === typeof a || 'function' === typeof a) &&
+												('object' == typeof a || 'function' == typeof a) &&
 												a.then),
 												r.isFunction(j)
 													? e
@@ -2124,7 +2122,7 @@
 			set: function(a, b, c) {
 				var d,
 					e = this.cache(a);
-				if ('string' === typeof b) e[r.camelCase(b)] = c;
+				if ('string' == typeof b) e[r.camelCase(b)] = c;
 				else for (d in b) e[r.camelCase(d)] = b[d];
 				return e;
 			},
@@ -2134,7 +2132,7 @@
 					: a[this.expando] && a[this.expando][r.camelCase(b)];
 			},
 			access: function(a, b, c) {
-				return void 0 === b || (b && 'string' === typeof b && void 0 === c)
+				return void 0 === b || (b && 'string' == typeof b && void 0 === c)
 					? this.get(a, b)
 					: (this.set(a, b, c), void 0 !== c ? c : b);
 			},
@@ -2181,7 +2179,7 @@
 			if (
 				((d = 'data-' + b.replace(Z, '-$&').toLowerCase()),
 				(c = a.getAttribute(d)),
-				'string' === typeof c)
+				'string' == typeof c)
 			) {
 				try {
 					c = $(c);
@@ -2229,7 +2227,7 @@
 					}
 					return e;
 				}
-				return 'object' === typeof a
+				return 'object' == typeof a
 					? this.each(function() {
 							X.set(this, a);
 					  })
@@ -2304,7 +2302,7 @@
 			queue: function(a, b) {
 				var c = 2;
 				return (
-					'string' !== typeof a && ((b = a), (a = 'fx'), c--),
+					'string' != typeof a && ((b = a), (a = 'fx'), c--),
 					arguments.length < c
 						? r.queue(this[0], a)
 						: void 0 === b
@@ -2333,7 +2331,7 @@
 					h = function() {
 						--d || e.resolveWith(f, [f]);
 					};
-				'string' !== typeof a && ((b = a), (a = void 0)), (a = a || 'fx');
+				'string' != typeof a && ((b = a), (a = void 0)), (a = a || 'fx');
 				while (g--)
 					(c = W.get(f[g], a + 'queueHooks')),
 						c && c.empty && (d++, c.empty.add(h));
@@ -2425,7 +2423,7 @@
 			return ia(this);
 		},
 		toggle: function(a) {
-			return 'boolean' === typeof a
+			return 'boolean' == typeof a
 				? a
 					? this.show()
 					: this.hide()
@@ -2452,9 +2450,9 @@
 		var c;
 		return (
 			(c =
-				'undefined' !== typeof a.getElementsByTagName
+				'undefined' != typeof a.getElementsByTagName
 					? a.getElementsByTagName(b || '*')
-					: 'undefined' !== typeof a.querySelectorAll
+					: 'undefined' != typeof a.querySelectorAll
 						? a.querySelectorAll(b || '*')
 						: []),
 			void 0 === b || (b && B(a, b)) ? r.merge([a], c) : c
@@ -2534,8 +2532,8 @@
 	}
 	function ya(a, b, c, d, e, f) {
 		var g, h;
-		if ('object' === typeof b) {
-			'string' !== typeof c && ((d = d || c), (c = void 0));
+		if ('object' == typeof b) {
+			'string' != typeof c && ((d = d || c), (c = void 0));
 			for (h in b) ya(a, h, c, d, b[h], f);
 			return a;
 		}
@@ -2543,7 +2541,7 @@
 			(null == d && null == e
 				? ((e = c), (d = c = void 0))
 				: null == e &&
-				  ('string' === typeof c
+				  ('string' == typeof c
 						? ((e = d), (d = void 0))
 						: ((e = d), (d = c), (c = void 0))),
 			e === !1)
@@ -2584,7 +2582,7 @@
 					(i = q.events) || (i = q.events = {}),
 					(g = q.handle) ||
 						(g = q.handle = function(b) {
-							return 'undefined' !== typeof r && r.event.triggered !== b.type
+							return 'undefined' != typeof r && r.event.triggered !== b.type
 								? r.event.dispatch.apply(a, arguments)
 								: void 0;
 						}),
@@ -2928,12 +2926,12 @@
 						),
 						this
 					);
-				if ('object' === typeof a) {
+				if ('object' == typeof a) {
 					for (e in a) this.off(e, b, a[e]);
 					return this;
 				}
 				return (
-					(b !== !1 && 'function' !== typeof b) || ((c = b), (b = void 0)),
+					(b !== !1 && 'function' != typeof b) || ((c = b), (b = void 0)),
 					c === !1 && (c = wa),
 					this.each(function() {
 						r.event.remove(this, a, c, b);
@@ -2992,7 +2990,7 @@
 			n = m - 1,
 			q = b[0],
 			s = r.isFunction(q);
-		if (s || (m > 1 && 'string' === typeof q && !o.checkClone && Ba.test(q)))
+		if (s || (m > 1 && 'string' == typeof q && !o.checkClone && Ba.test(q)))
 			return a.each(function(e) {
 				var f = a.eq(e);
 				s && (b[0] = q.call(this, e, f.html())), Ja(f, b, c, d);
@@ -3153,7 +3151,7 @@
 							d = this.length;
 						if (void 0 === a && 1 === b.nodeType) return b.innerHTML;
 						if (
-							'string' === typeof a &&
+							'string' == typeof a &&
 							!Aa.test(a) &&
 							!ma[(ka.exec(a) || ['', ''])[1].toLowerCase()]
 						) {
@@ -3460,7 +3458,7 @@
 			(r.cssHooks[a + b] = {
 				expand: function(c) {
 					for (
-						var d = 0, e = {}, f = 'string' === typeof c ? c.split(' ') : [c];
+						var d = 0, e = {}, f = 'string' == typeof c ? c.split(' ') : [c];
 						d < 4;
 						d++
 					)
@@ -3809,7 +3807,7 @@
 	})),
 		(r.speed = function(a, b, c) {
 			var d =
-				a && 'object' === typeof a
+				a && 'object' == typeof a
 					? r.extend({}, a)
 					: {
 							complete: c || (!c && b) || (r.isFunction(a) && a),
@@ -3819,7 +3817,7 @@
 			return (
 				r.fx.off
 					? (d.duration = 0)
-					: 'number' !== typeof d.duration &&
+					: 'number' != typeof d.duration &&
 					  (d.duration in r.fx.speeds
 							? (d.duration = r.fx.speeds[d.duration])
 							: (d.duration = r.fx.speeds._default)),
@@ -3858,7 +3856,7 @@
 					delete a.stop, b(c);
 				};
 				return (
-					'string' !== typeof a && ((c = b), (b = a), (a = void 0)),
+					'string' != typeof a && ((c = b), (b = a), (a = void 0)),
 					b && a !== !1 && this.queue(a || 'fx', []),
 					this.each(function() {
 						var b = !0,
@@ -3906,7 +3904,7 @@
 		r.each(['toggle', 'show', 'hide'], function(a, b) {
 			var c = r.fn[b];
 			r.fn[b] = function(a, d, e) {
-				return null == a || 'boolean' === typeof a
+				return null == a || 'boolean' == typeof a
 					? c.apply(this, arguments)
 					: this.animate(gb(b, !0), a, d, e);
 			};
@@ -3988,7 +3986,7 @@
 					e,
 					f = a.nodeType;
 				if (3 !== f && 8 !== f && 2 !== f)
-					return 'undefined' === typeof a.getAttribute
+					return 'undefined' == typeof a.getAttribute
 						? r.prop(a, b, c)
 						: ((1 === f && r.isXMLDoc(a)) ||
 								(e =
@@ -4135,7 +4133,7 @@
 				return this.each(function(b) {
 					r(this).addClass(a.call(this, b, qb(this)));
 				});
-			if ('string' === typeof a && a) {
+			if ('string' == typeof a && a) {
 				b = a.match(L) || [];
 				while ((c = this[i++]))
 					if (((e = qb(c)), (d = 1 === c.nodeType && ' ' + pb(e) + ' '))) {
@@ -4160,7 +4158,7 @@
 					r(this).removeClass(a.call(this, b, qb(this)));
 				});
 			if (!arguments.length) return this.attr('class', '');
-			if ('string' === typeof a && a) {
+			if ('string' == typeof a && a) {
 				b = a.match(L) || [];
 				while ((c = this[i++]))
 					if (((e = qb(c)), (d = 1 === c.nodeType && ' ' + pb(e) + ' '))) {
@@ -4175,7 +4173,7 @@
 		},
 		toggleClass: function(a, b) {
 			var c = typeof a;
-			return 'boolean' === typeof b && 'string' === c
+			return 'boolean' == typeof b && 'string' === c
 				? b
 					? this.addClass(a)
 					: this.removeClass(a)
@@ -4220,7 +4218,7 @@
 								((e = d ? a.call(this, c, r(this).val()) : a),
 								null == e
 									? (e = '')
-									: 'number' === typeof e
+									: 'number' == typeof e
 										? (e += '')
 										: Array.isArray(e) &&
 										  (e = r.map(e, function(a) {
@@ -4239,7 +4237,7 @@
 						b && 'get' in b && void 0 !== (c = b.get(e, 'value'))
 							? c
 							: ((c = e.value),
-							  'string' === typeof c ? c.replace(rb, '') : null == c ? '' : c)
+							  'string' == typeof c ? c.replace(rb, '') : null == c ? '' : c)
 					);
 			}
 		},
@@ -4322,7 +4320,7 @@
 					(p.indexOf('.') > -1 &&
 						((q = p.split('.')), (p = q.shift()), q.sort()),
 					(k = p.indexOf(':') < 0 && 'on' + p),
-					(b = b[r.expando] ? b : new r.Event(p, 'object' === typeof b && b)),
+					(b = b[r.expando] ? b : new r.Event(p, 'object' == typeof b && b)),
 					(b.isTrigger = f ? 2 : 3),
 					(b.namespace = q.join('.')),
 					(b.rnamespace = b.namespace
@@ -4433,7 +4431,7 @@
 		vb = /\?/;
 	r.parseXML = function(b) {
 		var c;
-		if (!b || 'string' !== typeof b) return null;
+		if (!b || 'string' != typeof b) return null;
 		try {
 			c = new a.DOMParser().parseFromString(b, 'text/xml');
 		} catch (d) {
@@ -4456,7 +4454,7 @@
 				c || wb.test(a)
 					? d(a, e)
 					: Ab(
-							a + '[' + ('object' === typeof e && null != e ? b : '') + ']',
+							a + '[' + ('object' == typeof e && null != e ? b : '') + ']',
 							e,
 							c,
 							d
@@ -4526,7 +4524,7 @@
 	Lb.href = tb.href;
 	function Mb(a) {
 		return function(b, c) {
-			'string' !== typeof b && ((c = b), (b = '*'));
+			'string' != typeof b && ((c = b), (b = '*'));
 			var d,
 				e = 0,
 				f = b.toLowerCase().match(L) || [];
@@ -4546,7 +4544,7 @@
 				(e[h] = !0),
 				r.each(a[h] || [], function(a, h) {
 					var j = h(b, c, d);
-					return 'string' !== typeof j || f || e[j]
+					return 'string' != typeof j || f || e[j]
 						? f
 							? !(i = j)
 							: void 0
@@ -4676,7 +4674,7 @@
 		ajaxPrefilter: Mb(Ib),
 		ajaxTransport: Mb(Jb),
 		ajax: function(b, c) {
-			'object' === typeof b && ((c = b), (b = void 0)), (c = c || {});
+			'object' == typeof b && ((c = b), (b = void 0)), (c = c || {});
 			var e,
 				f,
 				g,
@@ -4758,7 +4756,7 @@
 			if (
 				(o.data &&
 					o.processData &&
-					'string' !== typeof o.data &&
+					'string' != typeof o.data &&
 					(o.data = r.param(o.data, o.traditional)),
 				Nb(Ib, o, c, y),
 				k)
@@ -4979,14 +4977,14 @@
 									'abort' === a
 										? h.abort()
 										: 'error' === a
-											? 'number' !== typeof h.status
+											? 'number' != typeof h.status
 												? f(0, 'error')
 												: f(h.status, h.statusText)
 											: f(
 													Rb[h.status] || h.status,
 													h.statusText,
 													'text' !== (h.responseType || 'text') ||
-													'string' !== typeof h.responseText
+													'string' != typeof h.responseText
 														? { binary: h.response }
 														: { text: h.responseText },
 													h.getAllResponseHeaders()
@@ -5073,7 +5071,7 @@
 					b.jsonp !== !1 &&
 					(Ub.test(b.url)
 						? 'url'
-						: 'string' === typeof b.data &&
+						: 'string' == typeof b.data &&
 						  0 ===
 								(b.contentType || '').indexOf(
 									'application/x-www-form-urlencoded'
@@ -5113,8 +5111,8 @@
 			);
 		})()),
 		(r.parseHTML = function(a, b, c) {
-			if ('string' !== typeof a) return [];
-			'boolean' === typeof b && ((c = b), (b = !1));
+			if ('string' != typeof a) return [];
+			'boolean' == typeof b && ((c = b), (b = !1));
 			var e, f, g;
 			return (
 				b ||
@@ -5143,7 +5141,7 @@
 				h > -1 && ((d = pb(a.slice(h))), (a = a.slice(0, h))),
 				r.isFunction(b)
 					? ((c = b), (b = void 0))
-					: b && 'object' === typeof b && (e = 'POST'),
+					: b && 'object' == typeof b && (e = 'POST'),
 				g.length > 0 &&
 					r
 						.ajax({ url: a, type: e || 'GET', dataType: 'html', data: b })
@@ -5311,7 +5309,7 @@
 				d
 			) {
 				r.fn[d] = function(e, f) {
-					var g = arguments.length && (c || 'boolean' !== typeof e),
+					var g = arguments.length && (c || 'boolean' != typeof e),
 						h = c || (e === !0 || f === !0 ? 'margin' : 'border');
 					return T(
 						this,
@@ -5363,7 +5361,7 @@
 		(r.isArray = Array.isArray),
 		(r.parseJSON = JSON.parse),
 		(r.nodeName = B),
-		'function' === typeof define &&
+		'function' == typeof define &&
 			define.amd &&
 			define('jquery', [], function() {
 				return r;

@@ -776,7 +776,7 @@
 		moderator: false,
 	};
 
-	if (typeof COMMENT_OPTIONS !== 'undefined') {
+	if (typeof COMMENT_OPTIONS != 'undefined') {
 		opts = jQuery.extend(opts, COMMENT_OPTIONS);
 	}
 
