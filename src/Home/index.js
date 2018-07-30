@@ -178,7 +178,7 @@ export const Home = () => (
 									title="The blockchain will disrupt the music business and beyond"
 								>
 									<img
-										src="https://www.taittowers.com/wp-content/uploads/2016/07/WORKS_wired-magazine.jpg"
+										src="https://www.musicoin.org/images/logos/wired.jpg"
 										width="195"
 										length="195"
 										alt=""
