@@ -1,6 +1,6 @@
-# musicoin-frontend
+# Website
 
-Marketing website for Musicoin.
+The Musicoin Frontend Website.
 
 ## Heuristics
 
@@ -16,6 +16,6 @@ Marketing website for Musicoin.
 * Avoid abstracting too early
 * Avoid thinking too far in the future
 
-## Contributing
+# License
 
-Documentation for contributing can be found [here](/CONTRIBUTING.md).
+GNU GPL v3

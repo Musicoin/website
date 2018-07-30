@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import { rem } from 'polished';
 import microphone from './images/microphone.jpg';
 import { media } from '@/styles/media';
 import { Page } from '@/shared/Page';
-import { ArrowButton } from '@/shared/buttons';
 
 export const Wrapper = styled(Page)`
 	background: url(${microphone}) center top no-repeat;
@@ -35,19 +33,10 @@ export const EPlayer = styled.iframe`
 	padding-top: 10px;
 `;
 
-export const PostButton = styled(ArrowButton)`
-	float: right;
-`;
-
 export const PostHeader = styled.header`
 	display: flex;
 `;
 
 export const PostTitle = styled.h4`
 	flex: 1 0 auto;
-`;
-
-export const PostDate = styled.span`
-	flex: 0 0 auto;
-	font-size: ${rem(14)};
 `;
