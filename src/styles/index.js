@@ -88,4 +88,7 @@ injectGlobal`
 		max-width: 100%;
 		height: auto;
 	}
+	.test {
+		color: #ccc;
+	}
 `;
