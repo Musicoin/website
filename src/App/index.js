@@ -29,7 +29,7 @@ export class AppBase extends Component {
 					<Route path="/how-it-works" component={HowItWorks} />
 					<Route path="/gettingstarted" component={GettingStarted} />
 					<Route path="/resources" component={Resources} />
-					<Route path="/privacy" component={Terms} />
+					<Route path="/legal" component={Terms} />
 					<Route path="/developers" component={Developers} />
 					<Route>
 						<div>404</div>

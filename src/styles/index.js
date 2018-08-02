@@ -67,6 +67,10 @@ injectGlobal`
 		margin-bottom: 1.6em;
 	}
 
+	b, strong {
+		font-weight: 700;
+	}
+
 	a {
 		color: inherit;
 		text-decoration: none;
