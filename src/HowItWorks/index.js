@@ -46,7 +46,12 @@ export const HowItWorks = () => (
 									without ads, while musicians are compensated more fairly than
 									major music streaming platforms in the industry.
 								</p>
-								<PrimaryButton to="https://musicoin.org/welcome" target="_blank">Join now</PrimaryButton>
+								<PrimaryButton
+									to="https://musicoin.org/welcome"
+									target="_blank"
+								>
+									Join now
+								</PrimaryButton>
 							</MediaContent>
 						</FirstMedia>
 					</Banner>
@@ -173,7 +178,7 @@ export const HowItWorks = () => (
 								</TertiaryHeading>
 								<p>
 									Our smart contracts mean that each stream operates on a
-									Per-per-play (PPP) basis. Every time a song is streamed, MUSIC
+									Pay-Per-Play (PPP) basis. Every time a song is streamed, MUSIC
 									is automatically transferred to the musician or all parties of
 									a group.
 								</p>
