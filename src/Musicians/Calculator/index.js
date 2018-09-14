@@ -43,9 +43,9 @@ export class Calculator extends Component {
 									/>
 								</div>
 								<div>
-									<EarningsLabel>You will earn</EarningsLabel>
+									<EarningsLabel>You earn a minimum of</EarningsLabel>
 									<PrettyText key={plays}>
-										$<Numeral format="0[.]00">{plays * priceUsd}</Numeral>
+										$<Numeral format="0[.]00">{plays * 0.011}</Numeral>
 									</PrettyText>
 								</div>
 							</Group>
