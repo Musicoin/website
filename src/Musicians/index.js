@@ -38,7 +38,9 @@ export const Musicians = () => (
 						ensures each musician receives the most competitive industry
 						compensation, instantly and automatically, for each stream of music.
 					</BannerText>
-					<PrimaryButton to="https://musicoin.org/welcome">Join now</PrimaryButton>
+					<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
+						Join now
+					</PrimaryButton>
 				</Banner>
 				<Features>
 					<FeaturesItem icon={<HighStandardsIcon />}>
