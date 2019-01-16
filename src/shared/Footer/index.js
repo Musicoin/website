@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
 	Wrapper,
 	Nav,
@@ -20,6 +21,8 @@ import {
 	GitIcon,
 	FacebookIcon,
 } from '@/shared/icons';
+import googlePlayButtonImage from '../../Home/images/google-play-badge.png';
+import appleAppMarketButtonImage from '../../Home/images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
 
 export const Footer = () => (
 	<Wrapper>
@@ -44,7 +47,9 @@ export const Footer = () => (
 				<NavTitle>Discover</NavTitle>
 				<NavItems>
 					<NavItem>
-						<NavLink to="https://musicoin.org/welcome-musician">Web Application</NavLink>
+						<NavLink to="https://musicoin.org/welcome-musician">
+							Web Application
+						</NavLink>
 					</NavItem>
 					<NavItem>
 						<a href="//github.com/Musicoin/desktop/releases">Desktop Wallet</a>
@@ -78,11 +83,36 @@ export const Footer = () => (
 			</NavGroup>
 		</Nav>
 		<SubNav>
-			<SmallPrint>&copy; 2018, musicoin.org</SmallPrint>
+			<SmallPrint>&copy; 2019, musicoin.org</SmallPrint>
 			<div>
 				{/*}<SocialLink href="//forum.musicoin.org" title="Musicoin Forum">
 					<LogoIcon />
 				</SocialLink>*/}
+				<Link
+					to="/"
+					style={{
+						width: '100px',
+						height: '40px',
+						float: 'left',
+						backgroundSize: '90%',
+						backgroundRepeat: 'no-repeat',
+						backgroundPosition: 'center',
+						backgroundImage: 'url(' + googlePlayButtonImage + ')',
+					}}
+				/>
+				<Link
+					to="/"
+					style={{
+						marginRight: '45px',
+						width: '100px',
+						height: '40px',
+						float: 'left',
+						backgroundSize: '75%',
+						backgroundRepeat: 'no-repeat',
+						backgroundPosition: 'center',
+						backgroundImage: 'url(' + appleAppMarketButtonImage + ')',
+					}}
+				/>
 				<SocialLink href="//twitter.com/musicoins" title="Twitter">
 					<TwitterIcon />
 				</SocialLink>
