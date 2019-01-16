@@ -8,7 +8,8 @@ export const HeadingTag = ({ level, isPretty, children, ...props }) => {
 
 	return (
 		<Tag {...props}>
-			<Inner>{children}</Inner>
+		  {children}
+			{/*<Inner style={this.customStyle}>{children}</Inner>*/}
 		</Tag>
 	);
 };

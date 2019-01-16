@@ -6,19 +6,23 @@ import { Main } from '@/shared/Main';
 import { Media, MediaImage, MediaContent } from '@/shared/Media';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
-import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
+import { PrimaryButton, SecondaryButton, ArrowButton, IconButton } from '@/shared/buttons';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
 import { Box } from '@/shared/Box';
+import { Link } from 'react-router-dom';
 import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
-import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
+import { PrimaryHeading, SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { Stats } from './Stats';
-
 import adFreeStreamingImage from './images/ad-free-streaming.png';
 import supportMusiciansImage from './images/support-musicians.png';
 import joinRevolutionImage from './images/revolution.png';
 import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
+import mobileAppImage from './images/mobile-3.png';
+import googlePlayButtonImage from './images/google-play-badge.png';
+import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
+//
 
 export const Home = () => (
 	<Wrapper>
@@ -59,23 +63,54 @@ export const Home = () => (
 		<Header />
 		<Main>
 			<Content>
-				<Banner>
-					<BannerTitle isWide={false}>
-						Revolutionizing music with the blockchain
-					</BannerTitle>
-					Listen to Artist of the week<span>
-						<br />
-					</span>
-					<BannerText>
-						100% free streaming for listeners, industry best compensation for
-						musicians.
-					</BannerText>
-					<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
-						Join the revolution
-					</PrimaryButton>
-					<ArrowButton to="/how-it-works">How it works</ArrowButton>
-				</Banner>
+				<Media marginTop={"125px"}>
+					<MediaImage
+							src={mobileAppImage}
+							order={0}
+							width={477}
+							height={450}
+					/>
+					<MediaContent>
+						<PrimaryHeading level={3} isPretty={true} color={"#6E7D85"} customSize={24} customMargin="0px 0px 5px 0px">
+							<label>Musicoin Mobile App V.1</label>
+						</PrimaryHeading>
+						<TertiaryHeading level={2} isPretty={true} color={"#FFFFFF"}>
+							Fair Play.
+						</TertiaryHeading>
+						<p>
+							With the power of our blockchain platform, you can stream more than 60,000 tracks, from more than 5000 independent artists. There's no ads, it's free, and artists get paid instantly.
+						</p>
+						<p>
+							Try for yourself & discover new music now!
+						</p>
+						{/*<Link to="/test" style={{backgroundColor:"transparent", backgroundSize:"50%", backgroundPosition: "center", backgroundRepeat:"no-repeat", backgroundImage:"url(./images/google-play-badge.png)"}}>test</Link>*/}
+						<Link to="/" style={ { width:"35%", height:"100px", float:"left", backgroundSize:"200px 75px", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundImage: "url(" + googlePlayButtonImage + ")" } }>
+						</Link>
+						<Link to="/" style={ { marginLeft:"25px", width:"35%", height:"100px", float:"left", backgroundSize:"185px 53px", backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundImage: "url(" + appleAppMarketButtonImage + ")" } }>
+						</Link>
+					</MediaContent>
+				</Media>
 			</Content>
+			<section>
+				<Content>
+					<Banner>
+						<BannerTitle isWide={false}>
+							Revolutionizing music with the blockchain
+						</BannerTitle>
+						Listen to Artist of the week<span>
+							<br />
+						</span>
+						<BannerText>
+							100% free streaming for listeners, industry best compensation for
+							musicians.
+						</BannerText>
+						<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
+							Join the revolution
+						</PrimaryButton>
+						<ArrowButton to="/how-it-works">How it works</ArrowButton>
+					</Banner>
+				</Content>
+			</section>
 			<section>
 				<Content>
 					<Stats />

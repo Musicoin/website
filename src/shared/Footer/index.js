@@ -68,9 +68,9 @@ export const Footer = () => (
 			<NavGroup>
 				<NavTitle>Help</NavTitle>
 				<NavItems>
-					<NavItem>
+					{/*}<NavItem>
 						<a href="//forum.musicoin.org">Forum</a>
-					</NavItem>
+					</NavItem>*/}
 					<NavItem>
 						<NavLink to="/resources/faq">FAQ</NavLink>
 					</NavItem>
@@ -80,9 +80,9 @@ export const Footer = () => (
 		<SubNav>
 			<SmallPrint>&copy; 2018, musicoin.org</SmallPrint>
 			<div>
-				<SocialLink href="//forum.musicoin.org" title="Musicoin Forum">
+				{/*}<SocialLink href="//forum.musicoin.org" title="Musicoin Forum">
 					<LogoIcon />
-				</SocialLink>
+				</SocialLink>*/}
 				<SocialLink href="//twitter.com/musicoins" title="Twitter">
 					<TwitterIcon />
 				</SocialLink>

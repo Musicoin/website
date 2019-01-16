@@ -15,8 +15,9 @@ export const Heading = styled(({ isCenter, ...props }) => (
 `;
 
 export const PrimaryHeading = styled(Heading)`
-	font-size: ${rem(48)};
-
+	font-size: ${props => (props.customSize) ? rem(props.customSize) : rem(48)};
+	margin: ${props => props.customMargin ? props.customMargin : ""};
+  color: ${props => (props.color) ? props.color : "#F3921B"};
 	${media.xsmall`
 		font-size: ${rem(24, mediaFontSize.small)};
 	`};
@@ -27,6 +28,7 @@ export const SecondaryHeading = styled(PrimaryHeading)`
 `;
 
 export const TertiaryHeading = styled(Heading)`
+  color: ${props => (props.color) ? props.color : "#F3921B"};
 	font-size: ${rem(36)};
 	font-weight: bold;
 `;

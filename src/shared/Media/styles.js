@@ -7,6 +7,7 @@ export const Media = styled.div`
 	justify-content: space-between;
 	margin-bottom: 110px;
 	flex-direction: ${props => props.isRows && 'column'};
+	margin-top:${props => props.marginTop ? props.marginTop : ""};
 
 	${media.xsmall`
 		flex-direction: column;
@@ -28,6 +29,9 @@ export const MediaImage = styled.img`
 	position: relative;
 	margin-left: ${props => props.order === 1 && !props.isBlock && '50px'};
 	margin-right: ${props => props.order === 0 && !props.isBlock && '50px'};
+	margin-top: ${props => props.marginTop ? props.marginTop : ""};
+  width: ${props => props.widthPercentage ? props.widthPercentage: ""};
+	height: ${props => props.heightPercentage ? props.heightPercentage : ""};
 
 	${media.large`
 		max-width: 400px;

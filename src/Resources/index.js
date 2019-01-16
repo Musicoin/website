@@ -30,7 +30,7 @@ export const Resources = ({ match }) => (
 					<NavLink href="http://www.scribd.com/document/362834077/Musicoin-White-Paper-v2-0-0">
 						White paper
 					</NavLink>
-					<NavLink href="https://forum.musicoin.org">Musicoin Forum</NavLink>
+					{/*<NavLink href="https://forum.musicoin.org">Musicoin Forum</NavLink>*/}
 				</Nav>
 			</Box>
 			<Strip>
