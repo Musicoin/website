@@ -75,15 +75,6 @@ export const Home = () => (
 				<Media marginTop={'125px'}>
 					<MediaImage src={mobileAppImage} order={0} width={477} height={450} />
 					<MediaContent>
-						<PrimaryHeading
-							level={3}
-							isPretty={true}
-							color={'#f3921b'}
-							customSize={24}
-							customMargin="0px 0px 5px 0px"
-						>
-							<label>Musicoin Mobile App V1.0</label>
-						</PrimaryHeading>
 						<TertiaryHeading level={2} isPretty={true} color={'#FFFFFF'}>
 							Fair Play.
 						</TertiaryHeading>
@@ -94,13 +85,22 @@ export const Home = () => (
 						</p>
 						<p>Try for yourself & discover new music now!</p>
 						{/*<Link to="/test" style={{backgroundColor:"transparent", backgroundSize:"50%", backgroundPosition: "center", backgroundRepeat:"no-repeat", backgroundImage:"url(./images/google-play-badge.png)"}}>test</Link>*/}
+						<PrimaryHeading
+							level={3}
+							isPretty={true}
+							color={'#f3921b'}
+							customSize={18}
+							customMargin="0px 0px 5px 0px"
+						>
+							<label>Musicoin Mobile App V1.0</label>
+						</PrimaryHeading>
 						<Link
 							to="/"
 							style={{
-								width: '35%',
-								height: '100px',
+								width: '155px',
+								height: '46px',
 								float: 'left',
-								backgroundSize: '200px 75px',
+								backgroundSize: '100%',
 								backgroundRepeat: 'no-repeat',
 								backgroundPosition: 'center',
 								backgroundImage: 'url(' + googlePlayButtonImage + ')',
@@ -109,11 +109,11 @@ export const Home = () => (
 						<Link
 							to="/"
 							style={{
-								marginLeft: '25px',
-								width: '35%',
-								height: '100px',
+								marginLeft: '32px',
+								width: '138px',
+								height: '46px',
 								float: 'left',
-								backgroundSize: '190px 52px',
+								backgroundSize: '90%',
 								backgroundRepeat: 'no-repeat',
 								backgroundPosition: 'center',
 								backgroundImage: 'url(' + appleAppMarketButtonImage + ')',
