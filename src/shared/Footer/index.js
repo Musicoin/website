@@ -107,7 +107,7 @@ export const Footer = () => (
 						width: '100px',
 						height: '40px',
 						float: 'left',
-						backgroundSize: '75%',
+						backgroundSize: '90%',
 						backgroundRepeat: 'no-repeat',
 						backgroundPosition: 'center',
 						backgroundImage: 'url(' + appleAppMarketButtonImage + ')',

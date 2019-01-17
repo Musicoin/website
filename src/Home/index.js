@@ -76,7 +76,7 @@ export const Home = () => (
 					<MediaImage src={mobileAppImage} order={0} width={477} height={450} />
 					<MediaContent>
 						<TertiaryHeading level={2} isPretty={true} color={'#FFFFFF'}>
-							Fair Play.
+							Music For All.
 						</TertiaryHeading>
 						<p>
 							With the power of our blockchain platform, you can stream more
@@ -97,9 +97,10 @@ export const Home = () => (
 						<Link
 							to="/"
 							style={{
-								width: '155px',
+								width: '160px',
 								height: '46px',
 								float: 'left',
+								padding: '8%',
 								backgroundSize: '100%',
 								backgroundRepeat: 'no-repeat',
 								backgroundPosition: 'center',
@@ -110,12 +111,13 @@ export const Home = () => (
 							to="/"
 							style={{
 								marginLeft: '32px',
-								width: '138px',
+								width: '160px',
 								height: '46px',
 								float: 'left',
-								backgroundSize: '90%',
+								padding: '8%',
+								backgroundSize: '100%',
 								backgroundRepeat: 'no-repeat',
-								backgroundPosition: 'center',
+								backgroundPosition: 'center center',
 								backgroundImage: 'url(' + appleAppMarketButtonImage + ')',
 							}}
 						/>
