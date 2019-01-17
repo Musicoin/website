@@ -82,7 +82,7 @@ export const Home = () => (
 							customSize={24}
 							customMargin="0px 0px 5px 0px"
 						>
-							<label>Musicoin Mobile App V.1</label>
+							<label>Musicoin Mobile App V1.0</label>
 						</PrimaryHeading>
 						<TertiaryHeading level={2} isPretty={true} color={'#FFFFFF'}>
 							Fair Play.
