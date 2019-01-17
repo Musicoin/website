@@ -90,7 +90,7 @@ export const Home = () => (
 							isPretty={true}
 							color={'#f3921b'}
 							customSize={18}
-							customMargin="0px 0px 5px 0px"
+							customMargin="0px 0px 16px 0px"
 						>
 							<label>Musicoin Mobile App V1.0</label>
 						</PrimaryHeading>
@@ -100,7 +100,7 @@ export const Home = () => (
 								width: '160px',
 								height: '46px',
 								float: 'left',
-								padding: '8%',
+								padding: '2% 8% 8% 8%',
 								backgroundSize: '100%',
 								backgroundRepeat: 'no-repeat',
 								backgroundPosition: 'center',
@@ -114,7 +114,7 @@ export const Home = () => (
 								width: '160px',
 								height: '46px',
 								float: 'left',
-								padding: '8%',
+								padding: '2% 8% 8% 8%',
 								backgroundSize: '100%',
 								backgroundRepeat: 'no-repeat',
 								backgroundPosition: 'center center',
