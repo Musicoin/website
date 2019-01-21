@@ -56,16 +56,13 @@ export class Header extends Component {
 							</NavToggle>
 						)}
 						<NavItems open={open}>
-							<NavItem to="/musicians">Musicians</NavItem>
 							<NavItem to="/how-it-works">How it works</NavItem>
-							<NavItem to="/resources">Resources</NavItem>
+							<NavItem to="/musicians">For Musicians</NavItem>
+							{/*}<NavItem to="/resources">Resources</NavItem>
 							<NavItem to="/gettingstarted">Getting Started</NavItem>
 							<NavItem to="/developers">Developers</NavItem>
-							<NavItem to="/legal">Legal</NavItem>
-							<SecondaryButton
-								to="/welcome-musician"
-								target="_blank"
-							>
+							<NavItem to="/legal">Legal</NavItem>*/}
+							<SecondaryButton to="/welcome-musician" target="_blank">
 								Log in
 							</SecondaryButton>
 							{/*}<SecondaryButton

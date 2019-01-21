@@ -41,6 +41,9 @@ export const Footer = () => (
 							Whitepaper
 						</a>
 					</NavItem>
+					<NavItem>
+						<a href="/legal">Legal</a>
+					</NavItem>
 				</NavItems>
 			</NavGroup>
 			<NavGroup>

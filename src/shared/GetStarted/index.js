@@ -15,10 +15,12 @@ export const GetStarted = () => (
 		</LogoIcon>
 		<Body>
 			<Title level={2} isPretty={false}>
-				Join Musicoin
+				Discover Musicoin
 			</Title>
 			<p>The worlds first smart cryptocurrency for music.</p>
 		</Body>
-		<PrimaryButton to="https://musicoin.org/welcome" target="_blank">Join now</PrimaryButton>
+		<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
+			DISCOVER NOW
+		</PrimaryButton>
 	</Wrapper>
 );

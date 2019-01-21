@@ -31,7 +31,16 @@ import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
 import mobileAppImage from './images/iOSAndroid.png';
 import googlePlayButtonImage from './images/google-play-badge.png';
 import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
-//
+const docLocation =
+	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
+
+const openUrl = () => (
+	console.log('Opening doc location'),
+	window.open(
+		'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform',
+		'_blank'
+	)
+);
 
 export const Home = () => (
 	<Wrapper>
@@ -92,10 +101,11 @@ export const Home = () => (
 							customSize={18}
 							customMargin="0px 0px 16px 0px"
 						>
-							<label>Musicoin Mobile App V1.0</label>
+							<label>Musicoin Mobile App V1.0 (coming soon)</label>
 						</PrimaryHeading>
 						<Link
 							to="/"
+							onClick={openUrl}
 							style={{
 								width: '160px',
 								height: '46px',
@@ -109,6 +119,7 @@ export const Home = () => (
 						/>
 						<Link
 							to="/"
+							onClick={openUrl}
 							style={{
 								marginLeft: '32px',
 								width: '160px',
@@ -124,7 +135,7 @@ export const Home = () => (
 					</MediaContent>
 				</Media>
 			</Content>
-			<section>
+			{/*}<section>
 				<Content>
 					<Banner>
 						<BannerTitle isWide={false}>
@@ -143,7 +154,7 @@ export const Home = () => (
 						<ArrowButton to="/how-it-works">How it works</ArrowButton>
 					</Banner>
 				</Content>
-			</section>
+			</section>*/}
 			<section>
 				<Content>
 					<Stats />
@@ -160,7 +171,7 @@ export const Home = () => (
 						/>
 						<MediaContent>
 							<TertiaryHeading level={2} isPretty={true}>
-								Ad free streaming
+								Free streaming
 							</TertiaryHeading>
 							<p>
 								With the power of our blockchain platform, you can stream our
@@ -183,7 +194,7 @@ export const Home = () => (
 							</p>
 						</MediaContent>
 					</Media>
-					<Media>
+					{/*}<Media>
 						<MediaImage
 							src={joinRevolutionImage}
 							order={1}
@@ -200,16 +211,17 @@ export const Home = () => (
 								shared in a musical economy.
 							</p>
 						</MediaContent>
-					</Media>
+					</Media>*/}
 					<Media>
 						<MediaImage
+							order={0}
 							src={musicoinForMusiansImage}
 							width={509}
 							height={542}
 						/>
-						<MediaContent align="right">
+						<MediaContent align="left">
 							<TertiaryHeading level={2} isPretty={true}>
-								Musicoin for musicians
+								Fair play for musicians
 							</TertiaryHeading>
 							<p>
 								With a unique currency, fair compensation, transparent contracts
