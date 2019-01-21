@@ -56,8 +56,7 @@ export class Header extends Component {
 							</NavToggle>
 						)}
 						<NavItems open={open}>
-							{/*}<NavItem to="/how-it-works">How it works</NavItem>*/}
-							<NavItem to="/nav/feed">How it works</NavItem>
+							<NavItem to="/how-it-works">How it works</NavItem>
 							<NavItem to="/musicians">For Musicians</NavItem>
 							{/*}<NavItem to="/resources">Resources</NavItem>
 							<NavItem to="/gettingstarted">Getting Started</NavItem>

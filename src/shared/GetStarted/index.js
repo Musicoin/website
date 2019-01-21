@@ -19,7 +19,8 @@ export const GetStarted = () => (
 			</Title>
 			<p>The worlds first smart cryptocurrency for music.</p>
 		</Body>
-		<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
+		{/*<PrimaryButton to="https://musicoin.org/welcome" target="_blank">*/}
+		<PrimaryButton to="https://musicoin.org/nav/feed" target="_blank">
 			DISCOVER NOW
 		</PrimaryButton>
 	</Wrapper>
