@@ -88,11 +88,12 @@ export const Home = () => (
 							Music For All
 						</TertiaryHeading>
 						<p>
-							95% of internet users can't listen to music online easily today
-							with expensive but closed streaming services. With the power of
-							blockchain, you can stream freely from more than 8 million
-							independent artists very soon. There's no ads. It is free,
-							shareable and artists get paid instantly.
+							95% of internet users don't have access to music online, unless
+							they subscribe to an expensive and closed streaming service. With
+							the power of $MUSIC blockchain, they can now stream independent
+							music for free, from a constantly growing catalog of labels and
+							artists. There's no ads, it is free, easy to share, and artists
+							get paid instantly.
 							{/*With the power of our blockchain platform, you can stream more
 							than 60,000 tracks, from more than 5000 independent artists.
 							There's no ads, it's free, and artists get paid instantly.*/}
@@ -219,7 +220,7 @@ export const Home = () => (
 					</Media>*/}
 					<Media>
 						<MediaImage
-							order={0}
+							order={1}
 							src={musicoinForMusiansImage}
 							width={509}
 							height={542}
