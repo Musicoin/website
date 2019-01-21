@@ -6,19 +6,41 @@ import { Main } from '@/shared/Main';
 import { Media, MediaImage, MediaContent } from '@/shared/Media';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
-import { PrimaryButton, SecondaryButton, ArrowButton } from '@/shared/buttons';
+import {
+	PrimaryButton,
+	SecondaryButton,
+	ArrowButton,
+	IconButton,
+} from '@/shared/buttons';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
 import { Box } from '@/shared/Box';
+import { Link } from 'react-router-dom';
 import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { TwitterFeedContainer } from '@/shared/TwitterFeedContainer';
-import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
+import {
+	PrimaryHeading,
+	SecondaryHeading,
+	TertiaryHeading,
+} from '@/shared/headings';
 import { Stats } from './Stats';
-
 import adFreeStreamingImage from './images/ad-free-streaming.png';
 import supportMusiciansImage from './images/support-musicians.png';
 import joinRevolutionImage from './images/revolution.png';
 import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
+import mobileAppImage from './images/iOSAndroid.png';
+import googlePlayButtonImage from './images/google-play-badge.png';
+import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
+const docLocation =
+	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
+
+const openUrl = () => (
+	console.log('Opening doc location'),
+	window.open(
+		'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform',
+		'_blank'
+	)
+);
 
 export const Home = () => (
 	<Wrapper>
@@ -59,23 +81,86 @@ export const Home = () => (
 		<Header />
 		<Main>
 			<Content>
-				<Banner>
-					<BannerTitle isWide={false}>
-						Revolutionizing music with the blockchain
-					</BannerTitle>
-					Listen to Artist of the week<span>
-						<br />
-					</span>
-					<BannerText>
-						100% free streaming for listeners, industry best compensation for
-						musicians.
-					</BannerText>
-					<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
-						Join the revolution
-					</PrimaryButton>
-					<ArrowButton to="/how-it-works">How it works</ArrowButton>
-				</Banner>
+				<Media marginTop={'125px'}>
+					<MediaImage src={mobileAppImage} order={0} width={477} height={450} />
+					<MediaContent>
+						<TertiaryHeading level={2} isPretty={true} color={'#FFFFFF'}>
+							Music For All
+						</TertiaryHeading>
+						<p>
+							95% of internet users don't have access to music online, unless
+							they subscribe to an expensive and closed streaming service. With
+							the power of $MUSIC blockchain, they can now stream independent
+							music for free, from a constantly growing catalog of labels and
+							artists. There's no ads, it is free, easy to share, and artists
+							get paid instantly.
+							{/*With the power of our blockchain platform, you can stream more
+							than 60,000 tracks, from more than 5000 independent artists.
+							There's no ads, it's free, and artists get paid instantly.*/}
+						</p>
+						<p>Try for yourself & discover new music now!</p>
+						{/*<Link to="/test" style={{backgroundColor:"transparent", backgroundSize:"50%", backgroundPosition: "center", backgroundRepeat:"no-repeat", backgroundImage:"url(./images/google-play-badge.png)"}}>test</Link>*/}
+						<PrimaryHeading
+							level={3}
+							isPretty={true}
+							color={'#f3921b'}
+							customSize={18}
+							customMargin="0px 0px 16px 0px"
+						>
+							<label>Musicoin Mobile App V1.0 (coming soon)</label>
+						</PrimaryHeading>
+						<Link
+							to="/"
+							onClick={openUrl}
+							style={{
+								width: '160px',
+								height: '46px',
+								float: 'left',
+								padding: '2% 8% 8% 8%',
+								backgroundSize: '100%',
+								backgroundRepeat: 'no-repeat',
+								backgroundPosition: 'center',
+								backgroundImage: 'url(' + googlePlayButtonImage + ')',
+							}}
+						/>
+						<Link
+							to="/"
+							onClick={openUrl}
+							style={{
+								marginLeft: '32px',
+								width: '160px',
+								height: '46px',
+								float: 'left',
+								padding: '2% 8% 8% 8%',
+								backgroundSize: '100%',
+								backgroundRepeat: 'no-repeat',
+								backgroundPosition: 'center center',
+								backgroundImage: 'url(' + appleAppMarketButtonImage + ')',
+							}}
+						/>
+					</MediaContent>
+				</Media>
 			</Content>
+			{/*}<section>
+				<Content>
+					<Banner>
+						<BannerTitle isWide={false}>
+							Revolutionizing music with the blockchain
+						</BannerTitle>
+						Listen to Artist of the week<span>
+							<br />
+						</span>
+						<BannerText>
+							100% free streaming for listeners, industry best compensation for
+							musicians.
+						</BannerText>
+						<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
+							Join the revolution
+						</PrimaryButton>
+						<ArrowButton to="/how-it-works">How it works</ArrowButton>
+					</Banner>
+				</Content>
+			</section>*/}
 			<section>
 				<Content>
 					<Stats />
@@ -92,7 +177,7 @@ export const Home = () => (
 						/>
 						<MediaContent>
 							<TertiaryHeading level={2} isPretty={true}>
-								Ad free streaming
+								Free streaming
 							</TertiaryHeading>
 							<p>
 								With the power of our blockchain platform, you can stream our
@@ -115,7 +200,7 @@ export const Home = () => (
 							</p>
 						</MediaContent>
 					</Media>
-					<Media>
+					{/*}<Media>
 						<MediaImage
 							src={joinRevolutionImage}
 							order={1}
@@ -132,16 +217,17 @@ export const Home = () => (
 								shared in a musical economy.
 							</p>
 						</MediaContent>
-					</Media>
+					</Media>*/}
 					<Media>
 						<MediaImage
+							order={1}
 							src={musicoinForMusiansImage}
 							width={509}
 							height={542}
 						/>
-						<MediaContent align="right">
+						<MediaContent align="left">
 							<TertiaryHeading level={2} isPretty={true}>
-								Musicoin for musicians
+								Fair play for musicians
 							</TertiaryHeading>
 							<p>
 								With a unique currency, fair compensation, transparent contracts
