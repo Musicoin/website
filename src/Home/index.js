@@ -85,12 +85,17 @@ export const Home = () => (
 					<MediaImage src={mobileAppImage} order={0} width={477} height={450} />
 					<MediaContent>
 						<TertiaryHeading level={2} isPretty={true} color={'#FFFFFF'}>
-							Music For All.
+							Music For All
 						</TertiaryHeading>
 						<p>
-							With the power of our blockchain platform, you can stream more
+							95% of internet users can't listen to music online easily today
+							with expensive but closed streaming services. With the power of
+							blockchain, you can stream freely from more than 8 million
+							independent artists very soon. There's no ads. It is free,
+							shareable and artists get paid instantly.
+							{/*With the power of our blockchain platform, you can stream more
 							than 60,000 tracks, from more than 5000 independent artists.
-							There's no ads, it's free, and artists get paid instantly.
+							There's no ads, it's free, and artists get paid instantly.*/}
 						</p>
 						<p>Try for yourself & discover new music now!</p>
 						{/*<Link to="/test" style={{backgroundColor:"transparent", backgroundSize:"50%", backgroundPosition: "center", backgroundRepeat:"no-repeat", backgroundImage:"url(./images/google-play-badge.png)"}}>test</Link>*/}
