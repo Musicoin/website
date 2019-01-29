@@ -38,6 +38,7 @@ const appleDownloadUrl =
 const googleDownloadUrl =
 	'https://play.google.com/store/apps/details?id=org.musicoin.musicoin';
 
+//function to load download urls
 const openGoogleUrl = () => window.open(googleDownloadUrl, '_blank');
 const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
