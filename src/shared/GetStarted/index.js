@@ -17,7 +17,7 @@ export const GetStarted = () => (
 			<Title level={2} isPretty={false}>
 				Discover Musicoin
 			</Title>
-			<p>The worlds first smart blockchain for music.</p>
+			<p>The worlds first smart cryptocurrency for music.</p>
 		</Body>
 		{/*<PrimaryButton to="https://musicoin.org/welcome" target="_blank">*/}
 		<PrimaryButton to="https://musicoin.org/nav/feed" target="_blank">
