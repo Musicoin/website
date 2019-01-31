@@ -108,7 +108,7 @@ export const Musicians = () => (
 								</StepsText>
 							</StepsItem>
 							<StepsItem icon={<PayPerPlayIcon />}>
-								<StepsTitle>PPP</StepsTitle>
+								<StepsTitle>PPP(Pay-per-Play)</StepsTitle>
 								<StepsText>
 									Design your license and get your content rights verified on
 									the $MUSIC Blockchain.
