@@ -46,13 +46,13 @@ export const Home = () => (
 	<Wrapper>
 		<Helmet
 			title="Musicoin Project"
-			description="Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain."
+			description="Musicoin (MUSIC) is a smart blockchain and music streaming platform."
 			meta={[
 				{ name: 'author', content: 'Musicoin Project' },
 				{
 					name: 'description',
 					content:
-						'Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain. ',
+						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
 				},
 
 				{ name: 'twitter:site', content: 'musicoins' },
@@ -70,7 +70,7 @@ export const Home = () => (
 				{
 					property: 'og:description',
 					content:
-						'Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain. ',
+						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
 				},
 				{
 					property: 'og:image',
