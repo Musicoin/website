@@ -39,7 +39,7 @@ export const Musicians = () => (
 						compensation, instantly and automatically, for each stream of music.
 					</BannerText>
 					<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
-						Join now
+						Join and Verify
 					</PrimaryButton>
 				</Banner>
 				<Features>
