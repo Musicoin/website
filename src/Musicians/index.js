@@ -33,13 +33,13 @@ export const Musicians = () => (
 					<BannerTitle>Musicoin for musicians</BannerTitle>
 					<BannerText>
 						With a unique currency, fair compensation, transparent contracts and
-						no intermediaries; Musicoin is revolutionizing the creation and
+						the least intermediaries; Musicoin is revolutionizing the creation and
 						distribution of value for musical activity. The Musicoin Blockchain
 						ensures each musician receives the most competitive industry
 						compensation, instantly and automatically, for each stream of music.
 					</BannerText>
 					<PrimaryButton to="https://musicoin.org/welcome" target="_blank">
-						Join now
+						Join and Verify
 					</PrimaryButton>
 				</Banner>
 				<Features>
@@ -108,10 +108,10 @@ export const Musicians = () => (
 								</StepsText>
 							</StepsItem>
 							<StepsItem icon={<PayPerPlayIcon />}>
-								<StepsTitle>PPP</StepsTitle>
+								<StepsTitle>PPP(Pay-per-Play)</StepsTitle>
 								<StepsText>
 									Design your license and get your content rights verified on
-									the $MUSIC Blockchain.
+									the $MUSIC Blockchain, and allocate future distribution to different right owners.
 								</StepsText>
 							</StepsItem>
 							<StepsItem icon={<PayoutIcon />}>

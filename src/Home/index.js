@@ -33,26 +33,26 @@ import googlePlayButtonImage from './images/google-play-badge.png';
 import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
 const docLocation =
 	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
+const appleDownloadUrl =
+	'https://itunes.apple.com/us/app/musicoin/id1447230096?ls=1&mt=8';
+const googleDownloadUrl =
+	'https://play.google.com/store/apps/details?id=org.musicoin.musicoin';
 
-const openUrl = () => (
-	console.log('Opening doc location'),
-	window.open(
-		'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform',
-		'_blank'
-	)
-);
+//function to load download urls
+const openGoogleUrl = () => window.open(googleDownloadUrl, '_blank');
+const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
 export const Home = () => (
 	<Wrapper>
 		<Helmet
 			title="Musicoin Project"
-			description="Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain."
+			description="Musicoin (MUSIC) is a smart blockchain and music streaming platform."
 			meta={[
 				{ name: 'author', content: 'Musicoin Project' },
 				{
 					name: 'description',
 					content:
-						'Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain. ',
+						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
 				},
 
 				{ name: 'twitter:site', content: 'musicoins' },
@@ -70,7 +70,7 @@ export const Home = () => (
 				{
 					property: 'og:description',
 					content:
-						'Musicoin (MUSIC) is a smart cryptocurrency and music streaming platform built upon the Musicoin blockchain. ',
+						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
 				},
 				{
 					property: 'og:image',
@@ -107,11 +107,11 @@ export const Home = () => (
 							customSize={18}
 							customMargin="0px 0px 16px 0px"
 						>
-							<label>Musicoin Mobile App V1.0 (coming soon)</label>
+							<label>Musicoin Mobile App V1.0 (Now Available)</label>
 						</PrimaryHeading>
 						<Link
 							to="/"
-							onClick={openUrl}
+							onClick={openGoogleUrl}
 							style={{
 								width: '160px',
 								height: '46px',
@@ -125,7 +125,7 @@ export const Home = () => (
 						/>
 						<Link
 							to="/"
-							onClick={openUrl}
+							onClick={openAppleUrl}
 							style={{
 								marginLeft: '32px',
 								width: '160px',

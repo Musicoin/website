@@ -23,6 +23,14 @@ import {
 } from '@/shared/icons';
 import googlePlayButtonImage from '../../Home/images/google-play-badge.png';
 import appleAppMarketButtonImage from '../../Home/images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
+const appleDownloadUrl =
+	'https://itunes.apple.com/us/app/musicoin/id1447230096?ls=1&mt=8';
+const googleDownloadUrl =
+	'https://play.google.com/store/apps/details?id=org.musicoin.musicoin';
+
+//function to load download urls
+const openGoogleUrl = () => window.open(googleDownloadUrl, '_blank');
+const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
 export const Footer = () => (
 	<Wrapper>
@@ -42,7 +50,7 @@ export const Footer = () => (
 						</a>
 					</NavItem>
 					<NavItem>
-						<a href="/legal">Legal</a>
+						<a href="/legal/legal">Legal</a>
 					</NavItem>
 				</NavItems>
 			</NavGroup>
@@ -93,6 +101,7 @@ export const Footer = () => (
 				</SocialLink>*/}
 				<Link
 					to="/"
+					onClick={openGoogleUrl}
 					style={{
 						width: '100px',
 						height: '40px',
@@ -105,6 +114,7 @@ export const Footer = () => (
 				/>
 				<Link
 					to="/"
+					onClick={openAppleUrl}
 					style={{
 						marginRight: '45px',
 						width: '100px',
