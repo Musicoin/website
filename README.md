@@ -2,7 +2,12 @@
 
 The Musicoin Frontend Website.
 
-## Heuristics
+
+## Build
+
+`npm run build`
+
+## Philosophy
 
 [heuristic](https://en.wikipedia.org/wiki/Heuristic_(computer_science))
 /ˌhjʊ(ə)ˈrɪstɪk/
