@@ -31,6 +31,8 @@ import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
 import mobileAppImage from './images/iOSAndroid.png';
 import googlePlayButtonImage from './images/google-play-badge.png';
 import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
+import statsBackgroundImage from './images/statsBackground.jpg';
+
 const docLocation =
 	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
 const appleDownloadUrl =
@@ -245,6 +247,28 @@ export const Home = () => (
 								for each stream of music.
 							</p>
 							<SecondaryButton to="/musicians">For Musicians</SecondaryButton>
+						</MediaContent>
+					</Media>
+				</Content>
+			</section>
+			<section>
+				<Content hasBg={false}>
+					<Media>
+						<MediaContent align="center">
+							<div
+								style={{
+									height: 608,
+									backgroundSize: '100%',
+									backgroundRepeat: 'no-repeat',
+									backgroundPosition: 'center center',
+									backgroundImage: 'url(' + statsBackgroundImage + ')',
+								}}
+							>
+								<p style={{ paddingTop: 50 }}>Tracks played</p>
+								<p>5,450,000</p>
+								<p style={{ paddingTop: 250 }}>Coins tipped</p>
+								<p>7,500,000</p>
+							</div>
 						</MediaContent>
 					</Media>
 				</Content>
