@@ -14,6 +14,7 @@ import {
 } from '@/shared/buttons';
 import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
 import { Box } from '@/shared/Box';
+import { BoxContent } from '@/shared/Box/styles';
 import { Link } from 'react-router-dom';
 import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
@@ -247,6 +248,48 @@ export const Home = () => (
 							<SecondaryButton to="/musicians">For Musicians</SecondaryButton>
 						</MediaContent>
 					</Media>
+				</Content>
+			</section>
+			<section>
+				<Content hasBg={false}>
+					<BoxContent style={{ textAlign: 'center', marginBottom: 50 }}>
+						<script
+							type="text/javascript"
+							src="//sgwidget.leaderapps.co/js/sendgrid-widget.js"
+						/>
+						<TertiaryHeading level={1} isPretty={true}>
+							Stay tuned!
+						</TertiaryHeading>
+						<p>
+							Subscribe to our newsletter to get the latest news about our
+							project & artists
+						</p>
+						<div
+							id="sendgrid-subscription-widget"
+							className="sendgrid-subscription-widget"
+						>
+							<form
+								id="sg-widget"
+								data-token="lOGj1RVaRfe4OXeyzgYZLA"
+								onSubmit="return false;"
+							>
+								<div className="sg-response" id="sg-response" />
+								<input
+									id="email"
+									type="email"
+									name="email"
+									placeholder="enter your email..."
+									required
+								/>
+								<input
+									type="submit"
+									id="sg-submit-btn"
+									value="Subscribe"
+									style={{ backgroundColor: '#F3921B' }}
+								/>
+							</form>
+						</div>
+					</BoxContent>
 				</Content>
 			</section>
 		</Main>
