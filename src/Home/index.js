@@ -6,13 +6,7 @@ import { Main } from '@/shared/Main';
 import { Media, MediaImage, MediaContent } from '@/shared/Media';
 import { Content } from '@/shared/Content';
 import { Footer } from '@/shared/Footer';
-import {
-	PrimaryButton,
-	SecondaryButton,
-	ArrowButton,
-	IconButton,
-} from '@/shared/buttons';
-import { Banner, BannerTitle, BannerText } from '@/shared/Banner';
+import { SecondaryButton } from '@/shared/buttons';
 import { Box } from '@/shared/Box';
 import { Link } from 'react-router-dom';
 import { Strip } from '@/shared/Strip';
@@ -26,12 +20,10 @@ import {
 import { Stats } from './Stats';
 import adFreeStreamingImage from './images/ad-free-streaming.png';
 import supportMusiciansImage from './images/support-musicians.png';
-import joinRevolutionImage from './images/revolution.png';
 import musicoinForMusiansImage from './images/musicoin-for-musicians.png';
 import mobileAppImage from './images/iOSAndroid.png';
 import googlePlayButtonImage from './images/google-play-badge.png';
 import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
-import statsBackgroundImage from './images/statsBackground.jpg';
 
 const docLocation =
 	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
@@ -82,6 +74,11 @@ export const Home = () => (
 		/>
 		<Header />
 		<Main>
+			<section>
+				<Content>
+					<Stats />
+				</Content>
+			</section>
 			<Content>
 				<Media marginTop={'125px'}>
 					<MediaImage src={mobileAppImage} order={0} width={477} height={450} />
@@ -164,11 +161,6 @@ export const Home = () => (
 				</Content>
 			</section>*/}
 			<section>
-				<Content>
-					<Stats />
-				</Content>
-			</section>
-			<section>
 				<Content hasBg={true}>
 					<Media>
 						<MediaImage
@@ -247,28 +239,6 @@ export const Home = () => (
 								for each stream of music.
 							</p>
 							<SecondaryButton to="/musicians">For Musicians</SecondaryButton>
-						</MediaContent>
-					</Media>
-				</Content>
-			</section>
-			<section>
-				<Content hasBg={false}>
-					<Media>
-						<MediaContent align="center">
-							<div
-								style={{
-									height: 608,
-									backgroundSize: '100%',
-									backgroundRepeat: 'no-repeat',
-									backgroundPosition: 'center center',
-									backgroundImage: 'url(' + statsBackgroundImage + ')',
-								}}
-							>
-								<p style={{ paddingTop: 50 }}>Tracks played</p>
-								<p>5,450,000</p>
-								<p style={{ paddingTop: 250 }}>Coins tipped</p>
-								<p>7,500,000</p>
-							</div>
 						</MediaContent>
 					</Media>
 				</Content>
