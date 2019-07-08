@@ -51,10 +51,7 @@ class Stats extends React.Component {
 	}
 
 	getStats() {
-		fetch(
-			`${process.env.MUSICOIN_API_ENDPOINT}/manage/analytics?password=${process
-				.env.ADMIN_PWD}`
-		)
+		fetch(`https://t2.musicoin.org/api/manage/analytics?password=12345`)
 			.then(response => response.json())
 			.then(data =>
 				this.setState({
