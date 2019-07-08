@@ -4,6 +4,7 @@ import AnimatedNumber from 'react-animated-number';
 let numberStyle = {
 	transition: '0.8s ease-out',
 	transitionProperty: 'background-color, color, opacity',
+	fontSize: '1.2em',
 };
 
 class Stats extends React.Component {
