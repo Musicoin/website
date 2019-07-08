@@ -19,12 +19,14 @@ class Stats extends React.Component {
 	render() {
 		return (
 			<div style={{ marginTop: 40 }}>
-				<h2 style={{ textAlign: 'center', fontWeight: 'medium' }}>
-					We have served {this.numberComponent(this.state.totalPlayed)} streams,
-					paid {this.numberComponent(this.state.totalArtistsTipped)}(tips) +{' '}
-					{this.numberComponent(this.state.totalTracksTipped)}(PPP)
+				<h3 style={{ textAlign: 'center', fontWeight: 'medium' }}>
+					We have served {this.numberComponent(this.state.totalPlayed)} streams
+					to listeners, paid{' '}
+					{this.numberComponent(
+						this.state.totalArtistsTipped + this.state.totalTracksTipped
+					)}
 					<span style={{ color: '#F3921B' }}> $MUSIC</span> to musicians.
-				</h2>
+				</h3>
 			</div>
 		);
 	}
