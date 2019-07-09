@@ -11,9 +11,9 @@ class Stats extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			totalArtistsTipped: '0',
-			totalTracksTipped: '0',
-			totalPlayed: '0',
+			totalArtistsTipped: 1000000,
+			totalTracksTipped: 3000000,
+			totalPlayed: 6000000,
 		};
 	}
 
