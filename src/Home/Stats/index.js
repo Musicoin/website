@@ -24,8 +24,10 @@ class Stats extends React.Component {
 					We have served {this.numberComponent(this.state.totalPlayed)} streams
 					to listeners, paid{' '}
 					{this.numberComponent(
-						this.state.totalArtistsTipped + this.state.totalTracksTipped
-					)}
+						this.state.totalArtistsTipped +
+							this.state.totalTracksTipped +
+							this.state.totalPlayed
+					)}+
 					<span style={{ color: '#F3921B' }}> $MUSIC</span> to musicians.
 				</h3>
 			</div>
