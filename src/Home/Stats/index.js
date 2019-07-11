@@ -27,7 +27,7 @@ class Stats extends React.Component {
 						this.state.totalArtistsTipped +
 							this.state.totalTracksTipped +
 							this.state.totalPlayed
-					)}+
+					)}
 					<span style={{ color: '#F3921B' }}> $MUSIC</span> to musicians.
 				</h3>
 			</div>
@@ -56,7 +56,7 @@ class Stats extends React.Component {
 	}
 
 	getStats() {
-		fetch(`https://t2.musicoin.org/api/manage/analytics?password=12345`)
+		fetch(`https://kickass.musicoin.org/api/manage/analytics`)
 			.then(response => response.json())
 			.then(data =>
 				this.setState({
