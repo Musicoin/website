@@ -73,10 +73,10 @@ export const Faq = () => (
 			<MoreInfo title="Where do I buy and sell Musicoin? How do I store them?">
 				<p>
 					Once you’ve bought Bitcoin, you can convert them into Musicoin at
-					Bittrex and Cryptopia cryptocurrency exchange. Bittrex is recommended
-					because of its higher liquidity. You can store your Musicoin either in
-					your web wallet at musicoin.org or download a desktop wallet from our
-					github page.
+					Bittrex and Dove Wallet cryptocurrency exchange. Bittrex is
+					recommended because of its higher liquidity. You can store your
+					Musicoin either in your web wallet at musicoin.org or download a
+					desktop wallet from our github page.
 				</p>
 			</MoreInfo>
 			<MoreInfo title="How do I get started with mining Musicoin?">

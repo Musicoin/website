@@ -9,8 +9,8 @@ export const ExchangeStub = () => (
 		</SecondaryHeading>
 		<p>
 			Muscioin is right now supported on{' '}
-			<Link href="https://bittrex.com">Bittrex</Link>
-			&nbsp;and <Link href="https://bittrex.com">Cryptopia</Link>
+			<Link href="https://bittrex.com">Bittrex</Link> and{' '}
+			<Link href="https://dovewallet.com">Dove Wallet</Link>
 		</p>
 	</Fragment>
 );
