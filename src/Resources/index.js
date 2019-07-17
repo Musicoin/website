@@ -21,13 +21,13 @@ export const Resources = ({ match }) => (
 			<Content hasBg={true}>
 				<ResourcesBanner isCenter={true}>
 					<BannerTitle>Resources</BannerTitle>
-					<ResourcesImage width={831} height={549}/>
+					<ResourcesImage width={831} height={549} />
 				</ResourcesBanner>
 			</Content>
 			<Box>
 				<Nav>
 					<NavLink to={`${match.url}/faq`}>FAQ</NavLink>
-					<NavLink href="http://www.scribd.com/document/362834077/Musicoin-White-Paper-v2-0-0">
+					<NavLink href="https://drive.google.com/file/d/1KVvcwPKUngMNffgWW65k1p4UvKg5QG0u/view">
 						White paper
 					</NavLink>
 					{/*<NavLink href="https://forum.musicoin.org">Musicoin Forum</NavLink>*/}
