@@ -35,11 +35,7 @@ class Stats extends React.Component {
 	}
 
 	componentDidMount() {
-		this.interval = setInterval(() => this.getStats(), 1000);
-	}
-
-	componentWillUnmount() {
-		clearInterval(this.interval);
+		this.getStats();
 	}
 
 	numberComponent(number) {
