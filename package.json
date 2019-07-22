@@ -18,7 +18,7 @@
     "numeral": "^2.0.6",
     "polished": "^1.8.1",
     "prettier": "^1.7.4",
-    "react": "^16.2.0",
+    "react": "^16.8.6",
     "react-animated-number": "^0.4.4",
     "react-apollo": "^2.1.0",
     "react-app-rewire-styled-components": "^3.0.0",
