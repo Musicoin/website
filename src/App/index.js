@@ -11,6 +11,7 @@ import { Resources } from '@/Resources';
 import { Terms } from '@/Terms';
 import { Developers } from '@/Developers';
 import { GettingStarted } from '@/GettingStarted';
+import { Team } from '@/Team';
 
 export class AppBase extends Component {
 	componentDidUpdate(prevProps) {
@@ -31,6 +32,7 @@ export class AppBase extends Component {
 					<Route path="/resources" component={Resources} />
 					<Route path="/legal" component={Terms} />
 					<Route path="/developers" component={Developers} />
+					<Route path="/team" component={Team} />
 					<Route>
 						<div>404</div>
 					</Route>

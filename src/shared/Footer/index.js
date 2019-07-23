@@ -42,7 +42,7 @@ export const Footer = () => (
 						<NavLink to="/how-it-works">What is musicoin?</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink to="/musicians">For musicians</NavLink>
+						<NavLink to="/team">Team</NavLink>
 					</NavItem>
 					<NavItem>
 						<a href="https://drive.google.com/file/d/1KVvcwPKUngMNffgWW65k1p4UvKg5QG0u/view">
