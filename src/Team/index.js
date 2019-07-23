@@ -48,7 +48,7 @@ export const Team = ({ match }) => (
 						/>
 						<Member
 							name="Immy Khan"
-							role="Crypto Manager"
+							role="Crypto Director"
 							country="IN"
 							image={immyKhanImage}
 						/>
