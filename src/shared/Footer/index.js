@@ -52,6 +52,9 @@ export const Footer = () => (
 					<NavItem>
 						<a href="/legal/legal">Legal</a>
 					</NavItem>
+					<NavItem>
+						<a href="/team">Team</a>
+					</NavItem>
 				</NavItems>
 			</NavGroup>
 			<NavGroup>
