@@ -39,7 +39,7 @@ export const Footer = () => (
 				<NavTitle>About</NavTitle>
 				<NavItems>
 					<NavItem>
-						<NavLink to="/how-it-works">What is musicoin?</NavLink>
+						<NavLink to="/how-it-works">What is Musicoin?</NavLink>
 					</NavItem>
 					<NavItem>
 						<NavLink to="/team">Team</NavLink>
