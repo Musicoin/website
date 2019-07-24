@@ -11,11 +11,11 @@ export const BountyStub = () => (
 		<p>
 			Musicoin has a bounty program offered for contributions to the Musicoin
 			Desktop Wallet. The available{' '}
-			<Link href="http://github.com/Musicoin/desktop/issues?q=is%3Aissue+is%3Aopen+label%3ABounty">
+			<Link href="//github.com/Musicoin/desktop/issues?q=is%3Aissue+is%3Aopen+label%3ABounty">
 				issues offering a bounty
 			</Link>{' '}
 			can be found{' '}
-			<Link href="http://github.com/Musicoin/desktop/issues?q=is%3Aissue+is%3Aopen+label%3ABounty">
+			<Link href="//github.com/Musicoin/desktop/issues?q=is%3Aissue+is%3Aopen+label%3ABounty">
 				here
 			</Link>.
 		</p>
@@ -64,22 +64,22 @@ export const BountyStub = () => (
 			<MoreInfo title="How do I get started with the code?">
 				<p>
 					The first step is to download the{' '}
-					<a href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
-						musicoin wallet
-					</a>{' '}
+					<Link href="//github.com/Musicoin/desktop">
+						Musicoin Wallet
+					</Link>{' '}
 					and go through the code.
 				</p>
 			</MoreInfo>
 			<MoreInfo title="Can I get help if I get stuck somewhere?">
 				<p>
 					If you have any doubts, feel free to approach the developers on{' '}
-					<a href="//discord.gg/gA8gjxC">Discord</a> or{' '}
-					<a href="//slack.musicoin.org/">Slack</a>
+					<Link href="//discord.gg/gA8gjxC">Discord</Link> or{' '}
+					<Link href="//slack.musicoin.org/">Slack</Link>
 				</p>
 			</MoreInfo>
 			<MoreInfo title="What if I have a new task to propose for the bounty program?">
 				<p>
-					Feel free to create a Github issue and we will look into it. If the
+					Feel free to{' '}<Link href="//github.com/Musicoin/desktop/issues/new">create a Github issue</Link>{' '} and we will look into it. If the
 					issue you submitted is bounty-worthy, we will label it appropriately.
 				</p>
 			</MoreInfo>
