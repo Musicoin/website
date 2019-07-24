@@ -72,19 +72,18 @@ export const Faq = () => (
 			</TertiaryHeading>
 			<MoreInfo title="Where do I buy and sell Musicoin? How do I store them?">
 				<p>
-					Once you’ve bought Bitcoin, you can convert them into Musicoin at
-					Bittrex and Dove Wallet cryptocurrency exchange. Bittrex is
-					recommended because of its higher liquidity. You can store your
-					Musicoin either in your web wallet at musicoin.org or download a
-					desktop wallet from our github page.
+					Once you’ve bought Bitcoin, you can convert them into Musicoin at{' '}
+					<Link href="//dovewallet.com/trade/spot/music-btc">Dove Wallet</Link>{' '}cryptocurrency exchange. 
+					You can store your Musicoin either in your web wallet at{' '}<Link href="//musicoin.org">musicoin.org</Link>{' '}
+					or download a desktop wallet{' '}<Link href="//github.com/Musicoin/desktop">from our GitHub page</Link>.
 				</p>
 			</MoreInfo>
 			<MoreInfo title="How do I get started with mining Musicoin?">
 				<p>
 					Your first step is to download the go-musicoin client and then follow{' '}
-					<a href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
+					<Link href="//github.com/Musicoin/go-musicoin/wiki/Start-a-miner">
 						the mining guide
-					</a>. The client has similar functionality to go-ethereum client, so
+					</Link>. The client has similar functionality to go-ethereum client, so
 					the steps are identical.
 				</p>
 			</MoreInfo>
