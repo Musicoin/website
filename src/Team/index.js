@@ -45,24 +45,33 @@ export const Team = ({ match }) => (
 							role="Founder / Chief Architect"
 							country="HK"
 							image={isaacMaoImage}
+							linkedinProfile="http://linkedin.com/in/isaacmao"
+							twitterProfile="https://twitter.com/isaac"
 						/>
 						<Member
 							name="Immy Khan"
 							role="Crypto Director"
 							country="IN"
 							image={immyKhanImage}
+							linkedinProfile="http://linkedin.com/in/imrankhan-nagori-9b167b69"
+							twitterProfile="https://twitter.com/ImmyKhanNagori"
 						/>
 						<Member
 							name="Asterios Papastamatakis"
 							role="Musician Relationship"
 							country="GR"
 							image={asteriosPapastamatakisImage}
+
+							twitterProfile="https://twitter.com/asteriospapas"
+							musicoinProfile="https://musicoin.org/nav/artist/0x44f10f4b8c8d90b003ea7d9d6c91a1513003aa6a"
 						/>
 						<Member
 							name="Ben Gyles"
 							role="Lead Mobile Developer"
 							country="BE"
 							image={benGylesImage}
+							linkedinProfile="https://www.linkedin.com/in/ben-gyles-7826b731/"
+							musicoinProfile="https://musicoin.org/nav/artist/0x411eedd91f172766061d705ed7e71131b84a7654"
 						/>
 					</MemberRow>
 					<MemberRow>
@@ -71,24 +80,28 @@ export const Team = ({ match }) => (
 							role="System Engineer"
 							country="CN"
 							image={riverYanImage}
+							linkedinProfile="https://www.linkedin.com/in/river-yan-65b630b/"
 						/>
 						<Member
 							name="Gibran Septya"
 							role="Chief Designer"
 							country="ID"
 							image={gibranSeptyaImage}
+							linkedinProfile="https://www.linkedin.com/in/gibranseptya/"
 						/>
 						<Member
 							name="Ehsan Hajian"
 							role="System Engineer"
 							country="IR"
 							image={ehsanHajianImage}
+							linkedinProfile="https://www.linkedin.com/in/ehsan-hajian-b23440148/"
 						/>
 						<Member
 							name="Sean Chen"
-							role="Chief Business Officer"
+							role="Founding Partner"
 							country="US"
 							image={seanChenImage}
+							twitterProfile="https://twitter.com/VSeanc"
 						/>
 					</MemberRow>
 				</Content>

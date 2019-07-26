@@ -51,3 +51,38 @@ export const MemberImage = styled.img`
 MemberImage.defaultProps = {
 	order: 0,
 };
+
+export const SocialRow = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 16px;
+	flex-direction: 'row'};
+
+	${media.xsmall`
+		flex-direction: row;
+	`};
+`;
+
+export const SocialLink = styled.a`
+	font-size: 24px;
+	opacity: 0.7;
+	transition: 200ms ease-in-out;
+
+	& + & {
+		margin: 10px;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+
+	${media.xsmall`
+		font-size: 16px;
+
+		& + & {
+			margin: 10px;
+		}
+	`};
+`;
