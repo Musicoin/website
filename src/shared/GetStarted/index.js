@@ -20,7 +20,7 @@ export const GetStarted = () => (
 			<p>The worlds first smart blockchain for music.</p>
 		</Body>
 		{/*<PrimaryButton to="https://musicoin.org/welcome" target="_blank">*/}
-		<PrimaryButton to="https://musicoin.org/nav/feed" target="_blank">
+		<PrimaryButton to="nav/feed" target="_blank">
 			DISCOVER NOW
 		</PrimaryButton>
 	</Wrapper>
