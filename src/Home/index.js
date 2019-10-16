@@ -106,7 +106,7 @@ export const Home = () => (
 							customSize={18}
 							customMargin="0px 0px 16px 0px"
 						>
-							<label>Musicoin Mobile App V2.1 (Now Available)</label>
+							<label>Musicoin Mobile App V3 (Now Available)</label>
 						</PrimaryHeading>
 						<Link
 							to="/"
