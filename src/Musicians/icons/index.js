@@ -1,0 +1,9 @@
+export { HighStandardsIcon } from './HighStandardsIcon';
+export { FairIcon } from './FairIcon';
+export { TransparentIcon } from './TransparentIcon';
+export { InteractiveIcon } from './InteractiveIcon';
+export { VerifyIcon } from './VerifyIcon';
+export { UploadIcon } from './UploadIcon';
+export { PayPerPlayIcon } from './PayPerPlayIcon';
+export { PayoutIcon } from './PayoutIcon';
+export { DistributeIcon } from './DistributeIcon';

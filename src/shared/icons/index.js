@@ -1,0 +1,12 @@
+export { Icon } from './styles';
+export { ArrowRightIcon } from './ArrowRightIcon';
+export { LogoIcon } from './LogoIcon';
+export { TwitterIcon } from './TwitterIcon';
+export { RedditIcon } from './RedditIcon';
+export { MediumIcon } from './MediumIcon';
+export { BitcoinIcon } from './BitcoinIcon';
+export { GitIcon } from './GitIcon';
+export { FacebookIcon } from './FacebookIcon';
+export { PlayIcon } from './PlayIcon';
+export { SkipIcon } from './SkipIcon';
+export { GoogleIcon } from './GoogleIcon';
