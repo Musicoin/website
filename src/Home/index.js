@@ -76,6 +76,11 @@ export const Home = () => (
 		<Main>
 			<section>
 				<Content>
+					{// temporary error message 
+					}
+					<p style={{ backgroundColor: 'rgba(255,0,0,0.4)', textAlign: 'center', padding: '1em' }}>
+						If you are having trouble logging in or playing music, don’t get frustrated, Our relaunch is just around the corner. Musicoin is about to come back as a community-driven project, louder than ever! <a href="project-relaunch" style={{textDecoration:'underline'}}>Read more.</a>
+					</p>
 					<Stats />
 				</Content>
 			</section>
@@ -303,6 +308,17 @@ export const Home = () => (
 								>
 									<img
 										src="https://fs.bitcoinmagazine.com/img/square_logo.png"
+										width="195"
+										length="195"
+										alt=""
+									/>
+								</a>
+								<a
+									href="https://coinmarketcap.com/el/headlines/news/Musicoin-partners-with-Skale-Network/"
+									title="Musicoin migration to skale"
+								>
+									<img
+										src="https://play-lh.googleusercontent.com/zdHuxTffm4hDJeIetin4lW8M2FStUvG0CIoUNSHSRIwxu9Q7xpbGBtbBXUf2WlOqXw"
 										width="195"
 										length="195"
 										alt=""
