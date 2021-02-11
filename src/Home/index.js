@@ -78,7 +78,7 @@ export const Home = () => (
 				<Content>
 					{// temporary error message 
 					}
-					<p style={{ backgroundColor: 'red', textAlign: 'center', padding: '1em' }}>
+					<p style={{ backgroundColor: 'rgba(255,0,0,0.4)', textAlign: 'center', padding: '1em' }}>
 						If you are having trouble logging in or playing music, don’t get frustrated, Our relaunch is just around the corner. Musicoin is about to come back as a community-driven project, louder than ever! <a href="project-relaunch" style={{textDecoration:'underline'}}>Read more.</a>
 					</p>
 					<Stats />

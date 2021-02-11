@@ -123,7 +123,7 @@ export const ProjectRelaunch = () => (
 									The community has become one of Musicoin’s absolute core values.
 									We have a community-driven road map rather than a utopist and pumped ICO one.
 									In Musicoin Everyone is a leader and can participate to grow the project with his best skills and passion.
-									our <a style={{textDecoration:'underline'}} href="https://t.me/musicoinofficial"> Telegram channel</a>  is best place to share your actions.
+									our <a style={{ textDecoration: 'underline' }} href="https://t.me/musicoinofficial"> Telegram channel</a>  is best place to share your actions.
 								</p>
 								<SecondaryButton
 									href="https://www.publish0x.com/musicoin-radio/musicoin-community-driven-road-map-xdnqqnz"
@@ -147,9 +147,9 @@ export const ProjectRelaunch = () => (
 									New tokenomics & business model
 								</TertiaryHeading>
 								<p>
+									Non Fungible tokenomics & business model based on a decentralized music liquidity pool.
 									Artists provide music,
-									fans provide liquidity for shared royalties and charge PPP in the long term.
-									.
+									fans provide liquidity to improve each song's capacity to generate royalties and provide $MUSICs to the PPPs in the long term.
 								</p>
 								<SecondaryButton
 									href="https://t.me/MusicoinNFT"
