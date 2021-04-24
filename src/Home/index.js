@@ -79,8 +79,8 @@ export const Home = () => (
 				<Content>
 					{// temporary error message 
 					}
-					<p style={{ backgroundColor: 'rgba(255,0,0,0.4)', textAlign: 'center', padding: '1em' }}>
-						Musicoin 2.0 Is now live!
+					<p style={{textAlign: 'center', padding: '1em' }}>
+						
 					</p>
 					<Stats />
 				</Content>
