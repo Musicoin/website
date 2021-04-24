@@ -9,3 +9,5 @@ export const Wrapper = styled.div`
 	min-width: 1080px; /* 1 */
 	position: relative;
 `;
+
+

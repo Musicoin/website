@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { shape, string } from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
@@ -13,6 +13,9 @@ import { Developers } from '@/Developers';
 import { GettingStarted } from '@/GettingStarted';
 import { Team } from '@/Team';
 import { ProjectRelaunch } from '@/projectRelaunch';
+import { set } from 'lodash-es';
+import {SkaleMetamask} from '@/SkaleMetamask'
+
 
 export class AppBase extends Component {
 	componentDidUpdate(prevProps) {
@@ -21,9 +24,12 @@ export class AppBase extends Component {
 		}
 	}
 
+
 	render() {
+
 		return (
 			<Wrapper>
+				<SkaleMetamask />
 				<Switch>
 					<Route path="/" exact={true} component={Home} />
 					<Route path="/musicians" component={Musicians} />
