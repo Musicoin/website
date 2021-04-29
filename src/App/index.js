@@ -14,7 +14,6 @@ import { GettingStarted } from '@/GettingStarted';
 import { Team } from '@/Team';
 import { ProjectRelaunch } from '@/projectRelaunch';
 import { set } from 'lodash-es';
-import {SkaleMetamask} from '@/SkaleMetamask'
 
 
 export class AppBase extends Component {
@@ -29,7 +28,6 @@ export class AppBase extends Component {
 
 		return (
 			<Wrapper>
-				<SkaleMetamask />
 				<Switch>
 					<Route path="/" exact={true} component={Home} />
 					<Route path="/musicians" component={Musicians} />
