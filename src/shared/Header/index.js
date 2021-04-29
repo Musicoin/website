@@ -59,7 +59,7 @@ export class Header extends Component {
 						)}
 						<NavItems open={open}>
 						
-							<NavItem to={roadMap} target="_blank" download> RoadMap</NavItem>
+							<NavItem to={roadMap} target="_blank" download>RoadMap</NavItem>
 							<NavItem to="/project-relaunch">Project Relaunch!</NavItem>
 							<NavItem to="/how-it-works">How it works</NavItem>
 							<NavItem to="/musicians">For Musicians</NavItem>
