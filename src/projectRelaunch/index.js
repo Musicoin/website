@@ -44,7 +44,7 @@ export const ProjectRelaunch = () => (
 							<MediaContent>
 								<BannerTitle>Project Relaunch</BannerTitle>
 								<p>
-									The Musicoin community is excited to announce its project Reulanch.
+									The Musicoin community is excited to announce its project relaunch.
 									Project relaunch includes
 									migration and collaboration with Skale network and its team.
 									New tokenomics model.
@@ -152,7 +152,7 @@ export const ProjectRelaunch = () => (
 									business model based on a decentralized music liquidity pool.
 									Artists provide music,
 									fans provide liquidity to improve each song's 
-									capacity to generate royalties and provide $MUSIC to the PPPs in the long term.
+									capacity to generate royalties and provide $MUSIC to the PPPs in the long-term.
 								</p>
 								<SecondaryButton
 									href="https://t.me/MusicoinNFT"
