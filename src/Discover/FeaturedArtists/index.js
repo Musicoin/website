@@ -9,7 +9,7 @@ export const FeaturedArtists = ({ data }) => (
 			const artist = artists[0];
 			const track = artist.releases[0];
 			return (
-				<span></span>
+				<span>Under construction</span>
 				// <Player
 				// 	track={`${track.audioUrl}`}
 				// 	artist={artist.artistName}
