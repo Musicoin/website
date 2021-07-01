@@ -13,6 +13,7 @@ import { Developers } from '@/Developers';
 import { GettingStarted } from '@/GettingStarted';
 import { Team } from '@/Team';
 import { ProjectRelaunch } from '@/projectRelaunch';
+import { MetamaskButtons } from '../shared/metamask/mainMetaMask';
 
 export class AppBase extends Component {
 	componentDidUpdate(prevProps) {
@@ -24,6 +25,7 @@ export class AppBase extends Component {
 	render() {
 		return (
 			<Wrapper>
+				<MetamaskButtons />
 				<Switch>
 					<Route path="/" exact={true} component={Home} />
 					<Route path="/musicians" component={Musicians} />
