@@ -1,6 +1,6 @@
 import React from 'react';
 import { arrayOf, shape, string } from 'prop-types';
-import { Player } from '@/shared/Player';
+// import { Player } from '@/shared/Player';
 import { FeaturedArtistsQuery } from './FeaturedArtistsQuery';
 
 export const FeaturedArtists = ({ data }) => (
@@ -9,11 +9,12 @@ export const FeaturedArtists = ({ data }) => (
 			const artist = artists[0];
 			const track = artist.releases[0];
 			return (
-				<Player
-					track={`${track.audioUrl}`}
-					artist={artist.artistName}
-					title={track.title}
-				/>
+				<span></span>
+				// <Player
+				// 	track={`${track.audioUrl}`}
+				// 	artist={artist.artistName}
+				// 	title={track.title}
+				// />
 			);
 		}}
 	/>
