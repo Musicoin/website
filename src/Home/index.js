@@ -38,7 +38,7 @@ const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
 export const Home = () => (
 	<Wrapper>
-		<head />
+		<head>
 		<Helmet
 			title="Musicoin Project"
 			description="Musicoin (MUSIC) is a smart blockchain and music streaming platform."
