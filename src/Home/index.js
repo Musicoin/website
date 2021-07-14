@@ -72,6 +72,11 @@ export const Home = () => (
 				},
 			]}
 		/>
+  <Helmet>
+                <link rel="Musicoin icoin" href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/96/Musicoin-MUSIC-icon.png" />
+  </Helmet>
+
+<link rel="shortcut icon" href="https://your-site.com/your-icon.png" />
 		<Header />
 		<Main>
 			<section>
