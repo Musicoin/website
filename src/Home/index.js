@@ -38,6 +38,7 @@ const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
 export const Home = () => (
 	<Wrapper>
+		<head />
 		<Helmet
 			title="Musicoin Project"
 			description="Musicoin (MUSIC) is a smart blockchain and music streaming platform."
@@ -72,12 +73,10 @@ export const Home = () => (
 				},
 			]}
 		/>
-  <Helmet>
-                <link rel="Musicoin icoin" href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/96/Musicoin-MUSIC-icon.png" />
-  </Helmet>
+           <link rel="Musicoin icoin" href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/96/Musicoin-MUSIC-icon.png" />
 
-<link rel="shortcut icon" href="https://your-site.com/your-icon.png" />
-		<Header />
+
+		<head />
 		<Main>
 			<section>
 				<Content>
