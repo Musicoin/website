@@ -38,45 +38,26 @@ const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
 export const Home = () => (
 	<Wrapper>
-		<head>
-		<Helmet
-			title="Musicoin Project"
-			description="Musicoin (MUSIC) is a smart blockchain and music streaming platform."
-			meta={[
-				{ name: 'author', content: 'Musicoin Project' },
-				{
-					name: 'description',
-					content:
-						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
-				},
+<head>
+			<title>Musicoin</title>
 
-				{ name: 'twitter:site', content: 'musicoins' },
-				{ name: 'twitter:creator', content: 'Musicoin Project' },
-				{ name: 'twitter:title', content: 'Musicoin Project' },
-				{
-					name: 'twitter:image',
-					content: 'https://musicoin.org/og-musicoin.jpg',
-				},
+			<meta name='author' content='Musicoin Project' > </meta>
+			<meta name="description" content="Musicoin (MUSIC) is a smart blockchain and music streaming platform" />
 
-				{ property: 'og:title', content: 'Musicoin Project' },
-				{ property: 'og:site_name', content: 'Musicoin Project' },
-				{ property: 'og:type', content: 'website' },
-				{ property: 'og:url', content: 'https://musicoin.org/' },
-				{
-					property: 'og:description',
-					content:
-						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
-				},
-				{
-					property: 'og:image',
-					content: 'https://musicoin.org/og-musicoin.jpg',
-				},
-			]}
-		/>
-           <link rel="Musicoin icoin" href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/96/Musicoin-MUSIC-icon.png" />
+			<meta name='twitter:site' content='musicoins'></meta>
+			<meta name='twitter:creator' content='Musicoin Project'></meta>
+			<meta name='twitter:title' content='Musicoin Project'></meta>
+			<meta name='twitter:image' content='https://musicoin.org/og-musicoin.jpg'></meta>
+			<meta name="twitter:card" content="https://musicoin.org/og-musicoin.jpg'">
+			</meta>
+			<meta name='og:title' property='og:title' content='Musicoin' />
+			<meta property="og:image" content="https://musicoin.org/og-musicoin.jpg" />
+			<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+			<meta property='og:site_name' content='Musicoin Project' />
+			<meta property='og:type' content='website'></meta>
+			<meta property='og:description' content='Musicoin (MUSIC) is a smart blockchain and music streaming platform.'> </meta>
 
-
-		<head />
+		</head>
 		<Main>
 			<section>
 				<Content>
