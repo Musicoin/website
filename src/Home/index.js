@@ -44,18 +44,18 @@ export const Home = () => (
 			<meta name='author' content='Musicoin Project' > </meta>
 			<meta name="description" content="Musicoin (MUSIC) is a smart blockchain and music streaming platform" />
 
-			<meta name='twitter:site' content='musicoins'></meta>
-			<meta name='twitter:creator' content='Musicoin Project'></meta>
-			<meta name='twitter:title' content='Musicoin Project'></meta>
-			<meta name='twitter:image' content='https://musicoin.org/og-musicoin.jpg'></meta>
+			<meta name='twitter:site' content='musicoins'>
+			<meta name='twitter:creator' content='Musicoin Project'>
+			<meta name='twitter:title' content='Musicoin Project'>
+			<meta name='twitter:image' content='https://musicoin.org/og-musicoin.jpg'>
 			<meta name="twitter:card" content="https://musicoin.org/og-musicoin.jpg'">
 			</meta>
-			<meta name='og:title' property='og:title' content='Musicoin' />
-			<meta property="og:image" content="https://musicoin.org/og-musicoin.jpg" />
-			<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-			<meta property='og:site_name' content='Musicoin Project' />
-			<meta property='og:type' content='website'></meta>
-			<meta property='og:description' content='Musicoin (MUSIC) is a smart blockchain and music streaming platform.'> </meta>
+			<meta name='og:title' property='og:title' content='Musicoin' >
+			<meta property="og:image" content="https://musicoin.org/og-musicoin.jpg" >
+			<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" >
+			<meta property='og:site_name' content='Musicoin Project' >
+			<meta property='og:type' content='website'>
+			<meta property='og:description' content='Musicoin (MUSIC) is a smart blockchain and music streaming platform.'>
 
 		</head>
 		<Main>
