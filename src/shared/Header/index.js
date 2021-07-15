@@ -13,6 +13,8 @@ import {
 import { Content } from '@/shared/Content';
 import { SecondaryButton, TertiaryButton } from '@/shared/buttons/styles';
 import { mediaSizes } from '@/styles/media';
+import roadMap from './images/roadmap_musicoin.jpeg';
+
 
 export class Header extends Component {
 	mql = window.matchMedia(`(max-width: ${mediaSizes.large}px)`);
@@ -56,6 +58,7 @@ export class Header extends Component {
 							</NavToggle>
 						)}
 						<NavItems open={open}>
+							<NavItem to={roadMap} target="_blank" download>RoadMap</NavItem>
 							<NavItem to="/project-relaunch">Project Relaunch!</NavItem>
 							<NavItem to="/how-it-works">How it works</NavItem>
 							<NavItem to="/musicians">For Musicians</NavItem>
