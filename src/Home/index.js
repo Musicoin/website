@@ -38,48 +38,60 @@ const openAppleUrl = () => window.open(appleDownloadUrl, '_blank');
 
 export const Home = () => (
 	<Wrapper>
-		<Helmet
-			title="Musicoin Project"
-			description="Musicoin (MUSIC) is a smart blockchain and music streaming platform."
-			meta={[
-				{ name: 'author', content: 'Musicoin Project' },
-				{
-					name: 'description',
-					content:
-						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
-				},
+		<head>
+			<Helmet>
+				{/* <!-- HTML Meta Tags --> */}
+				<title>Musicoin</title>
+				<meta
+					name="description"
+					content="Musicoin (MUSIC) is a smart blockchain and music streaming platform"
+				/>
 
-				{ name: 'twitter:site', content: 'musicoins' },
-				{ name: 'twitter:creator', content: 'Musicoin Project' },
-				{ name: 'twitter:title', content: 'Musicoin Project' },
-				{
-					name: 'twitter:image',
-					content: 'https://musicoin.org/og-musicoin.jpg',
-				},
+				{/* <!-- Google / Search Engine Tags --> */}
+				<meta itemprop="name" content="Reed" />
+				<meta
+					itemprop="description"
+					content="Musicoin (MUSIC) is a smart blockchain and music streaming platform"
+				/>
+				<meta
+					itemprop="image"
+					content="https://musicoin.org/og-musicoin.jpg"
+				/>
 
-				{ property: 'og:title', content: 'Musicoin Project' },
-				{ property: 'og:site_name', content: 'Musicoin Project' },
-				{ property: 'og:type', content: 'website' },
-				{ property: 'og:url', content: 'https://musicoin.org/' },
-				{
-					property: 'og:description',
-					content:
-						'Musicoin (MUSIC) is a smart blockchain and music streaming platform. ',
-				},
-				{
-					property: 'og:image',
-					content: 'https://musicoin.org/og-musicoin.jpg',
-				},
-			]}
-		/>
-		<Header />
+				{/* <!-- Facebook Meta Tags --> */}
+				<meta property="og:url" content="https://musicoin.org" />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="Musicoin" />
+				<meta
+					property="og:description"
+					content="Musicoin (MUSIC) is a smart blockchain and music streaming platform"
+				/>
+				<meta
+					property="og:image"
+					content="https://musicoin.org/og-musicoin.jpg"
+				/>
+
+				{/* <!-- Twitter Meta Tags --> */}
+				<meta name="twitter:card" content="https://musicoin.org/og-musicoin.jpg" />
+				<meta name="twitter:title" content="Musicoin" />
+				<meta
+					name="twitter:description"
+					content="Musicoin (MUSIC) is a smart blockchain and music streaming platform"
+				/>
+				<meta
+					name="twitter:image"
+					content="https://musicoin.org/og-musicoin.jpg"
+				/>
+
+			</Helmet>
+		</head>
 		<Main>
 			<section>
 				<Content>
 					{// temporary error message 
 					}
 					<p style={{ backgroundColor: 'rgba(255,0,0,0.4)', textAlign: 'center', padding: '1em' }}>
-						If you are having trouble logging in or playing music, don’t get frustrated, Our relaunch is just around the corner. Musicoin is about to come back as a community-driven project, louder than ever! <a href="project-relaunch" style={{textDecoration:'underline'}}>Read more.</a>
+						If you are having trouble logging in or playing music, don’t get frustrated, Our relaunch is just around the corner. Musicoin is about to come back as a community-driven project, louder than ever! <a href="project-relaunch" style={{ textDecoration: 'underline' }}>Read more.</a>
 					</p>
 					<Stats />
 				</Content>
