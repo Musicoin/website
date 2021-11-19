@@ -84,6 +84,15 @@ export const Faq = () => (
 					</Link>.
 				</p>
 			</MoreInfo>
+			<MoreInfo title="How do I swap my old coin into the new ERC 20 token?">
+				<p>
+					The second coin swap will take place after the migration to the Skale network,{" "}
+					<Link href="https://t.me/MusicoinSecondSwappers">
+						Join the second swap group
+					</Link>{" "}
+					for updates
+				</p>
+			</MoreInfo>
 			<MoreInfo title="How do I get started with mining Musicoin?">
 				<p>
 					Your first step is to download the go-musicoin client and then follow{' '}

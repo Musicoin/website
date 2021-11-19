@@ -48,14 +48,7 @@ export const Team = ({ match }) => (
 							linkedinProfile="http://linkedin.com/in/isaacmao"
 							twitterProfile="https://twitter.com/isaac"
 						/>
-						<Member
-							name="Immy Khan"
-							role="Crypto Director"
-							country="IN"
-							image={immyKhanImage}
-							linkedinProfile="http://linkedin.com/in/imrankhan-nagori-9b167b69"
-							twitterProfile="https://twitter.com/ImmyKhanNagori"
-						/>
+
 						<Member
 							name="Asterios Papastamatakis"
 							role="Musician Relationship"
