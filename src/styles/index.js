@@ -1,10 +1,10 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import ubuntuRegular from '@/assets/fonts/ubuntu-regular.woff';
 import ubuntuBold from '@/assets/fonts/ubuntu-bold.woff';
 import { rem, normalize } from 'polished';
 import { media, mediaFontSize } from '@/styles/media';
 
-injectGlobal`
+createGlobalStyle`
 	${normalize()};
 
 	@font-face {

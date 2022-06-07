@@ -29,7 +29,7 @@ export class Player extends Component {
 		duration: 0,
 	};
 
-	componentWillMount() {
+	UNSAFE_componentWillMount() {
 		const { track } = this.props;
 
 		this.player = this.getPlayer(track);
@@ -37,7 +37,7 @@ export class Player extends Component {
 		this.player.addEventListener('loadedmetadata', this.handleLoadedMetaData);
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		const { track } = this.props;
 
 		if (nextProps.track !== track) {

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { graphql } from 'react-apollo';
-import { bool, func } from 'prop-types';
+import { bool, func, PropTypes } from 'prop-types';
 import { mockClient } from '@/client.mock';
 import { Query as ReactApolloQuery } from 'react-apollo';
+import MockQueryRender from './MockQueryRender';
 
 export const Query = ({ isMock, ...props }) => {
 	const { query } = props;
@@ -24,14 +25,6 @@ Query.defaultProps = {
 	isMock: false,
 };
 
-class MockQueryRender extends Component {
-	render() {
-		const { data, children } = this.props;
-		const { loading, error } = data;
-		return children({ data, loading, error });
-	}
-}
-
-MockQueryRender.propTypes = {
-	children: func.isRequired,
+Query.propTypes = {
+	query: PropTypes.node.isRequired,
 };

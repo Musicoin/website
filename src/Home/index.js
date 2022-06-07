@@ -76,10 +76,22 @@ export const Home = () => (
 		<Main>
 			<section>
 				<Content>
-					{// temporary error message 
+					{
+						// temporary error message
 					}
-					<p style={{ backgroundColor: 'rgba(255,0,0,0.4)', textAlign: 'center', padding: '1em' }}>
-						If you are having trouble logging in or playing music, don’t get frustrated, Our relaunch is just around the corner. Musicoin is about to come back as a community-driven project, louder than ever! <a href="project-relaunch" style={{textDecoration:'underline'}}>Read more.</a>
+					<p
+						style={{
+							backgroundColor: 'rgba(255,0,0,0.4)',
+							textAlign: 'center',
+							padding: '1em',
+						}}
+					>
+						If you are having trouble logging in or playing music, don’t get
+						frustrated, Our relaunch is just around the corner. Musicoin is
+						about to come back as a community-driven project, louder than ever!{' '}
+						<a href="project-relaunch" style={{ textDecoration: 'underline' }}>
+							Read more.
+						</a>
 					</p>
 					<Stats />
 				</Content>
@@ -92,15 +104,15 @@ export const Home = () => (
 							Music For All
 						</TertiaryHeading>
 						<p>
-							95% of internet users don't have access to music online, unless
-							they subscribe to an expensive and closed streaming service. With
-							the power of $MUSIC blockchain, they can now stream independent
-							music for free, from a constantly growing catalog of labels and
-							artists. There's no ads, it is free, easy to share, and artists
-							get paid instantly.
+							95% of internet users don&apos;t have access to music online,
+							unless they subscribe to an expensive and closed streaming
+							service. With the power of $MUSIC blockchain, they can now stream
+							independent music for free, from a constantly growing catalog of
+							labels and artists. There&apos;s no ads, it is free, easy to
+							share, and artists get paid instantly.
 							{/*With the power of our blockchain platform, you can stream more
 							than 60,000 tracks, from more than 5000 independent artists.
-							There's no ads, it's free, and artists get paid instantly.*/}
+							There&apos;s no ads, it&apos;s free, and artists get paid instantly.*/}
 						</p>
 						<p>Try for yourself & discover new music now!</p>
 						{/*<Link to="/test" style={{backgroundColor:"transparent", backgroundSize:"50%", backgroundPosition: "center", backgroundRepeat:"no-repeat", backgroundImage:"url(./images/google-play-badge.png)"}}>test</Link>*/}

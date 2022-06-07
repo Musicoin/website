@@ -8,6 +8,7 @@ import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { BannerTitle } from '@/shared/Banner';
 import { Box } from '@/shared/Box';
+import PropTypes from 'prop-types';
 
 import isaacMaoImage from './images/isaac-mao.png';
 import seanChenImage from './images/sean-chen.png';
@@ -54,7 +55,6 @@ export const Team = ({ match }) => (
 							role="Musician Relationship"
 							country="GR"
 							image={asteriosPapastamatakisImage}
-
 							twitterProfile="https://twitter.com/asteriospapas"
 							musicoinProfile="https://musicoin.org/nav/artist/0x44f10f4b8c8d90b003ea7d9d6c91a1513003aa6a"
 						/>
@@ -112,3 +112,7 @@ export const Team = ({ match }) => (
 		</Content>
 	</Page>
 );
+
+Team.propTypes = {
+	match: PropTypes.node.isRequired,
+};
