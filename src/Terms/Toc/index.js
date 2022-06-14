@@ -2,11 +2,8 @@ import React, { Fragment } from 'react';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { MoreInfo } from '@/shared/MoreInfo';
 import { Section } from './styles';
-import Tos from './Tos';
-import Copyright from './Copyright';
-import Arp from './Arp';
 
-export const Toc = () => (
+const Toc = () => (
 	<Fragment>
 		<SecondaryHeading level={2} isCenter={true} />
 		<Section>
@@ -288,3 +285,5 @@ Effective Date: May 25, 2018
     */}
 	</Fragment>
 );
+
+export default Toc;

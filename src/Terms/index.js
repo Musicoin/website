@@ -9,7 +9,11 @@ import { Footer } from '@/shared/Footer';
 import { Strip } from '@/shared/Strip';
 import { GetStarted } from '@/shared/GetStarted';
 import { BannerTitle } from '@/shared/Banner';
-import { Toc, Tos, Arp, Copyright } from './Toc';
+import Tos from './Toc/Tos';
+import Copyright from './Toc/Copyright';
+import Arp from './Toc/Arp';
+import Toc from './Toc';
+
 import { TermsBanner } from './styles';
 import { Box } from '@/shared/Box';
 import { Nav, NavLink } from './Nav';
@@ -34,7 +38,7 @@ export const Terms = ({ match }) => (
 			<Strip>
 				<Content>
 					<Switch>
-					<Redirect
+						<Redirect
 							from={`${match.url}`}
 							to={`${match.url}/legal`}
 							exact={true}

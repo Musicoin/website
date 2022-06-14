@@ -3,7 +3,7 @@ import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { MoreInfo } from '@/shared/MoreInfo';
 import { Section } from './styles';
 
-export const Copyright = () => (
+const Copyright = () => (
 	<Fragment>
 		<SecondaryHeading level={2} isCenter={true}>
 			Intellectual Property Infringement Notification Policy

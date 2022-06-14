@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
 import { MoreInfo } from '@/shared/MoreInfo';
 
-export const Tos = () => (
+const Tos = () => (
 	<Fragment>
 		<SecondaryHeading level={2} isCenter={true}>
 			TOS

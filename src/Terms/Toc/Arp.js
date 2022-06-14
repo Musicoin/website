@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { SecondaryHeading } from '@/shared/headings';
 import { MoreInfo } from '@/shared/MoreInfo';
 
-export const Arp = () => (
+const Arp = () => (
 	<Fragment>
 		<SecondaryHeading level={2} isCenter={true}>
 			Artist Content Policy
