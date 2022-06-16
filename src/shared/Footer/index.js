@@ -13,7 +13,6 @@ import {
 	SmallPrint,
 } from './styles';
 import {
-	LogoIcon,
 	TwitterIcon,
 	RedditIcon,
 	MediumIcon,

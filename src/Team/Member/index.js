@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import PropTypes from 'prop-types';
 import {
 	MemberBox,
 	MemberImage,
@@ -12,7 +12,7 @@ import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare';
 import { twitterSquare } from 'react-icons-kit/fa/twitterSquare';
 import { LogoIcon } from '@/shared/icons';
 
-export const Member = ({ children, ...props }) => {
+export const Member = ({ ...props }) => {
 	return (
 		<MemberBox>
 			<MemberImage src={props.image} />
@@ -56,11 +56,22 @@ export const Member = ({ children, ...props }) => {
 };
 
 Member.propTypes = {
-	name: string,
-	image: string,
-	role: string,
-	country: string,
-	linkedinProfile: string,
-	twitterProfile: string,
-	musicoinProfile: string,
+	match: PropTypes.node.isRequired,
+	name: PropTypes.string,
+	image: PropTypes.string,
+	role: PropTypes.string,
+	country: PropTypes.string,
+	linkedinProfile: PropTypes.string,
+	twitterProfile: PropTypes.string,
+	musicoinProfile: PropTypes.string,
+};
+
+Member.defaultProps = {
+	name: '',
+	image: '',
+	role: '',
+	country: '',
+	linkedinProfile: '',
+	twitterProfile: '',
+	musicoinProfile: '',
 };

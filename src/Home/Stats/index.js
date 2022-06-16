@@ -64,7 +64,7 @@ class Stats extends React.Component {
 	}
 
 	numberWithCommas(number) {
-		if (number == 0) {
+		if (number === 0) {
 			return '0,000,000';
 		} else {
 			return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');

@@ -18,9 +18,6 @@ import technologyImage from './images/technology.png';
 import streamingImage from './images/streaming.png';
 import ubiImage from './images/ubi.png';
 import sharismImage from './images/sharism.png';
-import currencyImage from './images/currency.png';
-import contractsImage from './images/contracts.png';
-import supportImage from './images/support.png';
 
 export const ProjectRelaunch = () => (
 	<Page>

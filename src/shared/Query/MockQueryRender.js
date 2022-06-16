@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { func } from 'prop-types';
 
 class MockQueryRender extends Component {

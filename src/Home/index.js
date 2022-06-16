@@ -25,8 +25,8 @@ import mobileAppImage from './images/iOSAndroid.png';
 import googlePlayButtonImage from './images/google-play-badge.png';
 import appleAppMarketButtonImage from './images/download_on_the_app_store_badge_us-uk_rgb_blk_092917.png';
 
-const docLocation =
-	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
+// const docLocation =
+// 	'https://docs.google.com/forms/d/e/1FAIpQLSc3y97mc5fHPAczhzvGTd8SDqlCRsJan6LipmCop84waky3vg/viewform';
 const appleDownloadUrl =
 	'https://itunes.apple.com/us/app/musicoin/id1447230096?ls=1&mt=8';
 const googleDownloadUrl =

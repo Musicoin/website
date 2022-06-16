@@ -17,7 +17,6 @@ import benGylesImage from './images/ben-gyles.png';
 import riverYanImage from './images/river-yan.png';
 import gibranSeptyaImage from './images/gibran-septya.png';
 import ehsanHajianImage from './images/ehsan-hajian.png';
-import immyKhanImage from './images/immy-khan.png';
 
 import { Member } from './Member/index';
 import { MemberRow } from './styles';

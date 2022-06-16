@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
-import { SecondaryHeading, TertiaryHeading } from '@/shared/headings';
-import { MoreInfo } from '@/shared/MoreInfo';
-import { Section } from './styles';
+import { SecondaryHeading } from '@/shared/headings';
 
 const Copyright = () => (
 	<Fragment>

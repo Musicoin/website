@@ -1,14 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { number, node, bool } from 'prop-types';
-import { PrettyText } from '@/shared/PrettyText';
 
 export const HeadingTag = ({ level, isPretty, children, ...props }) => {
-	const Inner = isPretty ? PrettyText : Fragment;
 	const Tag = `h${level}`;
 
 	return (
 		<Tag {...props}>
-		  {children}
+			{children}
 			{/*<Inner style={this.customStyle}>{children}</Inner>*/}
 		</Tag>
 	);

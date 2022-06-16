@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { graphql } from 'react-apollo';
-import { bool, func, PropTypes } from 'prop-types';
+import { bool, PropTypes } from 'prop-types';
 import { mockClient } from '@/client.mock';
 import { Query as ReactApolloQuery } from 'react-apollo';
 import MockQueryRender from './MockQueryRender';
